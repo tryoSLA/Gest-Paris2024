@@ -13,19 +13,21 @@ public class Modele {
 	
 	public static String verifConnexion (String login, String mdp)
 	{
-		String requete = "Select count(*) as nb, droits from user" +
-				" where login ='" + login + "' and mdp ='"+mdp+"' ; ";
+		String requete = "Select count(*) as nb from utilisateur" +
+				" where pseudo ='" + login + "' and mot_de_passe ='"+mdp+"' ; ";
+		System.out.println(requete);
 		String droits =""; 
 		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123"); 
 		try{
 			uneBdd.seConnecter();
 			Statement unStat = uneBdd.getMaConnexion().createStatement(); 
-			ResultSet unRes = unStat.executeQuery(requete);
-			if (unRes.next())
+			ResultSet unRes = unStat.executeQuery(requete);			
+			if (unRes.getInt("nb") == 0)
 			{
-				droits = unRes.getString("droits"); 
+				droits = unRes.getString("role"); 
 				int nb = unRes.getInt("nb");
 				if (nb==0) droits =""; 
+				System.out.println(droits);
 			}
 			unRes.close(); 
 			unStat.close(); 
