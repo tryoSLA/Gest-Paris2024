@@ -108,7 +108,6 @@ public class VueConnexion extends JFrame implements ActionListener,KeyListener
 		 }else {
 		 
 				 String droits = Modele.verifConnexion(login, mdp); 
-				 System.out.println("aaaa");
 				 if (droits.equals("")){
 					 JOptionPane.showMessageDialog(this, "Erreur d'identifiants",
 							 "Erreur", JOptionPane.ERROR_MESSAGE);

@@ -52,6 +52,12 @@ public class VueGeneral extends JFrame implements ActionListener
 		 this.setVisible(true);
 	 }
 
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
 //	@Override
 //	public void actionPerformed(ActionEvent e) 
 //	{

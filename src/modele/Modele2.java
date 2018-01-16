@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 
 
-public class Modele {
+public class Modele2 {
 	
 	public static String verifConnexion (String login, String mdp)
 	{
