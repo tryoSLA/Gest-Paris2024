@@ -34,7 +34,7 @@ public class VueConnexion extends JFrame implements ActionListener,KeyListener
 	
 	public VueConnexion()
 	{
-		this.setTitle("Connexion à mon logiciel de gestion");
+		this.setTitle("Gest'Paris2024 - Connexion");
 		this.setBounds(200, 200, 500, 350);
 		this.setLayout(null); 
 		this.setResizable(false); 
@@ -53,11 +53,10 @@ public class VueConnexion extends JFrame implements ActionListener,KeyListener
 		
 		this.unPanel.setVisible(true);
 		this.add(this.unPanel);
-		
 		//Modification des bouttons
 		this.txtLogin.setBackground(null);
 		
-		this.txtLogin.setPreferredSize(new Dimension(50, 24));
+		//this.txtLogin.setPreferredSize();
 		this.txtLogin.setBorder(BorderFactory.createMatteBorder(1,0,1,0, Color.black));
 		this.txtLogin.setForeground(Color.RED);
 		
@@ -105,7 +104,7 @@ public class VueConnexion extends JFrame implements ActionListener,KeyListener
 		 String mdp = new String(this.pwdMdp.getPassword());
 		 if (login.equals("") || mdp.equals(""))
 		 {
-			 JOptionPane.showMessageDialog(this,"Veuillez remplir les identifiants");
+			 JOptionPane.showMessageDialog(this,"Veuillez remplir les identifiants !");
 		 }else {
 		 
 				 String droits = Modele.verifConnexion(login, mdp); 
@@ -120,7 +119,7 @@ public class VueConnexion extends JFrame implements ActionListener,KeyListener
 					 
 					 //appel de la Jframe generale 
 					 Main.rendreVisible(false); 
-					 new VueGeneral(droits);
+					 //new VueGeneral(droits);
 				 }
 		 }
 	}
