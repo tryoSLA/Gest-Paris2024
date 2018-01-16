@@ -15,11 +15,11 @@ public class VueGeneral extends JFrame implements ActionListener
 {
 	private JPanel panelMenu = new JPanel();
 	private JButton tabButton [] = new JButton[4];
-	private final String tabNom [] = {"Pays", "Sport", "Athlètes", "Quitter"};
+	private final String tabNom [] = {"Pays", "Sport", "AthlÃ¨tes", "Quitter"};
 
 	 public VueGeneral(String droits)
 	 {
-		 this.setTitle("Gestion des interventions");
+		 this.setTitle("Gestion des pays");
 		 this.setLayout(null); 
 		 this.setResizable(false); 
 		 this.setBounds(200, 200, 700, 500); 
@@ -29,10 +29,8 @@ public class VueGeneral extends JFrame implements ActionListener
 		 this.panelMenu.setBounds(0, 20, 700, 30);
 		 this.panelMenu.setLayout(new GridLayout(1,4));
 		 
-//		 this.panelMenu.add(this.btClients);
-//		 this.panelMenu.add(this.btTechs);
-//		 this.panelMenu.add(this.btInters);
-//		 this.panelMenu.add(this.btQuitter);
+		 //this.panelMenu.add(this.btPays);
+
 					 
 		for (int i = 0; i<4; i++)
 		{
@@ -43,48 +41,40 @@ public class VueGeneral extends JFrame implements ActionListener
 		 this.panelMenu.setVisible(true);
 		 this.add(this.panelMenu);
 		 
-//		 this.btClients.addActionListener(this);
-//		 this.btInters.addActionListener(this);
-//		 this.btTechs.addActionListener(this);
-//		 this.btQuitter.addActionListener(this);
+		 //this.btPays.addActionListener(this);
+
 		 //Ajout des 3 pannels
 		 
 		 this.setVisible(true);
 	 }
 
 	@Override
-	public void actionPerformed(ActionEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void actionPerformed(ActionEvent e)
+	{
+		if (e.getSource()==this.tabButton[3])
+		{
+			this.dispose();
+			Main.rendreVisible(true);
+		}
+		else if (e.getSource()==this.tabButton[0])
+		{
+			/*uneVueClient.setVisible(true);
+			uneVueInters.setVisible(false);
+			uneVueTech.setVisible(false);*/
+		}
+		else if (e.getSource()==this.tabButton[1])
+		{
+			/*uneVueClient.setVisible(false);
+			uneVueInters.setVisible(false);
+			uneVueTech.setVisible(true);*/
+		}
+		else if (e.getSource()==this.tabButton[2])
+		{
+			/*uneVueClient.setVisible(false);
+			uneVueInters.setVisible(true);
+			uneVueTech.setVisible(false);*/
+		}
 
-//	@Override
-//	public void actionPerformed(ActionEvent e) 
-//	{
-//		if (e.getSource()==this.tabButton[3])
-//		{
-//			this.dispose();
-//			Main.rendreVisible(true);
-//		}
-//		else if (e.getSource()==this.tabButton[0])
-//		{
-//			uneVueClient.setVisible(true);
-//			uneVueInters.setVisible(false);
-//			uneVueTech.setVisible(false);
-//		}
-//		else if (e.getSource()==this.tabButton[1])
-//		{
-//			uneVueClient.setVisible(false);
-//			uneVueInters.setVisible(false);
-//			uneVueTech.setVisible(true);
-//		}
-//		else if (e.getSource()==this.tabButton[2])
-//		{
-//			uneVueClient.setVisible(false);
-//			uneVueInters.setVisible(true);
-//			uneVueTech.setVisible(false);
-//		}
-//
-//	}
+	}
 
 }

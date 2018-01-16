@@ -1,8 +1,5 @@
 package vue;
 import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.Graphics;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -35,40 +32,45 @@ public class VueConnexion extends JFrame implements ActionListener,KeyListener
 	public VueConnexion()
 	{
 		this.setTitle("Gest'Paris2024 - Connexion");
-		this.setBounds(200, 200, 500, 350);
+		this.setBounds(200, 200, 500, 400);
 		this.setLayout(null); 
-		this.setResizable(false); 
+		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
-		//this.getContentPane().setBackground(Color.cyan);
+
 		
 		//construction du pannel 
-		this.unPanel.setBounds(50, 150, 400, 150); 
-		this.unPanel.setLayout(new GridLayout(3,2));
+		this.unPanel.setBounds(50, 200, 400, 120);
+		this.unPanel.setLayout(new GridLayout(5,2));
 		this.unPanel.add(new JLabel("Nom d'utilisateur : "));
 		this.unPanel.add(this.txtLogin);
+		this.unPanel.add(new JLabel(""));
+		this.unPanel.add(new JLabel(""));
 		this.unPanel.add(new JLabel("Mot de passe : "));
-		this.unPanel.add(this.pwdMdp); 
+		this.unPanel.add(this.pwdMdp);
+		this.unPanel.add(new JLabel(""));
+		this.unPanel.add(new JLabel(""));
 		this.unPanel.add(this.btAnnuler); 
 		this.unPanel.add(this.btSeConnecter);
 		
 		this.unPanel.setVisible(true);
 		this.add(this.unPanel);
-		//Modification des bouttons
+
+		//Modification des boutons
 		this.txtLogin.setBackground(null);
-		
-		//this.txtLogin.setPreferredSize();
-		this.txtLogin.setBorder(BorderFactory.createMatteBorder(1,0,1,0, Color.black));
-		this.txtLogin.setForeground(Color.RED);
+		this.txtLogin.setBorder(BorderFactory.createMatteBorder(0,0,1,0, Color.black));
+		this.pwdMdp.setBackground(null);
+		this.pwdMdp.setBorder(BorderFactory.createMatteBorder(0,0,1,0, Color.black));
+
 		
 				
-		//ajout de l'image à la fenetre 		
+		//ajout de l'image ï¿½ la fenetre 		
 		ImageIcon logo = new ImageIcon("src/images/JO.png");
-		JLabel lbLogo = new JLabel(logo); 
+		JLabel lbLogo = new JLabel(logo);
 		lbLogo.setBounds(50, 20, 400, 120);
 		this.add(lbLogo);
 		
 		//changer icone application 
-		ImageIcon logopetit = new ImageIcon("src/images/Logo_paris_2024_simple.png"); 
+		ImageIcon logopetit = new ImageIcon("src/images/Logo_paris_2024_simple.png");
 		this.setIconImage(logopetit.getImage());
 		
 		//rendre les boutons cliquables 
@@ -115,11 +117,11 @@ public class VueConnexion extends JFrame implements ActionListener,KeyListener
 					 this.pwdMdp.setText("");
 				 }else {
 					 JOptionPane.showMessageDialog(this, "Bienvenue  !",
-							 "Connexion réussie", JOptionPane.INFORMATION_MESSAGE);
+							 "Connexion rÃ©ussie", JOptionPane.INFORMATION_MESSAGE);
 					 
 					 //appel de la Jframe generale 
-					 Main.rendreVisible(false); 
-					 //new VueGeneral(droits);
+					 Main.rendreVisible(false);
+					 new VueGeneral(droits);
 				 }
 		 }
 	}
