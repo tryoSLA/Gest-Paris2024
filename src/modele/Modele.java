@@ -39,7 +39,42 @@ public class Modele {
 		}
 		return droits;
 	}
+
+	public static ArrayList<pays> selectAllPays ()
+	{
+
+		ArrayList<pays> listPays = new ArrayList<pays>();
+
+		String requete = "SELECT id_pays, Libelle_pays, Description_pays FROM 'Pays'";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		try{
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+			while (rs.next())
+			{
+				int idPays = rs.getInt("id_pays");
+				String namePays = rs.getString("Libelle_pays");
+				String descPays = rs.getString("Description_pays");
+				listPays.add(new pays(idPays, namePays, descPays));
+			}
+
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		}
+		catch( SQLException exp)
+		{
+			System.out.println("Erreur : "+ requete);
+			//exp.printStackTrace();
+		}
+	}
+
 }
+
 //	public static ArrayList<Client> selectAllClients ()
 //	{
 //		ArrayList<Client> lesClients = new ArrayList<Client>();
