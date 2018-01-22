@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 import controleur.Pays;
 import controleur.Sports;
+import controleur.Athletes;
 
 
 
@@ -122,104 +123,53 @@ public class Modele {
 			//exp.printStackTrace();
 		}
 		return listSports;
+	}
+	/*
+	********************************************************************************************************************
+	---------------------------------------------		   Athletes		------------------------------------------------
+	********************************************************************************************************************
+	 */
+	public static ArrayList<Athletes> selectAllAthletes ()
+	{
+		ArrayList<Athletes> listAthletes = new ArrayList<Athletes>();
 
+		String requete = "SELECT * FROM 'athlete_detail'";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		try{
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
 
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+			while (rs.next())
+			{
+				//récupération des Champs par valeur
+				int idAthletes = rs.getInt("id_personne");
+				String nomAthletes = rs.getString("Nom");
+				String prenomAthletes = rs.getString("Prenom");
+				int ageAthletes = rs.getInt("Age");
+				String genreAthletes = rs.getString("Genre");
+				String libellePaysAthletes = rs.getString("Libelle_pays");
+				String photoAthletes = rs.getString("Photo");
+				String biographieAthletes = rs.getString("Biographie");
+				float poidsAthletes = rs.getFloat("Poids");
+				float tailleAthletes = rs.getFloat("Taille");
+				String libelleSportAthletes = rs.getString("Libelle_sport");
+				//Mise à jour de la liste
+				listAthletes.add(new Athletes(idAthletes, nomAthletes, prenomAthletes, genreAthletes, libelleSportAthletes, libellePaysAthletes, photoAthletes, biographieAthletes,  ageAthletes, tailleAthletes, poidsAthletes));
+			}
+
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		}
+		catch( SQLException exp)
+		{
+			System.out.println("Erreur : "+ requete);
+			//exp.printStackTrace();
+		}
+		return listAthletes;
 	}
 
 }
-
-//	public static ArrayList<Client> selectAllClients ()
-//	{
-//		ArrayList<Client> lesClients = new ArrayList<Client>();
-//		String requete = "SELECT * from client;";
-//		Bdd uneBdd = new Bdd("localhost", "intervention", "root", "");
-//		try
-//		{
-//			uneBdd.seConnecter();
-//			Statement unStat = uneBdd.getMaConnexion().createStatement();
-//			ResultSet unRes = unStat.executeQuery(requete);
-//			while (unRes.next())
-//			{
-////				int idclient = unRes.getInt("idclient");
-////				String nom = unRes.getString("nom");
-////				String prenom = unRes.getString("prenom");
-////				String adresse = unRes.getString("adresse");
-////				Client unCLient = new Client (idclient, nom, prenom, adresse);
-////				lesClients.add(unCLient)
-//				
-//				lesClients.add(new Client (unRes.getInt("idclient"), unRes.getString("nom"), unRes.getString("prenom"), 
-//						unRes.getString("adresse")) );
-//						
-//			}
-//			unStat.close();
-//			unRes.close();
-//			uneBdd.seDeConnecter();
-//		}
-//		catch (SQLException exp)
-//		{
-//			System.out.println("Erreur : "+ requete);
-//		}
-//		return lesClients;
-//	}
-//	
-//	public static void insertClient (Client unClient)
-//	{
-//		String requete = "INSERT INTO client VALUES (null,  '"+unClient.getNom() +
-//				"','"+unClient.getPrenom() +
-//				"','" +unClient.getAdresse() +
-//				"');";
-//		Bdd uneBdd = new Bdd ("localhost", "intervention", "root", "");
-//		try
-//		{
-//			uneBdd.seConnecter();
-//			Statement unStat = uneBdd.getMaConnexion().createStatement();
-//			unStat.execute(requete);
-//			unStat.close();
-//			uneBdd.seDeConnecter();
-//		}
-//		catch (SQLException exp)
-//		{
-//			System.out.println("Erreur : "+ requete);
-//		}
-//	}
-//	
-//	public static void deleteClient (Client unClient)
-//	{
-//		String requete = "DELETE FROM client WHERE idclient =" + unClient.getIdclient() + ";";
-//		Bdd uneBdd = new Bdd ("localhost", "intervention", "root", "");
-//		try
-//		{
-//			uneBdd.seConnecter();
-//			Statement unStat = uneBdd.getMaConnexion().createStatement();
-//			unStat.execute(requete);
-//			unStat.close();
-//			uneBdd.seDeConnecter();
-//		}
-//		catch (SQLException exp)
-//		{
-//			System.out.println("Erreur : "+ requete);
-//		}
-//	}
-//	
-//	public static void updateClient (Client unClient)
-//	{
-//		String requete = "UPDATE client SET nom = '"+ unClient.getNom() +
-//				"',prenom = '" + unClient.getPrenom() +
-//				"', adresse = '" +unClient.getAdresse() +
-//				"' WHERE idclient =" + unClient.getIdclient() + ";";
-//		
-//		Bdd uneBdd = new Bdd ("localhost", "intervention", "root", "");
-//		try
-//		{
-//			uneBdd.seConnecter();
-//			Statement unStat = uneBdd.getMaConnexion().createStatement();
-//			unStat.execute(requete);
-//			unStat.close();
-//			uneBdd.seDeConnecter();
-//		}
-//		catch (SQLException exp)
-//		{
-//			System.out.println("Erreur : "+ requete);
-//		}
-//	}
-//}
