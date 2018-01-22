@@ -22,7 +22,7 @@ import controleur.Tableau;
 
 public class VueAthletes extends JPanel implements ActionListener {
 
-    private JTable tableClients;
+    private JTable tableAthletes;
     private JPanel panelEdition = new JPanel();
     private JButton btAjouter = new JButton("Ajouter");
     private JButton btMiseAJour = new JButton("Mettre à jour");
@@ -133,13 +133,13 @@ public class VueAthletes extends JPanel implements ActionListener {
     {
         if (e.getSource() == this.btAjouter)
         {
-            Athletes unAthlete = new Client (txtNom.getText(), txtPrenom.getText(),txtAdresse.getText());
-            modele.insertclient(unClient);
+            Athletes unAthlete = new Athletes (txt.getText(), txtPrenom.getText(),txtAdresse.getText());
+            modele.insertAthletes(unAthlete);
             JOptionPane.showMessageDialog(this, "Insertion réussie");
             txtNom.setText("");
             txtPrenom.setText("");
             txtAdresse.setText("");
-            Object data [] = {unClient.getIdclient()+"", unClient.getNom(), unClient.getPrenom(), unClient.getAdresse()};
+            Object data [] = {unAthlete.getIdclient()+"", unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAdresse()};
             this.unTableau.add(data);
         }
         else if (e.getSource() == this.btSupprimer)
@@ -169,16 +169,16 @@ public class VueAthletes extends JPanel implements ActionListener {
     //recuperer les données sous formes d'une matrice
     private Object[][] recupererLesAthletes ()
     {
-        ArrayList<Athletes> lesAthletes = Modele.selectAllClients();
+        ArrayList<Athletes> lesAthletes = Modele.selectAllAthletes();
         Object[][] donnees = new Object[lesAthletes.size()][Athletes.getNbChampAthletes()];
         int i = 0;
         for (Athletes unAthlete : lesAthletes)
         {
-            donnees[i][0] = unAthlete.getNom()
+            donnees[i][0] = unAthlete.getNom();
             donnees[i][1] = unAthlete.getPrenom();
             donnees[i][2] = unAthlete.getAge();
             donnees[i][3] = unAthlete.getGenre();
-            donnees[i][3] = unAthlete.getLibellePays();
+            donnees[i][3] = unAthlete.getId_pays();
             donnees[i][3] = unAthlete.getPhoto();
             i++;
         }
