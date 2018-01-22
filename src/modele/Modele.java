@@ -4,11 +4,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Date;
 
 import controleur.Pays;
 import controleur.Sports;
 import controleur.Athletes;
-
+import controleur.Evenements;
+import javax.print.DocFlavor;
 
 
 public class Modele {
@@ -40,6 +42,25 @@ public class Modele {
 			//exp.printStackTrace();
 		}
 		return droits;
+	}
+	//*******************************   Function pour faire des entrée en  BDD  *******************************
+	public static void ExecutionBdd (Bdd uneBdd, String requete)
+	{
+		try
+		{
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+			//Exécution de la BDD
+			unStat.execute(requete);
+			unStat.close();
+			uneBdd.seDeConnecter();
+		}
+		catch (SQLException exp)
+		{
+			System.out.println(exp);
+		}
+
 	}
 	/*
 	********************************************************************************************************************
@@ -83,6 +104,18 @@ public class Modele {
 		}
 		return listPays;
 	}
+	public static void insertPays(Pays unPays)
+	{
+		String requete = "INSERT INTO Pays values (" +
+				"null," +
+				" '"+unPays.getLibelle()+"'," +
+				" '"+unPays.getImage()+"," +
+				" '"+unPays.getDescription()+"');";
+
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+
+		ExecutionBdd (uneBdd, requete);
+	}
 	/*
 	********************************************************************************************************************
 	---------------------------------------------		   Sports		------------------------------------------------
@@ -123,6 +156,18 @@ public class Modele {
 			//exp.printStackTrace();
 		}
 		return listSports;
+	}
+	public static void insertSports(Sports unSports)
+	{
+		String requete = "INSERT INTO Sport values (" +
+				"null," +
+				" '"+unSports.getLibelle()+"'," +
+				" '"+unSports.getImage()+"," +
+				" '"+unSports.getDescription()+"');";
+
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+
+		ExecutionBdd (uneBdd, requete);
 	}
 	/*
 	********************************************************************************************************************
@@ -178,5 +223,60 @@ public class Modele {
 		}
 		return listAthletes;
 	}
+	/*
+	********************************************************************************************************************
+	---------------------------------------------		   Event 		------------------------------------------------
+	********************************************************************************************************************
+	 */
+	// Il faut rajouter id_ville et id_type_event
+	public static ArrayList<Evenements> selectAllEvents ()
+	{
+		ArrayList<Evenements> listEvents = new ArrayList<Evenements>();
+
+		String requete = "SELECT * FROM 'evenement'";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		try{
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+			while (rs.next())
+			{
+				//récupération des Champs par valeur
+				int idEvents = rs.getInt("id_event");
+				String titleEvents = rs.getString("Titre_event");
+				String descEvents = rs.getString("Description_event");
+				String photoEvents = rs.getString("Photo_sport");
+				Date dateEvents = rs.getDate("Date_evenement");
+				//Mise à jour de la liste
+				listEvents.add(new Evenements(idEvents, titleEvents, descEvents, photoEvents, dateEvents));
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		}
+		catch( SQLException exp)
+		{
+			System.out.println("Erreur : "+ requete);
+			//exp.printStackTrace();
+		}
+		return listEvents;
+	}
+	public static void insertEvents(Evenements unEvents)
+	{
+		String requete = "INSERT INTO Sport values (" +
+				"null," +
+				" '"+unEvents.getTitleEvents()+"'," +
+				" '"+unEvents.getDescriptionEvents()+"," +
+				" '"+unEvents.getDateEvents()+"'," +
+				" '"+unEvents.getPhotoEvents()+"');";
+
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+
+		ExecutionBdd (uneBdd, requete);
+	}
+
 
 }
