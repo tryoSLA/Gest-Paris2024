@@ -133,7 +133,13 @@ public class Modele {
 	{
 		ArrayList<Athletes> listAthletes = new ArrayList<Athletes>();
 
-		String requete = "SELECT * FROM 'athlete_detail'";
+		String requete =
+				"SELECT Personne.Nom, Personne.Prenom, Personne.Age, Personne.Genre, " +
+				"Pays.Libelle_pays, " +
+				"Athlete.Photo, Athlete.Biographie, Athlete.Poids,Athlete.Taille " +
+				"Athlete.id_sport, Athlete.id_sport, Athlete.id_sport," +
+				"FROM 'athlete', 'personne'" +
+				"WHERE Sport.id_sport = Athlete.id_sport AND Pays.id_pays = Athlete.id_pays AND  Personne.id_personne = Athlete.id_personne;";
 		System.out.println(requete);
 		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
 		try{
@@ -151,14 +157,15 @@ public class Modele {
 				String prenomAthletes = rs.getString("Prenom");
 				int ageAthletes = rs.getInt("Age");
 				String genreAthletes = rs.getString("Genre");
-				String libellePaysAthletes = rs.getString("Libelle_pays");
 				String photoAthletes = rs.getString("Photo");
 				String biographieAthletes = rs.getString("Biographie");
 				float poidsAthletes = rs.getFloat("Poids");
 				float tailleAthletes = rs.getFloat("Taille");
-				String libelleSportAthletes = rs.getString("Libelle_sport");
+				int idSportAthletes = rs.getInt("id_sport");
+				int idPaysAthletes = rs.getInt("id_pays");
+				int idEquipeAthletes = rs.getInt("id_equipe");
 				//Mise à jour de la liste
-				listAthletes.add(new Athletes(idAthletes, nomAthletes, prenomAthletes, genreAthletes, libelleSportAthletes, libellePaysAthletes, photoAthletes, biographieAthletes,  ageAthletes, tailleAthletes, poidsAthletes));
+				listAthletes.add(new Athletes(idAthletes, nomAthletes, prenomAthletes, genreAthletes, photoAthletes, biographieAthletes,ageAthletes, tailleAthletes,poidsAthletes, idEquipeAthletes, idPaysAthletes, idSportAthletes));
 			}
 
 			//Fermeture de la connexion à la base de données
