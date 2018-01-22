@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 import controleur.Pays;
 import controleur.Sports;
+import controleur.Athletes;
 
 
 
@@ -122,8 +123,53 @@ public class Modele {
 			//exp.printStackTrace();
 		}
 		return listSports;
+	}
+	/*
+	********************************************************************************************************************
+	---------------------------------------------		   Athletes		------------------------------------------------
+	********************************************************************************************************************
+	 */
+	public static ArrayList<Athletes> selectAllAthletes ()
+	{
+		ArrayList<Athletes> listAthletes = new ArrayList<Athletes>();
 
+		String requete = "SELECT * FROM 'athlete_detail'";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		try{
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
 
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+			while (rs.next())
+			{
+				//récupération des Champs par valeur
+				int idAthletes = rs.getInt("id_personne");
+				String nomAthletes = rs.getString("Nom");
+				String prenomAthletes = rs.getString("Prenom");
+				int ageAthletes = rs.getInt("Age");
+				String genreAthletes = rs.getString("Genre");
+				String libellePaysAthletes = rs.getString("Libelle_pays");
+				String photoAthletes = rs.getString("Photo");
+				String biographieAthletes = rs.getString("Biographie");
+				float poidsAthletes = rs.getFloat("Poids");
+				float tailleAthletes = rs.getFloat("Taille");
+				String libelleSportAthletes = rs.getString("Libelle_sport");
+				//Mise à jour de la liste
+				listAthletes.add(new Athletes(idAthletes, nomAthletes, prenomAthletes, genreAthletes, libelleSportAthletes, libellePaysAthletes, photoAthletes, biographieAthletes,  ageAthletes, tailleAthletes, poidsAthletes));
+			}
+
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		}
+		catch( SQLException exp)
+		{
+			System.out.println("Erreur : "+ requete);
+			//exp.printStackTrace();
+		}
+		return listAthletes;
 	}
 
 }
