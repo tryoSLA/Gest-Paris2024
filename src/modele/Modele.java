@@ -179,12 +179,7 @@ public class Modele {
 		ArrayList<Athletes> listAthletes = new ArrayList<Athletes>();
 
 		String requete =
-				"SELECT Personne.Nom, Personne.Prenom, Personne.Age, Personne.Genre, " +
-				"Pays.Libelle_pays, " +
-				"Athlete.Photo, Athlete.Biographie, Athlete.Poids,Athlete.Taille " +
-				"Athlete.id_sport, Athlete.id_sport, Athlete.id_sport," +
-				"FROM 'athlete', 'personne'" +
-				"WHERE Sport.id_sport = Athlete.id_sport AND Pays.id_pays = Athlete.id_pays AND  Personne.id_personne = Athlete.id_personne;";
+				"SELECT * FROM athletes_java;";
 		System.out.println(requete);
 		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
 		try{

@@ -8,6 +8,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
+import javax.jnlp.IntegrationService;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -70,17 +71,19 @@ public class VueAthletes extends JPanel implements ActionListener {
             public void mouseClicked(MouseEvent m)
             {
                 int ligne = tableAthletes.getSelectedRow();
-                txtNom.setText(tableAthletes.getValueAt(ligne, 1).toString());
-                txtPrenom.setText(tableAthletes.getValueAt(ligne, 2).toString());
-                txtAge.setText(tableAthletes.getValueAt(ligne, 3).toString());
-                txtGenre.setText(tableAthletes.getValueAt(ligne, 4).toString());
-                txtTaille.setText(tableAthletes.getValueAt(ligne, 5).toString());
-                txtPoids.setText(tableAthletes.getValueAt(ligne, 6).toString());
-                txtPhoto.setText(tableAthletes.getValueAt(ligne, 7).toString());
-                txtBiographie.setText(tableAthletes.getValueAt(ligne, 8).toString());
-                txtEquipe.setText(tableAthletes.getValueAt(ligne, 9).toString());
-                txtSport.setText(tableAthletes.getValueAt(ligne, 10).toString());
-                txtPays.setText(tableAthletes.getValueAt(ligne, 11).toString());
+                txtNom.setText(tableAthletes.getValueAt(ligne, 0).toString());
+                txtPrenom.setText(tableAthletes.getValueAt(ligne, 1).toString());
+                txtAge.setText(tableAthletes.getValueAt(ligne, 2).toString());
+                txtGenre.setText(tableAthletes.getValueAt(ligne, 3).toString());
+                txtTaille.setText(tableAthletes.getValueAt(ligne, 4).toString());
+                txtPoids.setText(tableAthletes.getValueAt(ligne, 5).toString());
+                txtPhoto.setText(tableAthletes.getValueAt(ligne, 6).toString());
+                txtBiographie.setText(tableAthletes.getValueAt(ligne, 7).toString());
+                int idequipe = Integer.parseInt(tableAthletes.getValueAt(ligne, 8).toString());
+                Equipe uneEquipe = Modele.selectWhereEquipe (idequipe);
+                txtEquipe.setText(uneEquipe.getLibelle());
+                txtSport.setText(tableAthletes.getValueAt(ligne, 9).toString());
+                txtPays.setText(tableAthletes.getValueAt(ligne, 10).toString());
 
             }
 
@@ -153,7 +156,7 @@ public class VueAthletes extends JPanel implements ActionListener {
         this.btMiseAJour.addActionListener(this);
 
 
-        this.setVisible(true);
+        this.setVisible(false);
 
     }
 
@@ -234,8 +237,13 @@ public class VueAthletes extends JPanel implements ActionListener {
             donnees[i][1] = unAthlete.getPrenom();
             donnees[i][2] = unAthlete.getAge();
             donnees[i][3] = unAthlete.getGenre();
-            donnees[i][3] = unAthlete.getId_pays();
-            donnees[i][3] = unAthlete.getPhoto();
+            donnees[i][4] = unAthlete.getTaille();
+            donnees[i][5] = unAthlete.getPoids();
+            donnees[i][6] = unAthlete.getPhoto();
+            donnees[i][7] = unAthlete.getBiographie();
+            donnees[i][8] = unAthlete.getId_equipe();
+            donnees[i][9] = unAthlete.getId_sport();
+            donnees[i][10] = unAthlete.getId_pays();
             i++;
         }
         return donnees;
