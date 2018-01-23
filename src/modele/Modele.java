@@ -223,6 +223,26 @@ public class Modele {
 		}
 		return listAthletes;
 	}
+
+	public static void insertAthlete(Athletes unAthlete)
+	{
+		String requete =
+                "CALL insert_athlete ( '"+ unAthlete.getNom() +"'," +
+                        "'" + unAthlete.getPrenom() + "','" +
+                        "'" + unAthlete.getAge() + "','" +
+                        "'" + unAthlete.getGenre() + "','" +
+                        "'" + unAthlete.getTaille() + "','" +
+                        "'" + unAthlete.getPoids() + "','" +
+                        "'" + unAthlete.getPhoto() + "','" +
+                        "'" + unAthlete.getBiographie() + "','" +
+                        "'" + unAthlete.getId_pays() + "','" +
+                        "'" + unAthlete.getId_equipe() + "','" +
+                        "'" + unAthlete.getId_sport() + "');";
+
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+
+		ExecutionBdd (uneBdd, requete);
+	}
 	/*
 	********************************************************************************************************************
 	---------------------------------------------		   Event 		------------------------------------------------
