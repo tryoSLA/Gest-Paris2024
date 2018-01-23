@@ -30,8 +30,15 @@ public class VueAthletes extends JPanel implements ActionListener {
 
     private JTextField txtNom = new JTextField();
     private JTextField txtPrenom = new JTextField();
-    private JTextField txtAdresse = new JTextField();
-    private JTextField txtIdClient = new JTextField();
+    private JTextField txtAge = new JTextField();
+    private JTextField txtGenre = new JTextField();
+    private JTextField txtTaille = new JTextField();
+    private JTextField txtPoids = new JTextField();
+    private JTextField txtPhoto = new JTextField();
+    private JTextField txtBiographie = new JTextField();
+    private JTextField txtEquipe = new JTextField();
+    private JTextField txtSport = new JTextField();
+    private JTextField txtPays = new JTextField();
     private Tableau unTableau;
 
 
@@ -43,7 +50,7 @@ public class VueAthletes extends JPanel implements ActionListener {
         this.setBackground(Color.red);
 
         //Construction de la Jtable
-        String entete[] = {"Nom", "Prénom", "Age", "Genre", "Libelle_Pays", "Photo", "Biographie", "Poids", "Taille", "Libelle_sport"};
+        String entete[] = {"Nom", "Prénom", "Age", "Genre", "Taille","Poids","Photo", "Biographie", "Equipe", "Sport","Pays"};
 
         unTableau = new Tableau(this.recupererLesAthletes(), entete);
 
@@ -63,10 +70,18 @@ public class VueAthletes extends JPanel implements ActionListener {
             public void mouseClicked(MouseEvent m)
             {
                 int ligne = tableAthletes.getSelectedRow();
-                txtIdClient.setText(tableAthletes.getValueAt(ligne, 0).toString());
                 txtNom.setText(tableAthletes.getValueAt(ligne, 1).toString());
                 txtPrenom.setText(tableAthletes.getValueAt(ligne, 2).toString());
-                txtAdresse.setText(tableAthletes.getValueAt(ligne, 3).toString());
+                txtAge.setText(tableAthletes.getValueAt(ligne, 3).toString());
+                txtGenre.setText(tableAthletes.getValueAt(ligne, 4).toString());
+                txtTaille.setText(tableAthletes.getValueAt(ligne, 5).toString());
+                txtPoids.setText(tableAthletes.getValueAt(ligne, 6).toString());
+                txtPhoto.setText(tableAthletes.getValueAt(ligne, 7).toString());
+                txtBiographie.setText(tableAthletes.getValueAt(ligne, 8).toString());
+                txtEquipe.setText(tableAthletes.getValueAt(ligne, 9).toString());
+                txtSport.setText(tableAthletes.getValueAt(ligne, 10).toString());
+                txtPays.setText(tableAthletes.getValueAt(ligne, 11).toString());
+
             }
 
             @Override
@@ -99,14 +114,28 @@ public class VueAthletes extends JPanel implements ActionListener {
         //construction du panel d'édition d'un client
         this.panelEdition.setBounds(20, 290, 600, 60);
         this.panelEdition.setLayout(new GridLayout(2, 4));
-        this.panelEdition.add(new JLabel("ID Client : "));
-        this.panelEdition.add(txtIdClient);
         this.panelEdition.add(new JLabel("Nom : "));
         this.panelEdition.add(txtNom);
         this.panelEdition.add(new JLabel("Prénom : "));
         this.panelEdition.add(txtPrenom);
-        this.panelEdition.add(new JLabel("Adresse : "));
-        this.panelEdition.add(txtAdresse);
+        this.panelEdition.add(new JLabel("Age : "));
+        this.panelEdition.add(txtAge);
+        this.panelEdition.add(new JLabel("Genre : "));
+        this.panelEdition.add(txtGenre);
+        this.panelEdition.add(new JLabel("Taille : "));
+        this.panelEdition.add(txtTaille);
+        this.panelEdition.add(new JLabel("Poids : "));
+        this.panelEdition.add(txtPoids);
+        this.panelEdition.add(new JLabel("Photo : "));
+        this.panelEdition.add(txtPhoto);
+        this.panelEdition.add(new JLabel("Biographie : "));
+        this.panelEdition.add(txtBiographie);
+        this.panelEdition.add(new JLabel("Equipe : "));
+        this.panelEdition.add(txtEquipe);
+        this.panelEdition.add(new JLabel("Sport : "));
+        this.panelEdition.add(txtSport);
+        this.panelEdition.add(new JLabel("Pays : "));
+        this.panelEdition.add(txtPays);
         this.add(this.panelEdition);
 
         this.btAjouter.setBounds(100, 370, 100, 20);
@@ -116,7 +145,7 @@ public class VueAthletes extends JPanel implements ActionListener {
         this.btSupprimer.setBounds(340, 370, 100, 20);
         this.add(btSupprimer);
 
-        this.txtIdClient.setEditable(false);
+        //this.txtIdClient.setEditable(false);
 
         //rendre les boutons cliquables
         this.btAjouter.addActionListener(this);
@@ -133,37 +162,64 @@ public class VueAthletes extends JPanel implements ActionListener {
     {
         if (e.getSource() == this.btAjouter)
         {
-            Athletes unAthlete = new Athletes (txt.getText(), txtPrenom.getText(),txtAdresse.getText());
-            modele.insertAthletes(unAthlete);
+            int age = 0;
+            int pays = 0;
+            int equipe = 0;
+            int sport = 0;
+            float taille = 0.0f;
+            float poids = 0.0f;
+            try {
+                age = Integer.parseInt(txtAge.getText());
+                pays = Integer.parseInt(txtPays.getText());
+                equipe = Integer.parseInt(txtEquipe.getText());
+                sport = Integer.parseInt(txtSport.getText());
+                taille = Float.parseFloat(txtTaille.getText());
+                poids = Float.parseFloat(txtPoids.getText());
+            }
+            catch ( NumberFormatException exp)
+            {
+                JOptionPane.showMessageDialog(this, "Veillez entrer un age correct ! ");
+            }
+            Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),age,txtGenre.getText(),taille,poids,txtPhoto.getText(),txtBiographie.getText(), equipe, sport, pays);
+            Modele.insertAthlete(unAthlete);
             JOptionPane.showMessageDialog(this, "Insertion réussie");
             txtNom.setText("");
             txtPrenom.setText("");
-            txtAdresse.setText("");
-            Object data [] = {unAthlete.getIdclient()+"", unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAdresse()};
+            txtAge.setText("");
+            txtGenre.setText("");
+            txtTaille.setText("");
+            txtPoids.setText("");
+            txtPhoto.setText("");
+            txtBiographie.setText("");
+            txtPays.setText("");
+            txtSport.setText("");
+            txtEquipe.setText("");
+            txtAge.setText("");
+            Object data [] = {unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), unAthlete.getId_sport(), unAthlete.getId_pays()};
             this.unTableau.add(data);
         }
-        else if (e.getSource() == this.btSupprimer)
-        {
-            int idclient = Integer.parseInt(txtIdClient.getText());
-            Client unClient = new Client(idclient, txtNom.getText(), txtPrenom.getText(), txtAdresse.getText());
-            modele.deleteClient(unClient);
-            JOptionPane.showMessageDialog(this, "Supression effectuée");
-            txtNom.setText("");
-            txtPrenom.setText("");
-            txtAdresse.setText("");
-            int rowIndex = tableClients.getSelectedRow();
-            unTableau.remove(rowIndex);
-        }
-        else if (e.getSource() == this.btMiseAJour)
-        {
-            int idClient = Integer.parseInt(txtIdClient.getText());
-            Client unClient = new Client(idClient, txtNom.getText(), txtPrenom.getText(), txtAdresse.getText());
-            modele.updateClient(unClient);
-            JOptionPane.showMessageDialog(this, "Mise à jour effectuée");
-            Object data [] = {unClient.getIdclient()+"", unClient.getNom(), unClient.getPrenom(), unClient.getAdresse()};
-            int rowIndex = tableClients.getSelectedRow();
-            this.unTableau.update(rowIndex, data);
-        }
+//        else if (e.getSource() == this.btSupprimer)
+//        {
+//            int idclient = Integer.parseInt(txtIdClient.getText());
+//            Client unClient = new Client(idclient, txtNom.getText(), txtPrenom.getText(), txtAdresse.getText());
+//            modele.deleteClient(unClient);
+//            JOptionPane.showMessageDialog(this, "Supression effectuée");
+//            txtNom.setText("");
+//            txtPrenom.setText("");
+//            txtAdresse.setText("");
+//            int rowIndex = tableClients.getSelectedRow();
+//            unTableau.remove(rowIndex);
+//        }
+//        else if (e.getSource() == this.btMiseAJour)
+//        {
+//            int idClient = Integer.parseInt(txtIdClient.getText());
+//            Client unClient = new Client(idClient, txtNom.getText(), txtPrenom.getText(), txtAdresse.getText());
+//            modele.updateClient(unClient);
+//            JOptionPane.showMessageDialog(this, "Mise à jour effectuée");
+//            Object data [] = {unClient.getIdclient()+"", unClient.getNom(), unClient.getPrenom(), unClient.getAdresse()};
+//            int rowIndex = tableClients.getSelectedRow();
+//            this.unTableau.update(rowIndex, data);
+//        }
 
     }
     //recuperer les données sous formes d'une matrice
@@ -184,4 +240,17 @@ public class VueAthletes extends JPanel implements ActionListener {
         }
         return donnees;
     }
+
+//    public int ParseInt(String chaine)
+//    {
+//        int nb = 0;
+//        try {
+//            nb = Integer.parseInt(chaine.getText());
+//        }
+//        catch (NumberFormatException exp)
+//        {
+//            JOptionPane.showMessageDialog(this, "Veillez verifier les champs ! ");
+//        }
+//        return nb;
+//    }
 }

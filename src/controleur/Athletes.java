@@ -32,11 +32,10 @@ public class Athletes
         this.poids = poids;
         this.id_equipe = id_equipe;
         this.id_sport = id_sport;
-        this.id_equipe = id_equipe;
-
+        this.id_pays = id_pays;
     }
 
-    public Athletes(String nom, String prenom, String genre, String photo, String biographie, int age, float taille, float poids,int id_sport,int id_pays, int id_equipe)
+    public Athletes(String nom, String prenom, int age,String genre, float taille, float poids,String photo, String biographie, int id_equipe, int id_sport,int id_pays)
     {
         this.idAthletes = 0;
         this.nom = nom;

@@ -1,19 +1,19 @@
 package controleur;
 
-import vue.VueConnexion;
+import  vue.VueConnexion;
 
 public class Main 
 {
 
-	private static VueConnexion uneConnexion ; 
+	private static VueConnexion uneConnexion ;
 	
 	public static void rendreVisible (boolean action)
 	{
-		Main.uneConnexion.setVisible(action); 
+		Main.uneConnexion.setVisible(action);
 	}
 	
 	public static void main(String[] args) {
-		Main.uneConnexion = new VueConnexion();
+	 Main.uneConnexion = new VueConnexion();
 	}
 
 }
