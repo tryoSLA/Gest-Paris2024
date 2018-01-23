@@ -102,6 +102,38 @@ public class Modele {
 		}
 		return listPays;
 	}
+
+	public static String selectWherePays (int idPays)
+	{
+		String libellePays = "";
+
+		String requete = "SELECT Libelle_pays FROM Pays WHERE id_pays = " + idPays + ";";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		try{
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+
+			if (rs.next()) {
+				//récupération des Champs par valeur
+				libellePays = rs.getString("Libelle_pays");
+
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		}
+		catch( SQLException exp)
+		{
+			System.out.println("Erreur : "+ requete);
+			//exp.printStackTrace();
+		}
+		return libellePays;
+	}
+
 	public static void insertPays(Pays unPays)
 	{
 		String requete = "INSERT INTO Pays values (" +
@@ -167,6 +199,38 @@ public class Modele {
 
 		ExecutionBdd (uneBdd, requete);
 	}
+
+	public static String selectWhereSport (int idSport)
+	{
+		String libelleSport = "";
+
+		String requete = "SELECT Libelle_sport FROM Sport WHERE id_sport = " + idSport + ";";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		try{
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+
+			if (rs.next()) {
+				//récupération des Champs par valeur
+				libelleSport = rs.getString("Libelle_sport");
+
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		}
+		catch( SQLException exp)
+		{
+			System.out.println("Erreur : "+ requete);
+			//exp.printStackTrace();
+		}
+		return libelleSport;
+	}
+
 	/*
 	********************************************************************************************************************
 	---------------------------------------------		   Athletes		------------------------------------------------
