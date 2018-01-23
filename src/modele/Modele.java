@@ -6,10 +6,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Date;
 
-import controleur.Pays;
-import controleur.Sports;
-import controleur.Athletes;
-import controleur.Evenements;
+import controleur.*;
+
 import javax.print.DocFlavor;
 
 
@@ -243,7 +241,6 @@ public class Modele {
 	---------------------------------------------		   Event 		------------------------------------------------
 	********************************************************************************************************************
 	 */
-	// Il faut rajouter id_ville et id_type_event
 	public static ArrayList<Evenements> selectAllEvents ()
 	{
 		ArrayList<Evenements> listEvents = new ArrayList<Evenements>();
@@ -291,6 +288,76 @@ public class Modele {
 		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
 
 		ExecutionBdd (uneBdd, requete);
+	}
+	/*
+	********************************************************************************************************************
+	---------------------------------------------		   Equipe 		------------------------------------------------
+	********************************************************************************************************************
+	 */
+//	public static ArrayList<Equipes> selectAllEquipes ()
+//	{
+//		ArrayList<Equipes> listEquipes = new ArrayList<Equipes>();
+//
+//		String requete = "SELECT * FROM 'equipe'";
+//		System.out.println(requete);
+//		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+//		try{
+//			//Connexion à la base de donnée
+//			uneBdd.seConnecter();
+//			Statement unStat = uneBdd.getMaConnexion().createStatement();
+//
+//			//Exécution de la requète
+//			ResultSet rs = unStat.executeQuery(requete);
+//			while (rs.next())
+//			{
+//				//récupération des Champs par valeur
+//				int idEquipe = rs.getInt("id_equipe");
+//				String libelleEquipe = rs.getString("Libelle_equipe");
+//				int Nbjoueursequipe = rs.getInt("Nb_joueurs_equipe");
+//				int idSport = rs.getInt("id_sport");
+//				//Mise à jour de la liste
+//				listEquipes.add(new Equipes(idEquipe, libelleEquipe, Nbjoueursequipe, idSport));
+//			}
+//			//Fermeture de la connexion à la base de données
+//			uneBdd.seDeConnecter();
+//		}
+//		catch( SQLException exp)
+//		{
+//			System.out.println("Erreur : "+ requete);
+//			//exp.printStackTrace();
+//		}
+//		return listEquipes;
+//	}
+
+	public static String selectWhereEquipes (int idEquipe)
+	{
+		String libelleEquipe = "";
+
+		String requete = "SELECT Libelle_equipe FROM equipe WHERE id_equipe = " + idEquipe + ";";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		try{
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+
+			if (rs.next()) {
+				//récupération des Champs par valeur
+				libelleEquipe = rs.getString("Libelle_equipe");
+
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		}
+		catch( SQLException exp)
+		{
+			System.out.println("Erreur : "+ requete);
+			//exp.printStackTrace();
+		}
+		return libelleEquipe;
 	}
 
 

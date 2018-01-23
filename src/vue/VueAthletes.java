@@ -20,6 +20,8 @@ import javax.swing.JTextField;
 import controleur.Athletes;
 import modele.Modele;
 import controleur.Tableau;
+import controleur.Equipes;
+import modele.Modele;
 
 public class VueAthletes extends JPanel implements ActionListener {
 
@@ -80,8 +82,9 @@ public class VueAthletes extends JPanel implements ActionListener {
                 txtPhoto.setText(tableAthletes.getValueAt(ligne, 6).toString());
                 txtBiographie.setText(tableAthletes.getValueAt(ligne, 7).toString());
                 int idequipe = Integer.parseInt(tableAthletes.getValueAt(ligne, 8).toString());
-                Equipe uneEquipe = Modele.selectWhereEquipe (idequipe);
-                txtEquipe.setText(uneEquipe.getLibelle());
+                String libelleEquipe;
+                libelleEquipe = Modele.selectWhereEquipes(idequipe);
+                txtEquipe.setText(libelleEquipe);
                 txtSport.setText(tableAthletes.getValueAt(ligne, 9).toString());
                 txtPays.setText(tableAthletes.getValueAt(ligne, 10).toString());
 
