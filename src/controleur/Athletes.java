@@ -2,7 +2,7 @@ package controleur;
 
 public class Athletes
 {
-    private static int nbChampAthletes = 7;
+    private static int nbChampAthletes = 11;
     private String nom, prenom, genre, photo, biographie;
     private int age,idAthletes, id_pays, id_sport, id_equipe;
     private float poids, taille;

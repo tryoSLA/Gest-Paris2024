@@ -116,9 +116,7 @@ public class VueConnexion extends JFrame implements ActionListener,KeyListener
 					 this.txtLogin.setText("");
 					 this.pwdMdp.setText("");
 				 }else {
-					 JOptionPane.showMessageDialog(this, "Bienvenue  !",
-							 "Connexion réussie", JOptionPane.INFORMATION_MESSAGE);
-					 
+
 					 //appel de la Jframe generale 
 					 Main.rendreVisible(false);
 					 new VueGeneral(droits);

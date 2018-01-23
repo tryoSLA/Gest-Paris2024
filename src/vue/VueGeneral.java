@@ -17,6 +17,8 @@ public class VueGeneral extends JFrame implements ActionListener
 	private JButton tabButton [] = new JButton[4];
 	private final String tabNom [] = {"Pays", "Sport", "Athlètes", "Quitter"};
 
+	private VueAthletes uneVueAthletes = new VueAthletes();
+
 	 public VueGeneral(String droits)
 	 {
 		 this.setTitle("Gestion des pays");
@@ -44,8 +46,9 @@ public class VueGeneral extends JFrame implements ActionListener
 		 //this.btPays.addActionListener(this);
 
 		 //Ajout des 3 pannels
-		 
+		 this.add(this.uneVueAthletes);
 		 this.setVisible(true);
+
 	 }
 
 	@Override
@@ -70,9 +73,7 @@ public class VueGeneral extends JFrame implements ActionListener
 		}
 		else if (e.getSource()==this.tabButton[2])
 		{
-			/*uneVueClient.setVisible(false);
-			uneVueInters.setVisible(true);
-			uneVueTech.setVisible(false);*/
+			this.uneVueAthletes.setVisible(true);
 		}
 
 	}
