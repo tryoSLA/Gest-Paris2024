@@ -50,7 +50,7 @@ public class VueAthletes extends JPanel implements ActionListener {
     {
         this.setBounds(20, 70, 660, 400);
         this.setLayout(null);
-        this.setBackground(Color.red);
+        //this.setBackground(Color.red);
 
         //Construction de la Jtable
         String entete[] = {"Nom", "Prénom", "Age", "Genre", "Taille","Poids","Photo", "Biographie", "Equipe", "Sport","Pays"};
@@ -85,8 +85,14 @@ public class VueAthletes extends JPanel implements ActionListener {
                 String libelleEquipe;
                 libelleEquipe = Modele.selectWhereEquipes(idequipe);
                 txtEquipe.setText(libelleEquipe);
-                txtSport.setText(tableAthletes.getValueAt(ligne, 9).toString());
-                txtPays.setText(tableAthletes.getValueAt(ligne, 10).toString());
+                int idsport = Integer.parseInt(tableAthletes.getValueAt(ligne, 9).toString());
+                String libelleSport;
+                libelleSport = Modele.selectWhereSport(idsport);
+                txtSport.setText(libelleSport);
+                int idpays = Integer.parseInt(tableAthletes.getValueAt(ligne, 10).toString());
+                String libellePays;
+                libellePays = Modele.selectWherePays(idpays);
+                txtPays.setText(libellePays);
 
             }
 
