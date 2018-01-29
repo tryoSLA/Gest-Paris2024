@@ -1,32 +1,24 @@
 package vue;
 
-import java.awt.Color;
-import java.awt.GridLayout;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.util.ArrayList;
 
-import javax.jnlp.IntegrationService;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.JTextField;
+import java.util.ArrayList;
+import javax.swing.*;
 
 import controleur.Athletes;
 import modele.Modele;
 import controleur.Tableau;
-import controleur.Equipes;
-import modele.Modele;
+
 
 public class VueAthletes extends JPanel implements ActionListener {
 
     private JTable tableAthletes;
     private JPanel panelEdition = new JPanel();
+    private JPanel panelEdition2 = new JPanel();
     private JButton btAjouter = new JButton("Ajouter");
     private JButton btMiseAJour = new JButton("Mettre à jour");
     private JButton btSupprimer = new JButton("Supprimer");
@@ -34,23 +26,23 @@ public class VueAthletes extends JPanel implements ActionListener {
     private JTextField txtNom = new JTextField();
     private JTextField txtPrenom = new JTextField();
     private JTextField txtAge = new JTextField();
-    private JTextField txtGenre = new JTextField();
+    private JComboBox comboGenre = new JComboBox();
     private JTextField txtTaille = new JTextField();
     private JTextField txtPoids = new JTextField();
     private JTextField txtPhoto = new JTextField();
-    private JTextField txtBiographie = new JTextField();
-    private JTextField txtEquipe = new JTextField();
-    private JTextField txtSport = new JTextField();
-    private JTextField txtPays = new JTextField();
+    private TextArea txtBiographie = new TextArea();
+    public static JComboBox comboEquipe = new JComboBox();
+    public static JComboBox comboSport = new JComboBox();
+    public static JComboBox comboPays = new JComboBox();
     private Tableau unTableau;
 
 
 
     public VueAthletes()
     {
-        this.setBounds(20, 70, 660, 400);
+        this.setBounds(20, 70, 850, 790);
         this.setLayout(null);
-        //this.setBackground(Color.red);
+
 
         //Construction de la Jtable
         String entete[] = {"Nom", "Prénom", "Age", "Genre", "Taille","Poids","Photo", "Biographie", "Equipe", "Sport","Pays"};
@@ -76,7 +68,7 @@ public class VueAthletes extends JPanel implements ActionListener {
                 txtNom.setText(tableAthletes.getValueAt(ligne, 0).toString());
                 txtPrenom.setText(tableAthletes.getValueAt(ligne, 1).toString());
                 txtAge.setText(tableAthletes.getValueAt(ligne, 2).toString());
-                txtGenre.setText(tableAthletes.getValueAt(ligne, 3).toString());
+                comboGenre.setSelectedItem(tableAthletes.getValueAt(ligne, 3).toString());
                 txtTaille.setText(tableAthletes.getValueAt(ligne, 4).toString());
                 txtPoids.setText(tableAthletes.getValueAt(ligne, 5).toString());
                 txtPhoto.setText(tableAthletes.getValueAt(ligne, 6).toString());
@@ -84,15 +76,15 @@ public class VueAthletes extends JPanel implements ActionListener {
                 int idequipe = Integer.parseInt(tableAthletes.getValueAt(ligne, 8).toString());
                 String libelleEquipe;
                 libelleEquipe = Modele.selectWhereEquipes(idequipe);
-                txtEquipe.setText(libelleEquipe);
+                comboEquipe.setSelectedItem(libelleEquipe);
                 int idsport = Integer.parseInt(tableAthletes.getValueAt(ligne, 9).toString());
                 String libelleSport;
                 libelleSport = Modele.selectWhereSport(idsport);
-                txtSport.setText(libelleSport);
+                comboSport.setSelectedItem(libelleSport);
                 int idpays = Integer.parseInt(tableAthletes.getValueAt(ligne, 10).toString());
                 String libellePays;
                 libellePays = Modele.selectWherePays(idpays);
-                txtPays.setText(libellePays);
+                comboPays.setSelectedItem(libellePays);
 
             }
 
@@ -115,6 +107,17 @@ public class VueAthletes extends JPanel implements ActionListener {
             }
         });
 
+        //*****Remplissage des combos******
+        comboEquipe.addItem("");
+        Modele.Combo("Libelle_sport", "Sport", comboSport);
+        Modele.Combo("Libelle_equipe", "Equipe", comboEquipe);
+        Modele.Combo("Libelle_pays", "Pays", comboPays);
+        comboGenre.addItem("Homme");
+        comboGenre.addItem("Femme");
+
+
+
+        this.txtBiographie.setBounds(10,10,100,50);
 
         //Affichage de la JTable dans une ScrollTable
         JScrollPane uneScroll = new JScrollPane(this.tableAthletes);
@@ -122,39 +125,67 @@ public class VueAthletes extends JPanel implements ActionListener {
         uneScroll.setBackground(Color.black);
         this.add(uneScroll);
         this.tableAthletes.setEnabled(true);
-
+        this.panelEdition.setLayout(new GridLayout(3,8));
         //construction du panel d'édition d'un client
-        this.panelEdition.setBounds(20, 290, 600, 60);
-        this.panelEdition.setLayout(new GridLayout(2, 4));
+        this.panelEdition.setBounds(20, 290, 800, 200);
         this.panelEdition.add(new JLabel("Nom : "));
         this.panelEdition.add(txtNom);
+        this.panelEdition.add(new JLabel(""));
         this.panelEdition.add(new JLabel("Prénom : "));
         this.panelEdition.add(txtPrenom);
+        this.panelEdition.add(new JLabel(""));
+        this.panelEdition.add(new JLabel("Genre : "));
+        this.panelEdition.add(comboGenre);
+
+        //this.panelEdition.add(new JLabel(""));
         this.panelEdition.add(new JLabel("Age : "));
         this.panelEdition.add(txtAge);
-        this.panelEdition.add(new JLabel("Genre : "));
-        this.panelEdition.add(txtGenre);
+        this.panelEdition.add(new JLabel(""));
         this.panelEdition.add(new JLabel("Taille : "));
         this.panelEdition.add(txtTaille);
+        this.panelEdition.add(new JLabel(""));
         this.panelEdition.add(new JLabel("Poids : "));
         this.panelEdition.add(txtPoids);
-        this.panelEdition.add(new JLabel("Photo : "));
-        this.panelEdition.add(txtPhoto);
-        this.panelEdition.add(new JLabel("Biographie : "));
-        this.panelEdition.add(txtBiographie);
-        this.panelEdition.add(new JLabel("Equipe : "));
-        this.panelEdition.add(txtEquipe);
+        ///
         this.panelEdition.add(new JLabel("Sport : "));
-        this.panelEdition.add(txtSport);
+        this.panelEdition.add(comboSport);
+        this.panelEdition.add(new JLabel(""));
         this.panelEdition.add(new JLabel("Pays : "));
-        this.panelEdition.add(txtPays);
-        this.add(this.panelEdition);
+        this.panelEdition.add(comboPays);
+        this.panelEdition.add(new JLabel(""));
+        this.panelEdition.add(new JLabel("Equipe : "));
+        this.panelEdition.add(comboEquipe);
+        //
+        this.panelEdition2.setBounds(20, 500, 800, 83);
+        this.panelEdition2.setLayout(new GridBagLayout());
+        GridBagConstraints gridBC = new GridBagConstraints();
 
-        this.btAjouter.setBounds(100, 370, 100, 20);
+        this.panelEdition2.add(new JLabel("Photo : "), gridBC);
+        gridBC.gridx = 1;
+        gridBC.gridy = 0;
+        gridBC.weightx = 1;
+        this.panelEdition2.add(txtPhoto, gridBC);
+        gridBC.gridx = 2;
+        gridBC.gridy = 0;
+        gridBC.weightx = 1;
+        this.panelEdition2.add(new JLabel("Biographie : "), gridBC);
+        gridBC.gridx = 3;
+        gridBC.gridy = 0;
+        gridBC.weightx = 1;
+        this.panelEdition2.add(txtBiographie, gridBC);
+        gridBC.gridx = 4;
+        gridBC.gridy = 0;
+        gridBC.weightx = 2;
+
+
+        this.add(this.panelEdition);
+        this.add(this.panelEdition2);
+
+        this.btAjouter.setBounds(100, 600, 100, 20);
         this.add(btAjouter);
-        this.btMiseAJour.setBounds(220, 370, 100, 20);
+        this.btMiseAJour.setBounds(220, 600, 100, 20);
         this.add(btMiseAJour);
-        this.btSupprimer.setBounds(340, 370, 100, 20);
+        this.btSupprimer.setBounds(340, 600, 100, 20);
         this.add(btSupprimer);
 
         //this.txtIdClient.setEditable(false);
@@ -178,13 +209,15 @@ public class VueAthletes extends JPanel implements ActionListener {
             int pays = 0;
             int equipe = 0;
             int sport = 0;
+            String genre = "";
             float taille = 0.0f;
             float poids = 0.0f;
             try {
                 age = Integer.parseInt(txtAge.getText());
-                pays = Integer.parseInt(txtPays.getText());
-                equipe = Integer.parseInt(txtEquipe.getText());
-                sport = Integer.parseInt(txtSport.getText());
+//                pays = Integer.parseInt(comboPays.getSelectedItem());
+//                equipe = Integer.parseInt(comboEquipe.getSelectedItem());
+//                sport = Integer.parseInt(comboSport.getSelectedItem());
+                genre = comboGenre.getSelectedItem().toString();
                 taille = Float.parseFloat(txtTaille.getText());
                 poids = Float.parseFloat(txtPoids.getText());
             }
@@ -192,20 +225,20 @@ public class VueAthletes extends JPanel implements ActionListener {
             {
                 JOptionPane.showMessageDialog(this, "Veillez entrer un age correct ! ");
             }
-            Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),age,txtGenre.getText(),taille,poids,txtPhoto.getText(),txtBiographie.getText(), equipe, sport, pays);
+            Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),age,genre,taille,poids,txtPhoto.getText(),txtBiographie.getText(), equipe, sport, pays);
             Modele.insertAthlete(unAthlete);
             JOptionPane.showMessageDialog(this, "Insertion réussie");
             txtNom.setText("");
             txtPrenom.setText("");
             txtAge.setText("");
-            txtGenre.setText("");
+            comboGenre.setSelectedItem("");
             txtTaille.setText("");
             txtPoids.setText("");
             txtPhoto.setText("");
             txtBiographie.setText("");
-            txtPays.setText("");
-            txtSport.setText("");
-            txtEquipe.setText("");
+            comboPays.setSelectedItem("");
+            comboSport.setSelectedItem("");
+            comboEquipe.setSelectedItem("");
             txtAge.setText("");
             Object data [] = {unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), unAthlete.getId_sport(), unAthlete.getId_pays()};
             this.unTableau.add(data);

@@ -24,7 +24,7 @@ public class VueGeneral extends JFrame implements ActionListener
 		 this.setTitle("Gestion des pays");
 		 this.setLayout(null); 
 		 this.setResizable(false); 
-		 this.setBounds(200, 200, 700, 500); 
+		 this.setBounds(200, 200, 1000, 800);
 		 this.getContentPane().setBackground(Color.gray);
 		 this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		 

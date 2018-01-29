@@ -7,8 +7,10 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import controleur.*;
+import vue.VueAthletes;
 
 import javax.print.DocFlavor;
+import javax.swing.*;
 
 
 public class Modele {
@@ -17,8 +19,8 @@ public class Modele {
 	{
 		String requete = "Select count(*) as nb, role from Utilisateur" +	" where pseudo ='" + login + "' and mot_de_passe ='"+mdp+"' group by id_personne; ";
 		System.out.println(requete);
-		String droits =""; 
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123"); 
+		String droits ="";
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
 		try{
 			uneBdd.seConnecter();
 			Statement unStat = uneBdd.getMaConnexion().createStatement(); 
@@ -59,6 +61,35 @@ public class Modele {
 			System.out.println(exp);
 		}
 
+	}
+
+
+	//*******************************   Combo sport/pays/equipe   *******************************
+	public static void Combo(String champ, String table, JComboBox nomCombo)
+	{
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		try
+		{
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			String requete = "SELECT " + champ +" FROM "+ table +";";
+			System.out.println(requete);
+			ResultSet Rs = unStat.executeQuery(requete);
+
+			while (Rs.next())
+			{
+				nomCombo.addItem(Rs.getString(champ));
+			}
+			Rs.close();
+			unStat.close();
+			uneBdd.seDeConnecter();
+		}
+		catch( SQLException exp)
+		{
+			System.out.println("Erreur : ");
+			//exp.printStackTrace();
+		}
 	}
 	/*
 	********************************************************************************************************************
@@ -155,7 +186,7 @@ public class Modele {
 	{
 		ArrayList<Sports> listSports = new ArrayList<Sports>();
 
-		String requete = "SELECT id_sports, Libelle_sport, Description_sport, Image_sport FROM 'Pays'";
+		String requete = "SELECT id_sports, Libelle_sport, Description_sport, Image_sport FROM Sport";
 		System.out.println(requete);
 		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
 		try{
@@ -187,6 +218,7 @@ public class Modele {
 		}
 		return listSports;
 	}
+
 	public static void insertSports(Sports unSports)
 	{
 		String requete = "INSERT INTO Sport values (" +
