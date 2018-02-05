@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import javax.swing.*;
 
 import controleur.Athletes;
+import controleur.Pays;
 import modele.Modele;
 import controleur.Tableau;
 
@@ -19,6 +20,7 @@ public class VueAthletes extends JPanel implements ActionListener {
     private JTable tableAthletes;
     private JPanel panelEdition = new JPanel();
     private JPanel panelEdition2 = new JPanel();
+    private JButton btAnnuler = new JButton("Annuler");
     private JButton btAjouter = new JButton("Ajouter");
     private JButton btMiseAJour = new JButton("Mettre à jour");
     private JButton btSupprimer = new JButton("Supprimer");
@@ -181,16 +183,19 @@ public class VueAthletes extends JPanel implements ActionListener {
         this.add(this.panelEdition);
         this.add(this.panelEdition2);
 
-        this.btAjouter.setBounds(100, 600, 100, 20);
+        this.btAnnuler.setBounds(100, 600, 100, 20);
+        this.add(btAnnuler);
+        this.btAjouter.setBounds(220, 600, 100, 20);
         this.add(btAjouter);
-        this.btMiseAJour.setBounds(220, 600, 100, 20);
+        this.btMiseAJour.setBounds(340, 600, 100, 20);
         this.add(btMiseAJour);
-        this.btSupprimer.setBounds(340, 600, 100, 20);
+        this.btSupprimer.setBounds(460, 600, 100, 20);
         this.add(btSupprimer);
 
         //this.txtIdClient.setEditable(false);
 
         //rendre les boutons cliquables
+        this.btAnnuler.addActionListener(this);
         this.btAjouter.addActionListener(this);
         this.btSupprimer.addActionListener(this);
         this.btMiseAJour.addActionListener(this);
@@ -200,32 +205,38 @@ public class VueAthletes extends JPanel implements ActionListener {
 
     }
 
+    int age = 0;
+    int idpays = 0;
+    int idequipe = 0;
+    int idsport = 0;
+    String libellePays;
+    String genre = "";
+    float taille = 0.0f;
+    float poids = 0.0f;
+    try {
+        age = Integer.parseInt(txtAge.getText());
+        int ligne = tableAthletes.getSelectedRow();
+        idequipe = Integer.parseInt(tableAthletes.getValueAt(ligne, 8).toString());
+        idsport = Integer.parseInt(tableAthletes.getValueAt(ligne, 9).toString());
+        idpays = Integer.parseInt(tableAthletes.getValueAt(ligne, 10).toString());
+        genre = comboGenre.getSelectedItem().toString();
+        taille = Float.parseFloat(txtTaille.getText());
+        poids = Float.parseFloat(txtPoids.getText());
+    }
+    catch ( NumberFormatException exp)
+    {
+        JOptionPane.showMessageDialog(this, "Veillez entrer un age correct ! ");
+    }
+
     @Override
     public void actionPerformed(ActionEvent e)
     {
+
         if (e.getSource() == this.btAjouter)
         {
-            int age = 0;
-            int pays = 0;
-            int equipe = 0;
-            int sport = 0;
-            String genre = "";
-            float taille = 0.0f;
-            float poids = 0.0f;
-            try {
-                age = Integer.parseInt(txtAge.getText());
-//                pays = Integer.parseInt(comboPays.getSelectedItem());
-//                equipe = Integer.parseInt(comboEquipe.getSelectedItem());
-//                sport = Integer.parseInt(comboSport.getSelectedItem());
-                genre = comboGenre.getSelectedItem().toString();
-                taille = Float.parseFloat(txtTaille.getText());
-                poids = Float.parseFloat(txtPoids.getText());
-            }
-            catch ( NumberFormatException exp)
-            {
-                JOptionPane.showMessageDialog(this, "Veillez entrer un age correct ! ");
-            }
-            Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),age,genre,taille,poids,txtPhoto.getText(),txtBiographie.getText(), equipe, sport, pays);
+//
+
+            Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),age,genre,taille,poids,txtPhoto.getText(),txtBiographie.getText(), idequipe, idsport, idpays);
             Modele.insertAthlete(unAthlete);
             JOptionPane.showMessageDialog(this, "Insertion réussie");
             txtNom.setText("");
@@ -243,18 +254,42 @@ public class VueAthletes extends JPanel implements ActionListener {
             Object data [] = {unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), unAthlete.getId_sport(), unAthlete.getId_pays()};
             this.unTableau.add(data);
         }
-//        else if (e.getSource() == this.btSupprimer)
-//        {
-//            int idclient = Integer.parseInt(txtIdClient.getText());
-//            Client unClient = new Client(idclient, txtNom.getText(), txtPrenom.getText(), txtAdresse.getText());
-//            modele.deleteClient(unClient);
-//            JOptionPane.showMessageDialog(this, "Supression effectuée");
-//            txtNom.setText("");
-//            txtPrenom.setText("");
-//            txtAdresse.setText("");
-//            int rowIndex = tableClients.getSelectedRow();
-//            unTableau.remove(rowIndex);
-//        }
+        else if (e.getSource() == this.btAnnuler)
+        {
+            txtNom.setText("");
+            txtPrenom.setText("");
+            txtAge.setText("");
+            comboGenre.setSelectedItem("");
+            txtTaille.setText("");
+            txtPoids.setText("");
+            txtPhoto.setText("");
+            txtBiographie.setText("");
+            comboPays.setSelectedItem("");
+            comboSport.setSelectedItem("");
+            comboEquipe.setSelectedItem("");
+            txtAge.setText("");
+        }
+        else if (e.getSource() == this.btSupprimer)
+        {
+            int idAthlete = Integer.parseInt(txtIdClient.getText());
+            Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),age,genre,taille,poids,txtPhoto.getText(),txtBiographie.getText(), idequipe, idsport, idpays);
+            Modele.deleteAthlete(unAthlete);
+            JOptionPane.showMessageDialog(this, "Supression effectuée");
+            txtNom.setText("");
+            txtPrenom.setText("");
+            txtAge.setText("");
+            comboGenre.setSelectedItem("");
+            txtTaille.setText("");
+            txtPoids.setText("");
+            txtPhoto.setText("");
+            txtBiographie.setText("");
+            comboPays.setSelectedItem("");
+            comboSport.setSelectedItem("");
+            comboEquipe.setSelectedItem("");
+            txtAge.setText("");
+            int rowIndex = tableAthletes.getSelectedRow();
+            unTableau.remove(rowIndex);
+        }
 //        else if (e.getSource() == this.btMiseAJour)
 //        {
 //            int idClient = Integer.parseInt(txtIdClient.getText());
@@ -303,4 +338,9 @@ public class VueAthletes extends JPanel implements ActionListener {
 //        }
 //        return nb;
 //    }
+
+
+
+
 }
+

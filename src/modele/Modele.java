@@ -7,9 +7,6 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import controleur.*;
-import vue.VueAthletes;
-
-import javax.print.DocFlavor;
 import javax.swing.*;
 
 
@@ -91,6 +88,9 @@ public class Modele {
 			//exp.printStackTrace();
 		}
 	}
+
+
+
 	/*
 	********************************************************************************************************************
 	---------------------------------------------		   Pays			------------------------------------------------
@@ -316,20 +316,29 @@ public class Modele {
 	public static void insertAthlete(Athletes unAthlete)
 	{
 		String requete =
-                "CALL insert_athlete ( '"+ unAthlete.getNom() +"'," +
-                        "'" + unAthlete.getPrenom() + "','" +
-                        "'" + unAthlete.getAge() + "','" +
-                        "'" + unAthlete.getGenre() + "','" +
-                        "'" + unAthlete.getTaille() + "','" +
-                        "'" + unAthlete.getPoids() + "','" +
-                        "'" + unAthlete.getPhoto() + "','" +
-                        "'" + unAthlete.getBiographie() + "','" +
-                        "'" + unAthlete.getId_pays() + "','" +
-                        "'" + unAthlete.getId_equipe() + "','" +
-                        "'" + unAthlete.getId_sport() + "');";
+                "CALL insert_athlete ( '"+ unAthlete.getNom() +"','" +
+                        unAthlete.getPrenom() + "'," +
+                        unAthlete.getAge() + ",'" +
+                        unAthlete.getGenre() + "'," +
+                        unAthlete.getTaille() + "," +
+                        unAthlete.getPoids() + ",'" +
+                        unAthlete.getPhoto() + "','" +
+                        unAthlete.getBiographie() + "'," +
+                        unAthlete.getId_pays() + "," +
+                        unAthlete.getId_equipe() + "," +
+                        unAthlete.getId_sport() + ");";
 
 		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		System.out.println(requete);
+		ExecutionBdd (uneBdd, requete);
+	}
+	public static void deleteAthlete(Athletes unAthlete)
+	{
+		String requete =
+				"DELETE FROM athlete WHERE id_personne = "+unAthlete.getIdAthletes()+"";
 
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		System.out.println(requete);
 		ExecutionBdd (uneBdd, requete);
 	}
 	/*
