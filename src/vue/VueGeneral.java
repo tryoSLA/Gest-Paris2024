@@ -5,9 +5,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 import controleur.Main;
 
@@ -30,9 +28,11 @@ public class VueGeneral extends JFrame implements ActionListener
 		 
 		 this.panelMenu.setBounds(0, 20, 700, 30);
 		 this.panelMenu.setLayout(new GridLayout(1,4));
-		 
-		 //this.panelMenu.add(this.btPays);
 
+
+		 //changer icone application
+		 ImageIcon logopetit = new ImageIcon("src/images/Logo_paris_2024_simple.png");
+		 this.setIconImage(logopetit.getImage());
 					 
 		for (int i = 0; i<4; i++)
 		{

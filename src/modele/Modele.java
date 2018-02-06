@@ -11,40 +11,35 @@ import javax.swing.*;
 
 
 public class Modele {
-	
-	public static String verifConnexion (String login, String mdp)
-	{
-		String requete = "Select count(*) as nb, role from Utilisateur" +	" where pseudo ='" + login + "' and mot_de_passe ='"+mdp+"' group by id_personne; ";
+
+	public static String verifConnexion(String login, String mdp) {
+		String requete = "Select count(*) as nb, role from Utilisateur" + " where pseudo ='" + login + "' and mot_de_passe ='" + mdp + "' group by id_personne; ";
 		System.out.println(requete);
-		String droits ="";
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
-		try{
+		String droits = "";
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
 			uneBdd.seConnecter();
-			Statement unStat = uneBdd.getMaConnexion().createStatement(); 
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
 			ResultSet unRes = unStat.executeQuery(requete);
 
-			if (unRes.next())
-			{
-				droits = unRes.getString("role"); 
+			if (unRes.next()) {
+				droits = unRes.getString("role");
 				int nb = unRes.getInt("nb");
-				if (nb==0) droits ="";
+				if (nb == 0) droits = "";
 			}
-			unRes.close(); 
-			unStat.close(); 
+			unRes.close();
+			unStat.close();
 			uneBdd.seDeConnecter();
-		}
-		catch( SQLException exp)
-		{
-			System.out.println("Erreur : "+ requete);
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
 			//exp.printStackTrace();
 		}
 		return droits;
 	}
+
 	//*******************************   Function pour faire des entrée en  BDD  *******************************
-	public static void ExecutionBdd (Bdd uneBdd, String requete)
-	{
-		try
-		{
+	public static void ExecutionBdd(Bdd uneBdd, String requete) {
+		try {
 			//Connexion à la base de donnée
 			uneBdd.seConnecter();
 			Statement unStat = uneBdd.getMaConnexion().createStatement();
@@ -52,9 +47,7 @@ public class Modele {
 			unStat.execute(requete);
 			unStat.close();
 			uneBdd.seDeConnecter();
-		}
-		catch (SQLException exp)
-		{
+		} catch (SQLException exp) {
 			System.out.println(exp);
 		}
 
@@ -62,33 +55,27 @@ public class Modele {
 
 
 	//*******************************   Combo sport/pays/equipe   *******************************
-	public static void Combo(String champ, String table, JComboBox nomCombo)
-	{
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
-		try
-		{
+	public static void Combo(String champ, String table, JComboBox nomCombo) {
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
 			uneBdd.seConnecter();
 			Statement unStat = uneBdd.getMaConnexion().createStatement();
 
-			String requete = "SELECT " + champ +" FROM "+ table +";";
+			String requete = "SELECT " + champ + " FROM " + table + ";";
 			System.out.println(requete);
 			ResultSet Rs = unStat.executeQuery(requete);
 
-			while (Rs.next())
-			{
+			while (Rs.next()) {
 				nomCombo.addItem(Rs.getString(champ));
 			}
 			Rs.close();
 			unStat.close();
 			uneBdd.seDeConnecter();
-		}
-		catch( SQLException exp)
-		{
+		} catch (SQLException exp) {
 			System.out.println("Erreur : ");
 			//exp.printStackTrace();
 		}
 	}
-
 
 
 	/*
@@ -96,23 +83,21 @@ public class Modele {
 	---------------------------------------------		   Pays			------------------------------------------------
 	********************************************************************************************************************
 	 */
-	public static ArrayList<Pays> selectAllPays ()
-	{
+	public static ArrayList<Pays> selectAllPays() {
 		//list via le controleur des pays
 		ArrayList<Pays> listPays = new ArrayList<Pays>();
 
 		String requete = "SELECT id_pays, Libelle_pays, Description_pays, Image_pays FROM 'Pays'";
 		System.out.println(requete);
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
-		try{
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
 			//Connexion à la base de donnée
 			uneBdd.seConnecter();
 			Statement unStat = uneBdd.getMaConnexion().createStatement();
 
 			//Exécution de la requète
 			ResultSet rs = unStat.executeQuery(requete);
-			while (rs.next())
-			{
+			while (rs.next()) {
 				//récupération des Champs par valeur
 				int idPays = rs.getInt("id_pays");
 				String namePays = rs.getString("Libelle_pays");
@@ -125,23 +110,20 @@ public class Modele {
 
 			//Fermeture de la connexion à la base de données
 			uneBdd.seDeConnecter();
-		}
-		catch( SQLException exp)
-		{
-			System.out.println("Erreur : "+ requete);
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
 			//exp.printStackTrace();
 		}
 		return listPays;
 	}
 
-	public static String selectWherePays (int idPays)
-	{
+	public static String selectWherePays(int idPays) {
 		String libellePays = "";
 
 		String requete = "SELECT Libelle_pays FROM Pays WHERE id_pays = " + idPays + ";";
 		System.out.println(requete);
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
-		try{
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
 			//Connexion à la base de donnée
 			uneBdd.seConnecter();
 			Statement unStat = uneBdd.getMaConnexion().createStatement();
@@ -156,48 +138,72 @@ public class Modele {
 			}
 			//Fermeture de la connexion à la base de données
 			uneBdd.seDeConnecter();
-		}
-		catch( SQLException exp)
-		{
-			System.out.println("Erreur : "+ requete);
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
 			//exp.printStackTrace();
 		}
 		return libellePays;
 	}
 
-	public static void insertPays(Pays unPays)
-	{
-		String requete = "INSERT INTO Pays values (" +
-				"null," +
-				" '"+unPays.getLibelle()+"'," +
-				" '"+unPays.getImage()+"," +
-				" '"+unPays.getDescription()+"');";
+	public static int selectIdWherePays(String libellePays) {
+		int idpays = 0;
 
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
-
-		ExecutionBdd (uneBdd, requete);
-	}
-	/*
-	********************************************************************************************************************
-	---------------------------------------------		   Sports		------------------------------------------------
-	********************************************************************************************************************
-	 */
-	public static ArrayList<Sports> selectAllSports ()
-	{
-		ArrayList<Sports> listSports = new ArrayList<Sports>();
-
-		String requete = "SELECT id_sports, Libelle_sport, Description_sport, Image_sport FROM Sport";
+		String requete = "SELECT id_pays FROM Pays WHERE libelle_pays = '" + libellePays + "';";
 		System.out.println(requete);
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
-		try{
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
 			//Connexion à la base de donnée
 			uneBdd.seConnecter();
 			Statement unStat = uneBdd.getMaConnexion().createStatement();
 
 			//Exécution de la requète
 			ResultSet rs = unStat.executeQuery(requete);
-			while (rs.next())
-			{
+
+			if (rs.next()) {
+				//récupération des Champs par valeur
+				idpays = rs.getInt("id_pays");
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
+			//exp.printStackTrace();
+		}
+		return idpays;
+	}
+
+
+	public static void insertPays(Pays unPays) {
+		String requete = "INSERT INTO Pays values (" +
+				"null," +
+				" '" + unPays.getLibelle() + "'," +
+				" '" + unPays.getImage() + "," +
+				" '" + unPays.getDescription() + "');";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+
+		ExecutionBdd(uneBdd, requete);
+	}
+
+	/*
+	********************************************************************************************************************
+	---------------------------------------------		   Sports		------------------------------------------------
+	********************************************************************************************************************
+	 */
+	public static ArrayList<Sports> selectAllSports() {
+		ArrayList<Sports> listSports = new ArrayList<Sports>();
+
+		String requete = "SELECT id_sports, Libelle_sport, Description_sport, Image_sport FROM Sport";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+			while (rs.next()) {
 				//récupération des Champs par valeur
 				int idSports = rs.getInt("id_sports");
 				String nameSports = rs.getString("Libelle_sport");
@@ -210,36 +216,59 @@ public class Modele {
 
 			//Fermeture de la connexion à la base de données
 			uneBdd.seDeConnecter();
-		}
-		catch( SQLException exp)
-		{
-			System.out.println("Erreur : "+ requete);
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
 			//exp.printStackTrace();
 		}
 		return listSports;
 	}
 
-	public static void insertSports(Sports unSports)
-	{
-		String requete = "INSERT INTO Sport values (" +
-				"null," +
-				" '"+unSports.getLibelle()+"'," +
-				" '"+unSports.getImage()+"," +
-				" '"+unSports.getDescription()+"');";
+	public static int selectIdWhereSport(String libelleSport) {
+		int idsport = 0;
 
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		String requete = "SELECT id_sport FROM Sport WHERE libelle_sport = '" + libelleSport + "';";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
 
-		ExecutionBdd (uneBdd, requete);
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+
+			if (rs.next()) {
+				//récupération des Champs par valeur
+				idsport = rs.getInt("id_sport");
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
+			//exp.printStackTrace();
+		}
+		return idsport;
 	}
 
-	public static String selectWhereSport (int idSport)
-	{
+	public static void insertSports(Sports unSports) {
+		String requete = "INSERT INTO Sport values (" +
+				"null," +
+				" '" + unSports.getLibelle() + "'," +
+				" '" + unSports.getImage() + "," +
+				" '" + unSports.getDescription() + "');";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+
+		ExecutionBdd(uneBdd, requete);
+	}
+
+	public static String selectWhereSport(int idSport) {
 		String libelleSport = "";
 
 		String requete = "SELECT Libelle_sport FROM Sport WHERE id_sport = " + idSport + ";";
 		System.out.println(requete);
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
-		try{
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
 			//Connexion à la base de donnée
 			uneBdd.seConnecter();
 			Statement unStat = uneBdd.getMaConnexion().createStatement();
@@ -254,10 +283,8 @@ public class Modele {
 			}
 			//Fermeture de la connexion à la base de données
 			uneBdd.seDeConnecter();
-		}
-		catch( SQLException exp)
-		{
-			System.out.println("Erreur : "+ requete);
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
 			//exp.printStackTrace();
 		}
 		return libelleSport;
@@ -268,23 +295,21 @@ public class Modele {
 	---------------------------------------------		   Athletes		------------------------------------------------
 	********************************************************************************************************************
 	 */
-	public static ArrayList<Athletes> selectAllAthletes ()
-	{
+	public static ArrayList<Athletes> selectAllAthletes() {
 		ArrayList<Athletes> listAthletes = new ArrayList<Athletes>();
 
 		String requete =
 				"SELECT * FROM athletes_java;";
 		System.out.println(requete);
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
-		try{
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
 			//Connexion à la base de donnée
 			uneBdd.seConnecter();
 			Statement unStat = uneBdd.getMaConnexion().createStatement();
 
 			//Exécution de la requète
 			ResultSet rs = unStat.executeQuery(requete);
-			while (rs.next())
-			{
+			while (rs.next()) {
 				//récupération des Champs par valeur
 				int idAthletes = rs.getInt("id_personne");
 				String nomAthletes = rs.getString("Nom");
@@ -299,69 +324,87 @@ public class Modele {
 				int idPaysAthletes = rs.getInt("id_pays");
 				int idEquipeAthletes = rs.getInt("id_equipe");
 				//Mise à jour de la liste
-				listAthletes.add(new Athletes(idAthletes, nomAthletes, prenomAthletes, genreAthletes, photoAthletes, biographieAthletes,ageAthletes, tailleAthletes,poidsAthletes, idEquipeAthletes, idPaysAthletes, idSportAthletes));
+				listAthletes.add(new Athletes(idAthletes, nomAthletes, prenomAthletes, ageAthletes, genreAthletes, tailleAthletes, poidsAthletes, photoAthletes, biographieAthletes, idEquipeAthletes, idPaysAthletes, idSportAthletes));
 			}
 
 			//Fermeture de la connexion à la base de données
 			uneBdd.seDeConnecter();
-		}
-		catch( SQLException exp)
-		{
-			System.out.println("Erreur : "+ requete);
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
 			//exp.printStackTrace();
 		}
 		return listAthletes;
 	}
 
-	public static void insertAthlete(Athletes unAthlete)
-	{
+	public static void insertAthlete(Athletes unAthlete) {
 		String requete =
-                "CALL insert_athlete ( '"+ unAthlete.getNom() +"','" +
-                        unAthlete.getPrenom() + "'," +
-                        unAthlete.getAge() + ",'" +
-                        unAthlete.getGenre() + "'," +
-                        unAthlete.getTaille() + "," +
-                        unAthlete.getPoids() + ",'" +
-                        unAthlete.getPhoto() + "','" +
-                        unAthlete.getBiographie() + "'," +
-                        unAthlete.getId_pays() + "," +
-                        unAthlete.getId_equipe() + "," +
-                        unAthlete.getId_sport() + ");";
+				"CALL insert_athlete ( '" + unAthlete.getNom() + "','" +
+						unAthlete.getPrenom() + "'," +
+						unAthlete.getAge() + ",'" +
+						unAthlete.getGenre() + "'," +
+						unAthlete.getTaille() + "," +
+						unAthlete.getPoids() + ",'" +
+						unAthlete.getPhoto() + "','" +
+						unAthlete.getBiographie() + "'," +
+						unAthlete.getId_pays() + "," +
+						unAthlete.getId_equipe() + "," +
+						unAthlete.getId_sport() + ");";
 
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		System.out.println(requete);
-		ExecutionBdd (uneBdd, requete);
+		ExecutionBdd(uneBdd, requete);
 	}
-	public static void deleteAthlete(Athletes unAthlete)
-	{
+
+	public static void updateAthlete(Athletes unAthlete) {
 		String requete =
-				"DELETE FROM athlete WHERE id_personne = "+unAthlete.getIdAthletes()+"";
+				"UPDATE athlete_java SET id_personne = " + unAthlete.getIdAthletes() +
+						",nom = '" + unAthlete.getNom() +
+						"',prenom = '" + unAthlete.getPrenom() +
+						"',age = " + unAthlete.getAge() +
+						",genre = '" + unAthlete.getGenre() +
+						"',photo = '" + unAthlete.getPhoto() +
+						"',biographie = '" + unAthlete.getBiographie() +
+						"',poids = " + unAthlete.getPoids() +
+						",taille = " + unAthlete.getTaille() +
+						",id_sport = " + unAthlete.getId_sport() +
+						",id_pays = " + unAthlete.getId_pays() +
+						",id_equipe = " + unAthlete.getId_equipe() +
+						"WHERE id_personne = " + unAthlete.getIdAthletes() +
+						";";
 
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		System.out.println(requete);
-		ExecutionBdd (uneBdd, requete);
+		ExecutionBdd(uneBdd, requete);
 	}
+
+	public static void deleteAthlete(Athletes unAthlete) {
+		String requete =
+				"DELETE FROM athlete WHERE id_personne = " + unAthlete.getIdAthletes() + "";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+	}
+
 	/*
 	********************************************************************************************************************
 	---------------------------------------------		   Event 		------------------------------------------------
 	********************************************************************************************************************
 	 */
-	public static ArrayList<Evenements> selectAllEvents ()
-	{
+	public static ArrayList<Evenements> selectAllEvents() {
 		ArrayList<Evenements> listEvents = new ArrayList<Evenements>();
 
 		String requete = "SELECT * FROM 'evenement'";
 		System.out.println(requete);
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
-		try{
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
 			//Connexion à la base de donnée
 			uneBdd.seConnecter();
 			Statement unStat = uneBdd.getMaConnexion().createStatement();
 
 			//Exécution de la requète
 			ResultSet rs = unStat.executeQuery(requete);
-			while (rs.next())
-			{
+			while (rs.next()) {
 				//récupération des Champs par valeur
 				int idEvents = rs.getInt("id_event");
 				String titleEvents = rs.getString("Titre_event");
@@ -373,32 +416,33 @@ public class Modele {
 			}
 			//Fermeture de la connexion à la base de données
 			uneBdd.seDeConnecter();
-		}
-		catch( SQLException exp)
-		{
-			System.out.println("Erreur : "+ requete);
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
 			//exp.printStackTrace();
 		}
 		return listEvents;
 	}
-	public static void insertEvents(Evenements unEvents)
-	{
+
+	public static void insertEvents(Evenements unEvents) {
 		String requete = "INSERT INTO Sport values (" +
 				"null," +
-				" '"+unEvents.getTitleEvents()+"'," +
-				" '"+unEvents.getDescriptionEvents()+"," +
-				" '"+unEvents.getDateEvents()+"'," +
-				" '"+unEvents.getPhotoEvents()+"');";
+				" '" + unEvents.getTitleEvents() + "'," +
+				" '" + unEvents.getDescriptionEvents() + "," +
+				" '" + unEvents.getDateEvents() + "'," +
+				" '" + unEvents.getPhotoEvents() + "');";
 
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 
-		ExecutionBdd (uneBdd, requete);
+		ExecutionBdd(uneBdd, requete);
 	}
 	/*
 	********************************************************************************************************************
 	---------------------------------------------		   Equipe 		------------------------------------------------
 	********************************************************************************************************************
+
 	 */
+
+
 //	public static ArrayList<Equipes> selectAllEquipes ()
 //	{
 //		ArrayList<Equipes> listEquipes = new ArrayList<Equipes>();
@@ -434,14 +478,13 @@ public class Modele {
 //		return listEquipes;
 //	}
 
-	public static String selectWhereEquipes (int idEquipe)
-	{
+	public static String selectWhereEquipe(int idEquipe) {
 		String libelleEquipe = "";
 
 		String requete = "SELECT Libelle_equipe FROM equipe WHERE id_equipe = " + idEquipe + ";";
 		System.out.println(requete);
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
-		try{
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
 			//Connexion à la base de donnée
 			uneBdd.seConnecter();
 			Statement unStat = uneBdd.getMaConnexion().createStatement();
@@ -456,14 +499,41 @@ public class Modele {
 			}
 			//Fermeture de la connexion à la base de données
 			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
+			//exp.printStackTrace();
+		}
+		return libelleEquipe;
+	}
+
+	public static int selectIdWhereEquipe (String libelleEquipe)
+	{
+		int idequipe = 0;
+
+		String requete = "SELECT id_equipe FROM Equipe WHERE libelle_equipe = '" + libelleEquipe + "';";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		try{
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+
+			if (rs.next()) {
+				//récupération des Champs par valeur
+				idequipe = rs.getInt("id_equipe");
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
 		}
 		catch( SQLException exp)
 		{
 			System.out.println("Erreur : "+ requete);
 			//exp.printStackTrace();
 		}
-		return libelleEquipe;
+		return idequipe;
 	}
-
 
 }
