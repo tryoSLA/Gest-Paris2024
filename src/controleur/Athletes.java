@@ -2,8 +2,8 @@ package controleur;
 
 public class Athletes
 {
-    private static int nbChampAthletes = 11;
-    private String nom, prenom, genre, photo, biographie;
+    private static int nbChampAthletes = 12;
+    private String nom, prenom, genre, photo, biographie, id_equipe_string;
     private int age,idAthletes, id_pays, id_sport, id_equipe;
     private float poids, taille;
 
@@ -19,7 +19,7 @@ public class Athletes
         this.poids= 0.0f;
     }
 
-    public Athletes(int idAthletes, String nom, String prenom, String genre,  String photo,  String biographie, int age, float taille, float poids, int id_equipe, int id_pays, int id_sport)
+    public Athletes(int idAthletes, String nom, String prenom, int age,String genre, float taille, float poids,String photo, String biographie, int id_equipe, int id_sport,int id_pays)
     {
         this.idAthletes = idAthletes;
         this.nom = nom;
@@ -35,6 +35,8 @@ public class Athletes
         this.id_pays = id_pays;
     }
 
+
+
     public Athletes(String nom, String prenom, int age,String genre, float taille, float poids,String photo, String biographie, int id_equipe, int id_sport,int id_pays)
     {
         this.idAthletes = 0;
@@ -47,6 +49,22 @@ public class Athletes
         this.taille = taille;
         this.poids = poids;
         this.id_equipe = id_equipe;
+        this.id_sport = id_sport;
+        this.id_pays = id_pays;
+    }
+
+    public Athletes(String nom, String prenom, int age,String genre, float taille, float poids,String photo, String biographie, String id_equipe_string, int id_sport,int id_pays)
+    {
+        this.idAthletes = 0;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.genre = genre;
+        this.photo = photo;
+        this.biographie = biographie;
+        this.age = age;
+        this.taille = taille;
+        this.poids = poids;
+        this.id_equipe_string = id_equipe_string;
         this.id_sport = id_sport;
         this.id_pays = id_pays;
     }
@@ -154,4 +172,5 @@ public class Athletes
     public void setTaille(float taille) {
         this.taille = taille;
     }
+
 }

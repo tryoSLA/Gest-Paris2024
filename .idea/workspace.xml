@@ -3,11 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="22e8f376-dff3-4af5-9811-ce363fc557df" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/bin/controleur/Athletes.class" afterPath="$PROJECT_DIR$/bin/controleur/Athletes.class" />
       <change beforePath="$PROJECT_DIR$/bin/modele/Modele.class" afterPath="$PROJECT_DIR$/bin/modele/Modele.class" />
+      <change beforePath="$PROJECT_DIR$/bin/vue/VueAthletes$1.class" afterPath="$PROJECT_DIR$/bin/vue/VueAthletes$1.class" />
       <change beforePath="$PROJECT_DIR$/bin/vue/VueAthletes$2.class" afterPath="$PROJECT_DIR$/bin/vue/VueAthletes$2.class" />
       <change beforePath="$PROJECT_DIR$/bin/vue/VueAthletes.class" afterPath="$PROJECT_DIR$/bin/vue/VueAthletes.class" />
+      <change beforePath="$PROJECT_DIR$/bin/vue/VueGeneral.class" afterPath="$PROJECT_DIR$/bin/vue/VueGeneral.class" />
+      <change beforePath="$PROJECT_DIR$/src/controleur/Athletes.java" afterPath="$PROJECT_DIR$/src/controleur/Athletes.java" />
       <change beforePath="$PROJECT_DIR$/src/modele/Modele.java" afterPath="$PROJECT_DIR$/src/modele/Modele.java" />
       <change beforePath="$PROJECT_DIR$/src/vue/VueAthletes.java" afterPath="$PROJECT_DIR$/src/vue/VueAthletes.java" />
+      <change beforePath="$PROJECT_DIR$/src/vue/VueGeneral.java" afterPath="$PROJECT_DIR$/src/vue/VueGeneral.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,56 +36,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Evenements.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controleur/Evenements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#1458#1459#0" expanded="true" />
-                <element signature="e#1498#1499#0" expanded="true" />
-                <element signature="e#1748#1749#0" expanded="true" />
-                <element signature="e#1794#1795#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Modele.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
-              <folding>
-                <marker date="1516718362255" expanded="true" signature="318:446" ph="Select count... Utilisateur" />
-                <marker date="1516718362255" expanded="true" signature="2049:2119" ph="SELECT id_pa... " />
-                <marker date="1516718362255" expanded="true" signature="3123:3169" ph="SELECT Libel... Pays" />
-                <marker date="1516718362255" expanded="true" signature="4656:4731" ph="SELECT id_sp... " />
-                <marker date="1516718362255" expanded="true" signature="6111:6160" ph="SELECT Libel... Sport" />
-                <marker date="1516718362255" expanded="true" signature="7334:7361" ph="SELECT * FRO... athletes_java" />
-                <marker date="1516718362255" expanded="true" signature="10194:10219" ph="SELECT * FRO... " />
-                <marker date="1516718362255" expanded="true" signature="13235:13287" ph="SELECT Libel... equipe" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VueConnexion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueConnexion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2079">
-              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="VueAthletes.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="54" column="22" lean-forward="false" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="402">
+              <caret line="218" column="101" lean-forward="false" selection-start-line="218" selection-start-column="12" selection-end-line="218" selection-end-column="101" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1957#1958#0" expanded="true" />
+                <element signature="e#2001#2002#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,8 +53,18 @@
       <file leaf-file-name="VueGeneral.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="80" column="1" lean-forward="false" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+            <state relative-caret-position="231">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VueConnexion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vue/VueConnexion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,52 +80,91 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Modele.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-21">
+              <caret line="326" column="197" lean-forward="false" selection-start-line="326" selection-start-column="181" selection-end-line="326" selection-end-column="197" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2724#2730#0" expanded="true" />
+                <element signature="e#6131#6139#0" expanded="true" />
+                <element signature="e#9613#9623#0" expanded="true" />
+                <element signature="e#13413#13425#0" expanded="true" />
+                <marker date="1517905967556" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+                <marker date="1517905967556" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+                <marker date="1517905967556" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+                <marker date="1517905967556" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+                <marker date="1517905967556" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+                <marker date="1517905967556" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+                <marker date="1517905967556" expanded="true" signature="4633:4700" ph="SELECT id_pa... Pays" />
+                <marker date="1517905967556" expanded="true" signature="6164:6233" ph="SELECT id_sp... " />
+                <marker date="1517905967556" expanded="true" signature="6164:6238" ph="SELECT id_sp... Sport" />
+                <marker date="1517905967556" expanded="true" signature="7264:7335" ph="SELECT id_sp... Sport" />
+                <marker date="1517905967556" expanded="true" signature="8432:8481" ph="SELECT Libel... Sport" />
+                <marker date="1517905967556" expanded="true" signature="9652:9679" ph="SELECT * FRO... athletes_java" />
+                <marker date="1517905967556" expanded="true" signature="13450:13475" ph="SELECT * FRO... " />
+                <marker date="1517905967556" expanded="true" signature="16503:16555" ph="SELECT Libel... equipe" />
+                <marker date="1517905967556" expanded="true" signature="17335:17410" ph="SELECT id_sp... Sport" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Athletes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controleur/Athletes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pays.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controleur/Pays.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Equipes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controleur/Equipes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+            <state relative-caret-position="441">
+              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding>
-                <element signature="e#909#910#0" expanded="true" />
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#985#986#0" expanded="true" />
-                <element signature="e#1025#1026#0" expanded="true" />
-                <element signature="e#1067#1068#0" expanded="true" />
-                <element signature="e#1101#1102#0" expanded="true" />
-                <element signature="e#1159#1160#0" expanded="true" />
-                <element signature="e#1208#1209#0" expanded="true" />
-                <element signature="e#1248#1249#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1342#1343#0" expanded="true" />
-                <element signature="e#1392#1393#0" expanded="true" />
-                <element signature="e#1430#1431#0" expanded="true" />
-                <element signature="e#1467#1468#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1576#1577#0" expanded="true" />
-                <element signature="e#1613#1614#0" expanded="true" />
-                <element signature="e#1649#1650#0" expanded="true" />
-                <element signature="e#1704#1705#0" expanded="true" />
-                <element signature="e#1754#1755#0" expanded="true" />
+                <element signature="e#2464#2465#0" expanded="true" />
+                <element signature="e#2490#2491#0" expanded="true" />
+                <element signature="e#2528#2529#0" expanded="true" />
+                <element signature="e#2558#2559#0" expanded="true" />
+                <element signature="e#2591#2592#0" expanded="true" />
+                <element signature="e#2620#2621#0" expanded="true" />
+                <element signature="e#2664#2665#0" expanded="true" />
+                <element signature="e#2700#2701#0" expanded="true" />
+                <element signature="e#2732#2733#0" expanded="true" />
+                <element signature="e#2760#2761#0" expanded="true" />
+                <element signature="e#2802#2803#0" expanded="true" />
+                <element signature="e#2836#2837#0" expanded="true" />
+                <element signature="e#2868#2869#0" expanded="true" />
+                <element signature="e#2896#2897#0" expanded="true" />
+                <element signature="e#2938#2939#0" expanded="true" />
+                <element signature="e#2972#2973#0" expanded="true" />
+                <element signature="e#3009#3010#0" expanded="true" />
+                <element signature="e#3042#3043#0" expanded="true" />
+                <element signature="e#3094#3095#0" expanded="true" />
+                <element signature="e#3138#3139#0" expanded="true" />
+                <element signature="e#3165#3166#0" expanded="true" />
+                <element signature="e#3191#3192#0" expanded="true" />
+                <element signature="e#3226#3227#0" expanded="true" />
+                <element signature="e#3256#3257#0" expanded="true" />
+                <element signature="e#3290#3291#0" expanded="true" />
+                <element signature="e#3323#3324#0" expanded="true" />
+                <element signature="e#3372#3373#0" expanded="true" />
+                <element signature="e#3416#3417#0" expanded="true" />
+                <element signature="e#3447#3448#0" expanded="true" />
+                <element signature="e#3477#3478#0" expanded="true" />
+                <element signature="e#3520#3521#0" expanded="true" />
+                <element signature="e#3558#3559#0" expanded="true" />
+                <element signature="e#3590#3591#0" expanded="true" />
+                <element signature="e#3621#3622#0" expanded="true" />
+                <element signature="e#3666#3667#0" expanded="true" />
+                <element signature="e#3706#3707#0" expanded="true" />
+                <element signature="e#3739#3740#0" expanded="true" />
+                <element signature="e#3771#3772#0" expanded="true" />
+                <element signature="e#3818#3819#0" expanded="true" />
+                <element signature="e#3860#3861#0" expanded="true" />
+                <element signature="e#3891#3892#0" expanded="true" />
+                <element signature="e#3919#3920#0" expanded="true" />
+                <element signature="e#3960#3961#0" expanded="true" />
+                <element signature="e#3994#3995#0" expanded="true" />
+                <element signature="e#4026#4027#0" expanded="true" />
+                <element signature="e#4055#4056#0" expanded="true" />
+                <element signature="e#4098#4099#0" expanded="true" />
+                <element signature="e#4134#4135#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,8 +181,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>recupererLesAthletes</find>
       <find>next</find>
+      <find>ResultSet</find>
+      <find>panelEdition</find>
+      <find>array</find>
+      <find>recupererLesAthletes</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -184,10 +201,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/controleur/Evenements.java" />
         <option value="$PROJECT_DIR$/src/vue/VueConnexion.java" />
-        <option value="$PROJECT_DIR$/src/vue/VueGeneral.java" />
         <option value="$PROJECT_DIR$/src/controleur/Equipes.java" />
-        <option value="$PROJECT_DIR$/src/controleur/Athletes.java" />
+        <option value="$PROJECT_DIR$/src/vue/VueGeneral.java" />
         <option value="$PROJECT_DIR$/src/modele/Modele.java" />
+        <option value="$PROJECT_DIR$/src/controleur/Athletes.java" />
         <option value="$PROJECT_DIR$/src/vue/VueAthletes.java" />
       </list>
     </option>
@@ -199,9 +216,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1142" />
-    <option name="height" value="1047" />
+    <option name="x" value="132" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -218,6 +235,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,10 +271,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -398,29 +415,35 @@
       <workItem from="1516610166748" duration="1570000" />
       <workItem from="1516701122496" duration="287000" />
       <workItem from="1516702806007" duration="1799000" />
+      <workItem from="1517216614302" duration="15392000" />
+      <workItem from="1517743122384" duration="3669000" />
+      <workItem from="1517817895365" duration="5379000" />
+      <workItem from="1517840944935" duration="8330000" />
+      <workItem from="1517905125493" duration="1833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15777000" />
+    <option name="totallyTimeSpent" value="50380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.49570355" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.322691" sideWeight="0.5042965" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20068415" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.322691" sideWeight="0.49570355" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1584318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11868958" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -429,33 +452,41 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.322691" sideWeight="0.5042965" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.49570355" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20068415" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1584318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.322691" sideWeight="0.49570355" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11868958" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-    </layout>
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -464,48 +495,66 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/vue/VueConnexion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516718362255" expanded="true" signature="318:446" ph="Select count... Utilisateur" />
-            <marker date="1516718362255" expanded="true" signature="2049:2119" ph="SELECT id_pa... " />
-            <marker date="1516718362255" expanded="true" signature="3123:3169" ph="SELECT Libel... Pays" />
-            <marker date="1516718362255" expanded="true" signature="4656:4731" ph="SELECT id_sp... " />
-            <marker date="1516718362255" expanded="true" signature="6111:6160" ph="SELECT Libel... Sport" />
-            <marker date="1516718362255" expanded="true" signature="7334:7361" ph="SELECT * FRO... athletes_java" />
-            <marker date="1516718362255" expanded="true" signature="10194:10219" ph="SELECT * FRO... " />
-            <marker date="1516718362255" expanded="true" signature="13235:13287" ph="SELECT Libel... equipe" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controleur/Athletes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+            <element signature="e#2528#2529#0" expanded="true" />
+            <element signature="e#2558#2559#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2620#2621#0" expanded="true" />
+            <element signature="e#2664#2665#0" expanded="true" />
+            <element signature="e#2700#2701#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2802#2803#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+            <element signature="e#2938#2939#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3009#3010#0" expanded="true" />
+            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#3094#3095#0" expanded="true" />
+            <element signature="e#3138#3139#0" expanded="true" />
+            <element signature="e#3165#3166#0" expanded="true" />
+            <element signature="e#3191#3192#0" expanded="true" />
+            <element signature="e#3226#3227#0" expanded="true" />
+            <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3290#3291#0" expanded="true" />
+            <element signature="e#3323#3324#0" expanded="true" />
+            <element signature="e#3372#3373#0" expanded="true" />
+            <element signature="e#3416#3417#0" expanded="true" />
+            <element signature="e#3447#3448#0" expanded="true" />
+            <element signature="e#3477#3478#0" expanded="true" />
+            <element signature="e#3520#3521#0" expanded="true" />
+            <element signature="e#3558#3559#0" expanded="true" />
+            <element signature="e#3590#3591#0" expanded="true" />
+            <element signature="e#3621#3622#0" expanded="true" />
+            <element signature="e#3666#3667#0" expanded="true" />
+            <element signature="e#3706#3707#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="true" />
+            <element signature="e#3771#3772#0" expanded="true" />
+            <element signature="e#3818#3819#0" expanded="true" />
+            <element signature="e#3860#3861#0" expanded="true" />
+            <element signature="e#3891#3892#0" expanded="true" />
+            <element signature="e#3919#3920#0" expanded="true" />
+            <element signature="e#3960#3961#0" expanded="true" />
+            <element signature="e#3994#3995#0" expanded="true" />
+            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4055#4056#0" expanded="true" />
+            <element signature="e#4098#4099#0" expanded="true" />
+            <element signature="e#4134#4135#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -514,14 +563,26 @@
         <state relative-caret-position="17">
           <caret line="135" column="55" lean-forward="false" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="55" />
           <folding>
-            <marker date="1516718362255" expanded="true" signature="318:446" ph="Select count... Utilisateur" />
-            <marker date="1516718362255" expanded="true" signature="2049:2119" ph="SELECT id_pa... " />
-            <marker date="1516718362255" expanded="true" signature="3123:3169" ph="SELECT Libel... Pays" />
-            <marker date="1516718362255" expanded="true" signature="4656:4731" ph="SELECT id_sp... " />
-            <marker date="1516718362255" expanded="true" signature="6111:6160" ph="SELECT Libel... Sport" />
-            <marker date="1516718362255" expanded="true" signature="7334:7361" ph="SELECT * FRO... athletes_java" />
-            <marker date="1516718362255" expanded="true" signature="10194:10219" ph="SELECT * FRO... " />
-            <marker date="1516718362255" expanded="true" signature="13235:13287" ph="SELECT Libel... equipe" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9613#9623#0" expanded="true" />
+            <element signature="e#13413#13425#0" expanded="true" />
+            <marker date="1517905967556" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1517905967556" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1517905967556" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1517905967556" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4700" ph="SELECT id_pa... Pays" />
+            <marker date="1517905967556" expanded="true" signature="6164:6233" ph="SELECT id_sp... " />
+            <marker date="1517905967556" expanded="true" signature="6164:6238" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="7264:7335" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="8432:8481" ph="SELECT Libel... Sport" />
+            <marker date="1517905967556" expanded="true" signature="9652:9679" ph="SELECT * FRO... athletes_java" />
+            <marker date="1517905967556" expanded="true" signature="13450:13475" ph="SELECT * FRO... " />
+            <marker date="1517905967556" expanded="true" signature="16503:16555" ph="SELECT Libel... equipe" />
+            <marker date="1517905967556" expanded="true" signature="17335:17410" ph="SELECT id_sp... Sport" />
           </folding>
         </state>
       </provider>
@@ -538,7 +599,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
           <caret line="139" column="34" lean-forward="true" selection-start-line="139" selection-start-column="34" selection-end-line="139" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1957#1958#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -554,7 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -562,7 +626,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="15" />
-          <folding />
+          <folding>
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+            <element signature="e#2528#2529#0" expanded="true" />
+            <element signature="e#2558#2559#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2620#2621#0" expanded="true" />
+            <element signature="e#2664#2665#0" expanded="true" />
+            <element signature="e#2700#2701#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2802#2803#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+            <element signature="e#2938#2939#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3009#3010#0" expanded="true" />
+            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#3094#3095#0" expanded="true" />
+            <element signature="e#3138#3139#0" expanded="true" />
+            <element signature="e#3165#3166#0" expanded="true" />
+            <element signature="e#3191#3192#0" expanded="true" />
+            <element signature="e#3226#3227#0" expanded="true" />
+            <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3290#3291#0" expanded="true" />
+            <element signature="e#3323#3324#0" expanded="true" />
+            <element signature="e#3372#3373#0" expanded="true" />
+            <element signature="e#3416#3417#0" expanded="true" />
+            <element signature="e#3447#3448#0" expanded="true" />
+            <element signature="e#3477#3478#0" expanded="true" />
+            <element signature="e#3520#3521#0" expanded="true" />
+            <element signature="e#3558#3559#0" expanded="true" />
+            <element signature="e#3590#3591#0" expanded="true" />
+            <element signature="e#3621#3622#0" expanded="true" />
+            <element signature="e#3666#3667#0" expanded="true" />
+            <element signature="e#3706#3707#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="true" />
+            <element signature="e#3771#3772#0" expanded="true" />
+            <element signature="e#3818#3819#0" expanded="true" />
+            <element signature="e#3860#3861#0" expanded="true" />
+            <element signature="e#3891#3892#0" expanded="true" />
+            <element signature="e#3919#3920#0" expanded="true" />
+            <element signature="e#3960#3961#0" expanded="true" />
+            <element signature="e#3994#3995#0" expanded="true" />
+            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4055#4056#0" expanded="true" />
+            <element signature="e#4098#4099#0" expanded="true" />
+            <element signature="e#4134#4135#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -570,7 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,12 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="78" column="36" lean-forward="false" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
-          <folding>
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -592,14 +698,26 @@
         <state relative-caret-position="688">
           <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding>
-            <marker date="1516718362255" expanded="true" signature="318:446" ph="Select count... Utilisateur" />
-            <marker date="1516718362255" expanded="true" signature="2049:2119" ph="SELECT id_pa... " />
-            <marker date="1516718362255" expanded="true" signature="3123:3169" ph="SELECT Libel... Pays" />
-            <marker date="1516718362255" expanded="true" signature="4656:4731" ph="SELECT id_sp... " />
-            <marker date="1516718362255" expanded="true" signature="6111:6160" ph="SELECT Libel... Sport" />
-            <marker date="1516718362255" expanded="true" signature="7334:7361" ph="SELECT * FRO... athletes_java" />
-            <marker date="1516718362255" expanded="true" signature="10194:10219" ph="SELECT * FRO... " />
-            <marker date="1516718362255" expanded="true" signature="13235:13287" ph="SELECT Libel... equipe" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9613#9623#0" expanded="true" />
+            <element signature="e#13413#13425#0" expanded="true" />
+            <marker date="1517905967556" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1517905967556" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1517905967556" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1517905967556" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4700" ph="SELECT id_pa... Pays" />
+            <marker date="1517905967556" expanded="true" signature="6164:6233" ph="SELECT id_sp... " />
+            <marker date="1517905967556" expanded="true" signature="6164:6238" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="7264:7335" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="8432:8481" ph="SELECT Libel... Sport" />
+            <marker date="1517905967556" expanded="true" signature="9652:9679" ph="SELECT * FRO... athletes_java" />
+            <marker date="1517905967556" expanded="true" signature="13450:13475" ph="SELECT * FRO... " />
+            <marker date="1517905967556" expanded="true" signature="16503:16555" ph="SELECT Libel... equipe" />
+            <marker date="1517905967556" expanded="true" signature="17335:17410" ph="SELECT id_sp... Sport" />
           </folding>
         </state>
       </provider>
@@ -625,14 +743,26 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1516718362255" expanded="true" signature="318:446" ph="Select count... Utilisateur" />
-            <marker date="1516718362255" expanded="true" signature="2049:2119" ph="SELECT id_pa... " />
-            <marker date="1516718362255" expanded="true" signature="3123:3169" ph="SELECT Libel... Pays" />
-            <marker date="1516718362255" expanded="true" signature="4656:4731" ph="SELECT id_sp... " />
-            <marker date="1516718362255" expanded="true" signature="6111:6160" ph="SELECT Libel... Sport" />
-            <marker date="1516718362255" expanded="true" signature="7334:7361" ph="SELECT * FRO... athletes_java" />
-            <marker date="1516718362255" expanded="true" signature="10194:10219" ph="SELECT * FRO... " />
-            <marker date="1516718362255" expanded="true" signature="13235:13287" ph="SELECT Libel... equipe" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9613#9623#0" expanded="true" />
+            <element signature="e#13413#13425#0" expanded="true" />
+            <marker date="1517905967556" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1517905967556" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1517905967556" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1517905967556" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4700" ph="SELECT id_pa... Pays" />
+            <marker date="1517905967556" expanded="true" signature="6164:6233" ph="SELECT id_sp... " />
+            <marker date="1517905967556" expanded="true" signature="6164:6238" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="7264:7335" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="8432:8481" ph="SELECT Libel... Sport" />
+            <marker date="1517905967556" expanded="true" signature="9652:9679" ph="SELECT * FRO... athletes_java" />
+            <marker date="1517905967556" expanded="true" signature="13450:13475" ph="SELECT * FRO... " />
+            <marker date="1517905967556" expanded="true" signature="16503:16555" ph="SELECT Libel... equipe" />
+            <marker date="1517905967556" expanded="true" signature="17335:17410" ph="SELECT id_sp... Sport" />
           </folding>
         </state>
       </provider>
@@ -641,7 +771,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+            <element signature="e#2528#2529#0" expanded="true" />
+            <element signature="e#2558#2559#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2620#2621#0" expanded="true" />
+            <element signature="e#2664#2665#0" expanded="true" />
+            <element signature="e#2700#2701#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2802#2803#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+            <element signature="e#2938#2939#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3009#3010#0" expanded="true" />
+            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#3094#3095#0" expanded="true" />
+            <element signature="e#3138#3139#0" expanded="true" />
+            <element signature="e#3165#3166#0" expanded="true" />
+            <element signature="e#3191#3192#0" expanded="true" />
+            <element signature="e#3226#3227#0" expanded="true" />
+            <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3290#3291#0" expanded="true" />
+            <element signature="e#3323#3324#0" expanded="true" />
+            <element signature="e#3372#3373#0" expanded="true" />
+            <element signature="e#3416#3417#0" expanded="true" />
+            <element signature="e#3447#3448#0" expanded="true" />
+            <element signature="e#3477#3478#0" expanded="true" />
+            <element signature="e#3520#3521#0" expanded="true" />
+            <element signature="e#3558#3559#0" expanded="true" />
+            <element signature="e#3590#3591#0" expanded="true" />
+            <element signature="e#3621#3622#0" expanded="true" />
+            <element signature="e#3666#3667#0" expanded="true" />
+            <element signature="e#3706#3707#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="true" />
+            <element signature="e#3771#3772#0" expanded="true" />
+            <element signature="e#3818#3819#0" expanded="true" />
+            <element signature="e#3860#3861#0" expanded="true" />
+            <element signature="e#3891#3892#0" expanded="true" />
+            <element signature="e#3919#3920#0" expanded="true" />
+            <element signature="e#3960#3961#0" expanded="true" />
+            <element signature="e#3994#3995#0" expanded="true" />
+            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4055#4056#0" expanded="true" />
+            <element signature="e#4098#4099#0" expanded="true" />
+            <element signature="e#4134#4135#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -650,14 +829,26 @@
         <state relative-caret-position="17">
           <caret line="135" column="55" lean-forward="false" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="55" />
           <folding>
-            <marker date="1516718362255" expanded="true" signature="318:446" ph="Select count... Utilisateur" />
-            <marker date="1516718362255" expanded="true" signature="2049:2119" ph="SELECT id_pa... " />
-            <marker date="1516718362255" expanded="true" signature="3123:3169" ph="SELECT Libel... Pays" />
-            <marker date="1516718362255" expanded="true" signature="4656:4731" ph="SELECT id_sp... " />
-            <marker date="1516718362255" expanded="true" signature="6111:6160" ph="SELECT Libel... Sport" />
-            <marker date="1516718362255" expanded="true" signature="7334:7361" ph="SELECT * FRO... athletes_java" />
-            <marker date="1516718362255" expanded="true" signature="10194:10219" ph="SELECT * FRO... " />
-            <marker date="1516718362255" expanded="true" signature="13235:13287" ph="SELECT Libel... equipe" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9613#9623#0" expanded="true" />
+            <element signature="e#13413#13425#0" expanded="true" />
+            <marker date="1517905967556" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1517905967556" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1517905967556" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1517905967556" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4700" ph="SELECT id_pa... Pays" />
+            <marker date="1517905967556" expanded="true" signature="6164:6233" ph="SELECT id_sp... " />
+            <marker date="1517905967556" expanded="true" signature="6164:6238" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="7264:7335" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="8432:8481" ph="SELECT Libel... Sport" />
+            <marker date="1517905967556" expanded="true" signature="9652:9679" ph="SELECT * FRO... athletes_java" />
+            <marker date="1517905967556" expanded="true" signature="13450:13475" ph="SELECT * FRO... " />
+            <marker date="1517905967556" expanded="true" signature="16503:16555" ph="SELECT Libel... equipe" />
+            <marker date="1517905967556" expanded="true" signature="17335:17410" ph="SELECT id_sp... Sport" />
           </folding>
         </state>
       </provider>
@@ -682,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -690,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -698,12 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="78" column="36" lean-forward="false" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
-          <folding>
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -712,14 +895,26 @@
         <state relative-caret-position="484">
           <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding>
-            <marker date="1516718362255" expanded="true" signature="318:446" ph="Select count... Utilisateur" />
-            <marker date="1516718362255" expanded="true" signature="2049:2119" ph="SELECT id_pa... " />
-            <marker date="1516718362255" expanded="true" signature="3123:3169" ph="SELECT Libel... Pays" />
-            <marker date="1516718362255" expanded="true" signature="4656:4731" ph="SELECT id_sp... " />
-            <marker date="1516718362255" expanded="true" signature="6111:6160" ph="SELECT Libel... Sport" />
-            <marker date="1516718362255" expanded="true" signature="7334:7361" ph="SELECT * FRO... athletes_java" />
-            <marker date="1516718362255" expanded="true" signature="10194:10219" ph="SELECT * FRO... " />
-            <marker date="1516718362255" expanded="true" signature="13235:13287" ph="SELECT Libel... equipe" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9613#9623#0" expanded="true" />
+            <element signature="e#13413#13425#0" expanded="true" />
+            <marker date="1517905967556" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1517905967556" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1517905967556" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1517905967556" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4700" ph="SELECT id_pa... Pays" />
+            <marker date="1517905967556" expanded="true" signature="6164:6233" ph="SELECT id_sp... " />
+            <marker date="1517905967556" expanded="true" signature="6164:6238" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="7264:7335" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="8432:8481" ph="SELECT Libel... Sport" />
+            <marker date="1517905967556" expanded="true" signature="9652:9679" ph="SELECT * FRO... athletes_java" />
+            <marker date="1517905967556" expanded="true" signature="13450:13475" ph="SELECT * FRO... " />
+            <marker date="1517905967556" expanded="true" signature="16503:16555" ph="SELECT Libel... equipe" />
+            <marker date="1517905967556" expanded="true" signature="17335:17410" ph="SELECT id_sp... Sport" />
           </folding>
         </state>
       </provider>
@@ -736,7 +931,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+            <element signature="e#2528#2529#0" expanded="true" />
+            <element signature="e#2558#2559#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2620#2621#0" expanded="true" />
+            <element signature="e#2664#2665#0" expanded="true" />
+            <element signature="e#2700#2701#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2802#2803#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+            <element signature="e#2938#2939#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3009#3010#0" expanded="true" />
+            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#3094#3095#0" expanded="true" />
+            <element signature="e#3138#3139#0" expanded="true" />
+            <element signature="e#3165#3166#0" expanded="true" />
+            <element signature="e#3191#3192#0" expanded="true" />
+            <element signature="e#3226#3227#0" expanded="true" />
+            <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3290#3291#0" expanded="true" />
+            <element signature="e#3323#3324#0" expanded="true" />
+            <element signature="e#3372#3373#0" expanded="true" />
+            <element signature="e#3416#3417#0" expanded="true" />
+            <element signature="e#3447#3448#0" expanded="true" />
+            <element signature="e#3477#3478#0" expanded="true" />
+            <element signature="e#3520#3521#0" expanded="true" />
+            <element signature="e#3558#3559#0" expanded="true" />
+            <element signature="e#3590#3591#0" expanded="true" />
+            <element signature="e#3621#3622#0" expanded="true" />
+            <element signature="e#3666#3667#0" expanded="true" />
+            <element signature="e#3706#3707#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="true" />
+            <element signature="e#3771#3772#0" expanded="true" />
+            <element signature="e#3818#3819#0" expanded="true" />
+            <element signature="e#3860#3861#0" expanded="true" />
+            <element signature="e#3891#3892#0" expanded="true" />
+            <element signature="e#3919#3920#0" expanded="true" />
+            <element signature="e#3960#3961#0" expanded="true" />
+            <element signature="e#3994#3995#0" expanded="true" />
+            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4055#4056#0" expanded="true" />
+            <element signature="e#4098#4099#0" expanded="true" />
+            <element signature="e#4134#4135#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -744,7 +988,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
           <caret line="169" column="31" lean-forward="true" selection-start-line="169" selection-start-column="31" selection-end-line="169" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1957#1958#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -752,12 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,14 +1008,26 @@
         <state relative-caret-position="4767">
           <caret line="227" column="5" lean-forward="true" selection-start-line="227" selection-start-column="5" selection-end-line="227" selection-end-column="5" />
           <folding>
-            <marker date="1516718362255" expanded="true" signature="318:446" ph="Select count... Utilisateur" />
-            <marker date="1516718362255" expanded="true" signature="2049:2119" ph="SELECT id_pa... " />
-            <marker date="1516718362255" expanded="true" signature="3123:3169" ph="SELECT Libel... Pays" />
-            <marker date="1516718362255" expanded="true" signature="4656:4731" ph="SELECT id_sp... " />
-            <marker date="1516718362255" expanded="true" signature="6111:6160" ph="SELECT Libel... Sport" />
-            <marker date="1516718362255" expanded="true" signature="7334:7361" ph="SELECT * FRO... athletes_java" />
-            <marker date="1516718362255" expanded="true" signature="10194:10219" ph="SELECT * FRO... " />
-            <marker date="1516718362255" expanded="true" signature="13235:13287" ph="SELECT Libel... equipe" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9613#9623#0" expanded="true" />
+            <element signature="e#13413#13425#0" expanded="true" />
+            <marker date="1517905967556" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1517905967556" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1517905967556" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1517905967556" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4700" ph="SELECT id_pa... Pays" />
+            <marker date="1517905967556" expanded="true" signature="6164:6233" ph="SELECT id_sp... " />
+            <marker date="1517905967556" expanded="true" signature="6164:6238" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="7264:7335" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="8432:8481" ph="SELECT Libel... Sport" />
+            <marker date="1517905967556" expanded="true" signature="9652:9679" ph="SELECT * FRO... athletes_java" />
+            <marker date="1517905967556" expanded="true" signature="13450:13475" ph="SELECT * FRO... " />
+            <marker date="1517905967556" expanded="true" signature="16503:16555" ph="SELECT Libel... equipe" />
+            <marker date="1517905967556" expanded="true" signature="17335:17410" ph="SELECT id_sp... Sport" />
           </folding>
         </state>
       </provider>
@@ -790,35 +1044,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controleur/Pays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4515">
-          <caret line="235" column="44" lean-forward="false" selection-start-line="235" selection-start-column="44" selection-end-line="235" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controleur/Evenements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+            <element signature="e#2528#2529#0" expanded="true" />
+            <element signature="e#2558#2559#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2620#2621#0" expanded="true" />
+            <element signature="e#2664#2665#0" expanded="true" />
+            <element signature="e#2700#2701#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2802#2803#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+            <element signature="e#2938#2939#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3009#3010#0" expanded="true" />
+            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#3094#3095#0" expanded="true" />
+            <element signature="e#3138#3139#0" expanded="true" />
+            <element signature="e#3165#3166#0" expanded="true" />
+            <element signature="e#3191#3192#0" expanded="true" />
+            <element signature="e#3226#3227#0" expanded="true" />
+            <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3290#3291#0" expanded="true" />
+            <element signature="e#3323#3324#0" expanded="true" />
+            <element signature="e#3372#3373#0" expanded="true" />
+            <element signature="e#3416#3417#0" expanded="true" />
+            <element signature="e#3447#3448#0" expanded="true" />
+            <element signature="e#3477#3478#0" expanded="true" />
+            <element signature="e#3520#3521#0" expanded="true" />
+            <element signature="e#3558#3559#0" expanded="true" />
+            <element signature="e#3590#3591#0" expanded="true" />
+            <element signature="e#3621#3622#0" expanded="true" />
+            <element signature="e#3666#3667#0" expanded="true" />
+            <element signature="e#3706#3707#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="true" />
+            <element signature="e#3771#3772#0" expanded="true" />
+            <element signature="e#3818#3819#0" expanded="true" />
+            <element signature="e#3860#3861#0" expanded="true" />
+            <element signature="e#3891#3892#0" expanded="true" />
+            <element signature="e#3919#3920#0" expanded="true" />
+            <element signature="e#3960#3961#0" expanded="true" />
+            <element signature="e#3994#3995#0" expanded="true" />
+            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4055#4056#0" expanded="true" />
+            <element signature="e#4098#4099#0" expanded="true" />
+            <element signature="e#4134#4135#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -827,7 +1101,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="39" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4515">
+          <caret line="235" column="44" lean-forward="false" selection-start-line="235" selection-start-column="44" selection-end-line="235" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1957#1958#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Evenements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Pays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -836,14 +1135,26 @@
         <state relative-caret-position="5019">
           <caret line="249" column="7" lean-forward="true" selection-start-line="249" selection-start-column="7" selection-end-line="249" selection-end-column="7" />
           <folding>
-            <marker date="1516718362255" expanded="true" signature="318:446" ph="Select count... Utilisateur" />
-            <marker date="1516718362255" expanded="true" signature="2049:2119" ph="SELECT id_pa... " />
-            <marker date="1516718362255" expanded="true" signature="3123:3169" ph="SELECT Libel... Pays" />
-            <marker date="1516718362255" expanded="true" signature="4656:4731" ph="SELECT id_sp... " />
-            <marker date="1516718362255" expanded="true" signature="6111:6160" ph="SELECT Libel... Sport" />
-            <marker date="1516718362255" expanded="true" signature="7334:7361" ph="SELECT * FRO... athletes_java" />
-            <marker date="1516718362255" expanded="true" signature="10194:10219" ph="SELECT * FRO... " />
-            <marker date="1516718362255" expanded="true" signature="13235:13287" ph="SELECT Libel... equipe" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9613#9623#0" expanded="true" />
+            <element signature="e#13413#13425#0" expanded="true" />
+            <marker date="1517905967556" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1517905967556" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1517905967556" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1517905967556" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4700" ph="SELECT id_pa... Pays" />
+            <marker date="1517905967556" expanded="true" signature="6164:6233" ph="SELECT id_sp... " />
+            <marker date="1517905967556" expanded="true" signature="6164:6238" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="7264:7335" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="8432:8481" ph="SELECT Libel... Sport" />
+            <marker date="1517905967556" expanded="true" signature="9652:9679" ph="SELECT * FRO... athletes_java" />
+            <marker date="1517905967556" expanded="true" signature="13450:13475" ph="SELECT * FRO... " />
+            <marker date="1517905967556" expanded="true" signature="16503:16555" ph="SELECT Libel... equipe" />
+            <marker date="1517905967556" expanded="true" signature="17335:17410" ph="SELECT id_sp... Sport" />
           </folding>
         </state>
       </provider>
@@ -869,14 +1180,26 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1516718362255" expanded="true" signature="318:446" ph="Select count... Utilisateur" />
-            <marker date="1516718362255" expanded="true" signature="2049:2119" ph="SELECT id_pa... " />
-            <marker date="1516718362255" expanded="true" signature="3123:3169" ph="SELECT Libel... Pays" />
-            <marker date="1516718362255" expanded="true" signature="4656:4731" ph="SELECT id_sp... " />
-            <marker date="1516718362255" expanded="true" signature="6111:6160" ph="SELECT Libel... Sport" />
-            <marker date="1516718362255" expanded="true" signature="7334:7361" ph="SELECT * FRO... athletes_java" />
-            <marker date="1516718362255" expanded="true" signature="10194:10219" ph="SELECT * FRO... " />
-            <marker date="1516718362255" expanded="true" signature="13235:13287" ph="SELECT Libel... equipe" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9613#9623#0" expanded="true" />
+            <element signature="e#13413#13425#0" expanded="true" />
+            <marker date="1517905967556" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1517905967556" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1517905967556" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1517905967556" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4700" ph="SELECT id_pa... Pays" />
+            <marker date="1517905967556" expanded="true" signature="6164:6233" ph="SELECT id_sp... " />
+            <marker date="1517905967556" expanded="true" signature="6164:6238" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="7264:7335" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="8432:8481" ph="SELECT Libel... Sport" />
+            <marker date="1517905967556" expanded="true" signature="9652:9679" ph="SELECT * FRO... athletes_java" />
+            <marker date="1517905967556" expanded="true" signature="13450:13475" ph="SELECT * FRO... " />
+            <marker date="1517905967556" expanded="true" signature="16503:16555" ph="SELECT Libel... equipe" />
+            <marker date="1517905967556" expanded="true" signature="17335:17410" ph="SELECT id_sp... Sport" />
           </folding>
         </state>
       </provider>
@@ -885,7 +1208,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+            <element signature="e#2528#2529#0" expanded="true" />
+            <element signature="e#2558#2559#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2620#2621#0" expanded="true" />
+            <element signature="e#2664#2665#0" expanded="true" />
+            <element signature="e#2700#2701#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2802#2803#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+            <element signature="e#2938#2939#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3009#3010#0" expanded="true" />
+            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#3094#3095#0" expanded="true" />
+            <element signature="e#3138#3139#0" expanded="true" />
+            <element signature="e#3165#3166#0" expanded="true" />
+            <element signature="e#3191#3192#0" expanded="true" />
+            <element signature="e#3226#3227#0" expanded="true" />
+            <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3290#3291#0" expanded="true" />
+            <element signature="e#3323#3324#0" expanded="true" />
+            <element signature="e#3372#3373#0" expanded="true" />
+            <element signature="e#3416#3417#0" expanded="true" />
+            <element signature="e#3447#3448#0" expanded="true" />
+            <element signature="e#3477#3478#0" expanded="true" />
+            <element signature="e#3520#3521#0" expanded="true" />
+            <element signature="e#3558#3559#0" expanded="true" />
+            <element signature="e#3590#3591#0" expanded="true" />
+            <element signature="e#3621#3622#0" expanded="true" />
+            <element signature="e#3666#3667#0" expanded="true" />
+            <element signature="e#3706#3707#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="true" />
+            <element signature="e#3771#3772#0" expanded="true" />
+            <element signature="e#3818#3819#0" expanded="true" />
+            <element signature="e#3860#3861#0" expanded="true" />
+            <element signature="e#3891#3892#0" expanded="true" />
+            <element signature="e#3919#3920#0" expanded="true" />
+            <element signature="e#3960#3961#0" expanded="true" />
+            <element signature="e#3994#3995#0" expanded="true" />
+            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4055#4056#0" expanded="true" />
+            <element signature="e#4098#4099#0" expanded="true" />
+            <element signature="e#4134#4135#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -894,23 +1266,27 @@
         <state relative-caret-position="17">
           <caret line="135" column="55" lean-forward="false" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="55" />
           <folding>
-            <marker date="1516718362255" expanded="true" signature="318:446" ph="Select count... Utilisateur" />
-            <marker date="1516718362255" expanded="true" signature="2049:2119" ph="SELECT id_pa... " />
-            <marker date="1516718362255" expanded="true" signature="3123:3169" ph="SELECT Libel... Pays" />
-            <marker date="1516718362255" expanded="true" signature="4656:4731" ph="SELECT id_sp... " />
-            <marker date="1516718362255" expanded="true" signature="6111:6160" ph="SELECT Libel... Sport" />
-            <marker date="1516718362255" expanded="true" signature="7334:7361" ph="SELECT * FRO... athletes_java" />
-            <marker date="1516718362255" expanded="true" signature="10194:10219" ph="SELECT * FRO... " />
-            <marker date="1516718362255" expanded="true" signature="13235:13287" ph="SELECT Libel... equipe" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9613#9623#0" expanded="true" />
+            <element signature="e#13413#13425#0" expanded="true" />
+            <marker date="1517905967556" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1517905967556" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1517905967556" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1517905967556" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4700" ph="SELECT id_pa... Pays" />
+            <marker date="1517905967556" expanded="true" signature="6164:6233" ph="SELECT id_sp... " />
+            <marker date="1517905967556" expanded="true" signature="6164:6238" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="7264:7335" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="8432:8481" ph="SELECT Libel... Sport" />
+            <marker date="1517905967556" expanded="true" signature="9652:9679" ph="SELECT * FRO... athletes_java" />
+            <marker date="1517905967556" expanded="true" signature="13450:13475" ph="SELECT * FRO... " />
+            <marker date="1517905967556" expanded="true" signature="16503:16555" ph="SELECT Libel... equipe" />
+            <marker date="1517905967556" expanded="true" signature="17335:17410" ph="SELECT id_sp... Sport" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controleur/Tableau.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -918,28 +1294,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vue/VueConnexion.java">
+    <entry file="file://$PROJECT_DIR$/src/controleur/Equipes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2079">
-          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+        <state relative-caret-position="487">
+          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/JTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="2716" column="0" lean-forward="false" selection-start-line="2716" selection-start-column="0" selection-end-line="2716" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
+    <entry file="file://$PROJECT_DIR$/src/controleur/Sports.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="80" column="1" lean-forward="false" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+        <state relative-caret-position="21">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Pays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Utilisateurs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Tableau.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -951,73 +1349,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controleur/Pays.java">
+    <entry file="file://$PROJECT_DIR$/src/vue/VueConnexion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="39" />
+        <state relative-caret-position="441">
+          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controleur/Equipes.java">
+    <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-          <folding>
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1159#1160#0" expanded="true" />
-            <element signature="e#1208#1209#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1342#1343#0" expanded="true" />
-            <element signature="e#1392#1393#0" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
-            <element signature="e#1467#1468#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1576#1577#0" expanded="true" />
-            <element signature="e#1613#1614#0" expanded="true" />
-            <element signature="e#1649#1650#0" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controleur/Athletes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="231">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+        <state relative-caret-position="-21">
+          <caret line="326" column="197" lean-forward="false" selection-start-line="326" selection-start-column="181" selection-end-line="326" selection-end-column="197" />
           <folding>
-            <marker date="1516718362255" expanded="true" signature="318:446" ph="Select count... Utilisateur" />
-            <marker date="1516718362255" expanded="true" signature="2049:2119" ph="SELECT id_pa... " />
-            <marker date="1516718362255" expanded="true" signature="3123:3169" ph="SELECT Libel... Pays" />
-            <marker date="1516718362255" expanded="true" signature="4656:4731" ph="SELECT id_sp... " />
-            <marker date="1516718362255" expanded="true" signature="6111:6160" ph="SELECT Libel... Sport" />
-            <marker date="1516718362255" expanded="true" signature="7334:7361" ph="SELECT * FRO... athletes_java" />
-            <marker date="1516718362255" expanded="true" signature="10194:10219" ph="SELECT * FRO... " />
-            <marker date="1516718362255" expanded="true" signature="13235:13287" ph="SELECT Libel... equipe" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9613#9623#0" expanded="true" />
+            <element signature="e#13413#13425#0" expanded="true" />
+            <marker date="1517905967556" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1517905967556" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1517905967556" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1517905967556" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1517905967556" expanded="true" signature="4633:4700" ph="SELECT id_pa... Pays" />
+            <marker date="1517905967556" expanded="true" signature="6164:6233" ph="SELECT id_sp... " />
+            <marker date="1517905967556" expanded="true" signature="6164:6238" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="7264:7335" ph="SELECT id_sp... Sport" />
+            <marker date="1517905967556" expanded="true" signature="8432:8481" ph="SELECT Libel... Sport" />
+            <marker date="1517905967556" expanded="true" signature="9652:9679" ph="SELECT * FRO... athletes_java" />
+            <marker date="1517905967556" expanded="true" signature="13450:13475" ph="SELECT * FRO... " />
+            <marker date="1517905967556" expanded="true" signature="16503:16555" ph="SELECT Libel... equipe" />
+            <marker date="1517905967556" expanded="true" signature="17335:17410" ph="SELECT id_sp... Sport" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Athletes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+            <element signature="e#2528#2529#0" expanded="true" />
+            <element signature="e#2558#2559#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2620#2621#0" expanded="true" />
+            <element signature="e#2664#2665#0" expanded="true" />
+            <element signature="e#2700#2701#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2802#2803#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+            <element signature="e#2938#2939#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3009#3010#0" expanded="true" />
+            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#3094#3095#0" expanded="true" />
+            <element signature="e#3138#3139#0" expanded="true" />
+            <element signature="e#3165#3166#0" expanded="true" />
+            <element signature="e#3191#3192#0" expanded="true" />
+            <element signature="e#3226#3227#0" expanded="true" />
+            <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3290#3291#0" expanded="true" />
+            <element signature="e#3323#3324#0" expanded="true" />
+            <element signature="e#3372#3373#0" expanded="true" />
+            <element signature="e#3416#3417#0" expanded="true" />
+            <element signature="e#3447#3448#0" expanded="true" />
+            <element signature="e#3477#3478#0" expanded="true" />
+            <element signature="e#3520#3521#0" expanded="true" />
+            <element signature="e#3558#3559#0" expanded="true" />
+            <element signature="e#3590#3591#0" expanded="true" />
+            <element signature="e#3621#3622#0" expanded="true" />
+            <element signature="e#3666#3667#0" expanded="true" />
+            <element signature="e#3706#3707#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="true" />
+            <element signature="e#3771#3772#0" expanded="true" />
+            <element signature="e#3818#3819#0" expanded="true" />
+            <element signature="e#3860#3861#0" expanded="true" />
+            <element signature="e#3891#3892#0" expanded="true" />
+            <element signature="e#3919#3920#0" expanded="true" />
+            <element signature="e#3960#3961#0" expanded="true" />
+            <element signature="e#3994#3995#0" expanded="true" />
+            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4055#4056#0" expanded="true" />
+            <element signature="e#4098#4099#0" expanded="true" />
+            <element signature="e#4134#4135#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="54" column="22" lean-forward="false" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="402">
+          <caret line="218" column="101" lean-forward="false" selection-start-line="218" selection-start-column="12" selection-end-line="218" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1957#1958#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
