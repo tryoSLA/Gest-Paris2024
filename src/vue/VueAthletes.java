@@ -211,22 +211,25 @@ public class VueAthletes extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e)
     {
-        String equipe = "";
         if (e.getSource() == this.btAjouter)
         {
             //System.out.println(idpays);
             //System.out.println(Modele.selectiIdWherePays(comboPays.getSelectedItem().toString()));
-            System.out.println(Modele.selectIdWhereEquipe(comboEquipe.getSelectedItem().toString()));
-            if (Modele.selectIdWhereEquipe(comboEquipe.getSelectedItem().toString()) == 0)
+            System.out.println("aaaa");
+            System.out.println(comboEquipe.getSelectedItem().toString());
+            System.out.println("aaaa");
+            if (comboEquipe.getSelectedItem().toString().equals(""))
             {
-                equipe = "NULL";
-                Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),txtPhoto.getText(),txtBiographie.getText(), equipe, Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
-                Modele.insertAthlete(unAthlete);
-                Object data [] = {unAthlete.getIdAthletes(),unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), unAthlete.getId_sport(), unAthlete.getId_pays()};
+                String equipe = "NULL";
+                System.out.println(equipe);
+                System.out.println("zzzz");
+                Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),txtPhoto.getText(),txtBiographie.getText(),equipe, Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
+                Modele.insertAthleteSansEquipe(unAthlete);
+                Object data [] = {unAthlete.getIdAthletes(),unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), "NULL", unAthlete.getId_pays()};
                 this.unTableau.add(data);
             }else{
                 Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),txtPhoto.getText(),txtBiographie.getText(), Modele.selectIdWhereEquipe(comboEquipe.getSelectedItem().toString()), Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
-                Modele.insertAthlete(unAthlete);
+                Modele.insertAthleteAvecEquipe(unAthlete);
                 Object data [] = {unAthlete.getIdAthletes(),unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), unAthlete.getId_sport(), unAthlete.getId_pays()};
                 this.unTableau.add(data);
             }
@@ -264,7 +267,7 @@ public class VueAthletes extends JPanel implements ActionListener {
         else if (e.getSource() == this.btSupprimer)
         {
             int idAthlete = Integer.parseInt(txtId.getText());
-            Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),txtPhoto.getText(),txtBiographie.getText(), Modele.selectIdWhereEquipe(comboEquipe.getSelectedItem().toString()), Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
+            Athletes unAthlete = new Athletes (idAthlete,txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),txtPhoto.getText(),txtBiographie.getText(), Modele.selectIdWhereEquipe(comboEquipe.getSelectedItem().toString()), Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
             Modele.deleteAthlete(unAthlete);
             JOptionPane.showMessageDialog(this, "Supression effectuée");
             txtNom.setText("");
@@ -285,7 +288,7 @@ public class VueAthletes extends JPanel implements ActionListener {
         else if (e.getSource() == this.btMiseAJour)
         {
             int idAthlete = Integer.parseInt(txtId.getText());
-            Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),txtPhoto.getText(),txtBiographie.getText(), Modele.selectIdWhereEquipe(comboEquipe.getSelectedItem().toString()), Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
+            Athletes unAthlete = new Athletes (idAthlete,txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),txtPhoto.getText(),txtBiographie.getText(), Modele.selectIdWhereEquipe(comboEquipe.getSelectedItem().toString()), Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
             Modele.updateAthlete(unAthlete);
             JOptionPane.showMessageDialog(this, "Mise à jour effectuée");
             Object data [] = {unAthlete.getIdAthletes(),unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), unAthlete.getId_sport(), unAthlete.getId_pays()};

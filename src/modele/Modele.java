@@ -148,7 +148,7 @@ public class Modele {
 	public static int selectIdWherePays(String libellePays) {
 		int idpays = 0;
 
-		String requete = "SELECT id_pays FROM Pays WHERE libelle_pays = '" + libellePays + "';";
+		String requete = "SELECT id_pays FROM Pays WHERE libelle_pays = \"" + libellePays + "\";";
 		System.out.println(requete);
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
@@ -226,7 +226,7 @@ public class Modele {
 	public static int selectIdWhereSport(String libelleSport) {
 		int idsport = 0;
 
-		String requete = "SELECT id_sport FROM Sport WHERE libelle_sport = '" + libelleSport + "';";
+		String requete = "SELECT id_sport FROM Sport WHERE libelle_sport = \"" + libelleSport + "\";";
 		System.out.println(requete);
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
@@ -336,7 +336,7 @@ public class Modele {
 		return listAthletes;
 	}
 
-	public static void insertAthlete(Athletes unAthlete) {
+	public static void insertAthleteAvecEquipe(Athletes unAthlete) {
 		String requete =
 				"CALL insert_athlete ( '" + unAthlete.getNom() + "','" +
 						unAthlete.getPrenom() + "'," +
@@ -355,10 +355,28 @@ public class Modele {
 		ExecutionBdd(uneBdd, requete);
 	}
 
+	public static void insertAthleteSansEquipe(Athletes unAthlete) {
+		String requete =
+				"CALL insert_athlete ( '" + unAthlete.getNom() + "','" +
+						unAthlete.getPrenom() + "'," +
+						unAthlete.getAge() + ",'" +
+						unAthlete.getGenre() + "'," +
+						unAthlete.getTaille() + "," +
+						unAthlete.getPoids() + ",'" +
+						unAthlete.getPhoto() + "','" +
+						unAthlete.getBiographie() + "'," +
+						unAthlete.getId_pays() + "," +
+						unAthlete.getId_equipe_string() + "," +
+						unAthlete.getId_sport() + ");";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+	}
+
 	public static void updateAthlete(Athletes unAthlete) {
 		String requete =
-				"UPDATE athlete_java SET id_personne = " + unAthlete.getIdAthletes() +
-						",nom = '" + unAthlete.getNom() +
+				"UPDATE athlete_java SET nom = '" + unAthlete.getNom() +
 						"',prenom = '" + unAthlete.getPrenom() +
 						"',age = " + unAthlete.getAge() +
 						",genre = '" + unAthlete.getGenre() +
@@ -369,7 +387,7 @@ public class Modele {
 						",id_sport = " + unAthlete.getId_sport() +
 						",id_pays = " + unAthlete.getId_pays() +
 						",id_equipe = " + unAthlete.getId_equipe() +
-						"WHERE id_personne = " + unAthlete.getIdAthletes() +
+						" WHERE id_personne = " + unAthlete.getIdAthletes() +
 						";";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
@@ -510,7 +528,7 @@ public class Modele {
 	{
 		int idequipe = 0;
 
-		String requete = "SELECT id_equipe FROM Equipe WHERE libelle_equipe = '" + libelleEquipe + "';";
+		String requete = "SELECT id_equipe FROM Equipe WHERE libelle_equipe = \"" + libelleEquipe + "\";";
 		System.out.println(requete);
 		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
 		try{

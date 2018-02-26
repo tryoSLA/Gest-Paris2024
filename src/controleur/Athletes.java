@@ -173,4 +173,11 @@ public class Athletes
         this.taille = taille;
     }
 
+    public String getId_equipe_string() {
+        return id_equipe_string;
+    }
+
+    public void setId_equipe_string(String id_equipe_string) {
+        this.id_equipe_string = id_equipe_string;
+    }
 }
