@@ -69,6 +69,22 @@ public class Athletes
         this.id_pays = id_pays;
     }
 
+    public Athletes(int id,String nom, String prenom, int age,String genre, float taille, float poids,String photo, String biographie, String id_equipe_string, int id_sport,int id_pays)
+    {
+        this.idAthletes = id;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.genre = genre;
+        this.photo = photo;
+        this.biographie = biographie;
+        this.age = age;
+        this.taille = taille;
+        this.poids = poids;
+        this.id_equipe_string = id_equipe_string;
+        this.id_sport = id_sport;
+        this.id_pays = id_pays;
+    }
+
     public static int getNbChampAthletes() {
         return nbChampAthletes;
     }

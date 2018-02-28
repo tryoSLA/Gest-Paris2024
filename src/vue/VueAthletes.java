@@ -51,7 +51,7 @@ public class VueAthletes extends JPanel implements ActionListener {
         //Construction de la Jtable
         String entete[] = {"Id","Nom", "Prénom", "Age", "Genre", "Taille","Poids","Photo", "Biographie", "Equipe", "Sport","Pays"};
 
-        unTableau = new Tableau(this.recupererLesAthletes(), entete);
+        this.unTableau = new Tableau(this.recupererLesAthletes(), entete);
 
         this.tableAthletes = new JTable(unTableau){
             public boolean isCellEditable(int row, int column){
@@ -213,16 +213,9 @@ public class VueAthletes extends JPanel implements ActionListener {
     {
         if (e.getSource() == this.btAjouter)
         {
-            //System.out.println(idpays);
-            //System.out.println(Modele.selectiIdWherePays(comboPays.getSelectedItem().toString()));
-            System.out.println("aaaa");
-            System.out.println(comboEquipe.getSelectedItem().toString());
-            System.out.println("aaaa");
             if (comboEquipe.getSelectedItem().toString().equals(""))
             {
                 String equipe = "NULL";
-                System.out.println(equipe);
-                System.out.println("zzzz");
                 Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),txtPhoto.getText(),txtBiographie.getText(),equipe, Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
                 Modele.insertAthleteSansEquipe(unAthlete);
                 Object data [] = {unAthlete.getIdAthletes(),unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), "NULL", unAthlete.getId_pays()};
@@ -288,14 +281,26 @@ public class VueAthletes extends JPanel implements ActionListener {
         else if (e.getSource() == this.btMiseAJour)
         {
             int idAthlete = Integer.parseInt(txtId.getText());
-            Athletes unAthlete = new Athletes (idAthlete,txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),txtPhoto.getText(),txtBiographie.getText(), Modele.selectIdWhereEquipe(comboEquipe.getSelectedItem().toString()), Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
-            Modele.updateAthlete(unAthlete);
-            JOptionPane.showMessageDialog(this, "Mise à jour effectuée");
-            Object data [] = {unAthlete.getIdAthletes(),unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), unAthlete.getId_sport(), unAthlete.getId_pays()};
-            int rowIndex = tableAthletes.getSelectedRow();
-            this.unTableau.update(rowIndex, data);
-        }
 
+            if (comboEquipe.getSelectedItem().toString().equals(""))
+            {
+                String equipe = "NULL";
+                Athletes unAthlete = new Athletes (idAthlete,txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),txtPhoto.getText(),txtBiographie.getText(),equipe, Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
+                Modele.updateAthleteSansEquipe(unAthlete);
+                Object data [] = {unAthlete.getIdAthletes(),unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), unAthlete.getId_sport(), unAthlete.getId_pays()};
+                int rowIndex = tableAthletes.getSelectedRow();
+                System.out.println(rowIndex);
+                if (unTableau != null)this.unTableau.update(rowIndex, data);
+            }else{
+                Athletes unAthlete = new Athletes (idAthlete,txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),txtPhoto.getText(),txtBiographie.getText(), Modele.selectIdWhereEquipe(comboEquipe.getSelectedItem().toString()), Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
+                Modele.updateAthleteAvecEquipe(unAthlete);
+                Object data [] = {unAthlete.getIdAthletes(),unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), unAthlete.getId_sport(), unAthlete.getId_pays()};
+                int rowIndex = tableAthletes.getSelectedRow();
+                System.out.println(rowIndex);
+                if (unTableau != null)
+                this.unTableau.update(rowIndex, data);
+            }
+        }
     }
     //recuperer les données sous formes d'une matrice
     private Object[][] recupererLesAthletes ()

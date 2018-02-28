@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="22e8f376-dff3-4af5-9811-ce363fc557df" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bin/controleur/Athletes.class" afterPath="$PROJECT_DIR$/bin/controleur/Athletes.class" />
       <change beforePath="$PROJECT_DIR$/bin/modele/Modele.class" afterPath="$PROJECT_DIR$/bin/modele/Modele.class" />
-      <change beforePath="$PROJECT_DIR$/bin/vue/VueAthletes.class" afterPath="$PROJECT_DIR$/bin/vue/VueAthletes.class" />
       <change beforePath="$PROJECT_DIR$/src/controleur/Athletes.java" afterPath="$PROJECT_DIR$/src/controleur/Athletes.java" />
+      <change beforePath="$PROJECT_DIR$/src/controleur/Tableau.java" afterPath="$PROJECT_DIR$/src/controleur/Tableau.java" />
       <change beforePath="$PROJECT_DIR$/src/modele/Modele.java" afterPath="$PROJECT_DIR$/src/modele/Modele.java" />
       <change beforePath="$PROJECT_DIR$/src/vue/VueAthletes.java" afterPath="$PROJECT_DIR$/src/vue/VueAthletes.java" />
     </list>
@@ -32,138 +31,133 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VueAthletes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5775">
-              <caret line="290" column="57" lean-forward="false" selection-start-line="290" selection-start-column="57" selection-end-line="290" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1957#1958#0" expanded="true" />
-                <element signature="e#2001#2002#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VueGeneral.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VueConnexion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueConnexion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2331">
-              <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controleur/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Modele.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1518533306814" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-                <marker date="1518533306814" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-                <marker date="1518533306814" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-                <marker date="1518533306814" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-                <marker date="1518533306814" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
-                <marker date="1518533306814" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
-                <marker date="1518533306814" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-                <marker date="1518533306814" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
-                <marker date="1518533306814" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
-                <marker date="1518533306814" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
-                <marker date="1518533306814" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
-                <marker date="1518533306814" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
-                <marker date="1518533306814" expanded="true" signature="14080:14105" ph="SELECT * FRO... " />
-                <marker date="1518533306814" expanded="true" signature="17133:17185" ph="SELECT Libel... equipe" />
-                <marker date="1518533306814" expanded="true" signature="17965:18016" ph="SELECT id_eq... Equipe" />
-                <marker date="1518533306814" expanded="true" signature="17965:18019" ph="SELECT id_eq... Equipe" />
-                <marker date="1518533306814" expanded="true" signature="17965:18040" ph="SELECT id_sp... Sport" />
-                <marker date="1518533306814" expanded="true" signature="17965:18042" ph="SELECT id_eq... Equipe" />
-                <marker date="1518533306814" expanded="true" signature="17965:18043" ph="SELECT id_eq... Equipe" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Athletes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controleur/Athletes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2583">
-              <caret line="175" column="41" lean-forward="false" selection-start-line="175" selection-start-column="41" selection-end-line="175" selection-end-column="41" />
+            <state relative-caret-position="242">
+              <caret line="73" column="29" lean-forward="true" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
               <folding>
-                <element signature="e#2464#2465#0" expanded="true" />
-                <element signature="e#2490#2491#0" expanded="true" />
-                <element signature="e#2528#2529#0" expanded="true" />
-                <element signature="e#2558#2559#0" expanded="true" />
-                <element signature="e#2591#2592#0" expanded="true" />
-                <element signature="e#2620#2621#0" expanded="true" />
-                <element signature="e#2664#2665#0" expanded="true" />
-                <element signature="e#2700#2701#0" expanded="true" />
-                <element signature="e#2732#2733#0" expanded="true" />
-                <element signature="e#2760#2761#0" expanded="true" />
-                <element signature="e#2802#2803#0" expanded="true" />
-                <element signature="e#2836#2837#0" expanded="true" />
-                <element signature="e#2868#2869#0" expanded="true" />
-                <element signature="e#2896#2897#0" expanded="true" />
-                <element signature="e#2938#2939#0" expanded="true" />
-                <element signature="e#2972#2973#0" expanded="true" />
-                <element signature="e#3009#3010#0" expanded="true" />
-                <element signature="e#3042#3043#0" expanded="true" />
-                <element signature="e#3094#3095#0" expanded="true" />
-                <element signature="e#3138#3139#0" expanded="true" />
-                <element signature="e#3165#3166#0" expanded="true" />
-                <element signature="e#3191#3192#0" expanded="true" />
-                <element signature="e#3226#3227#0" expanded="true" />
-                <element signature="e#3256#3257#0" expanded="true" />
-                <element signature="e#3290#3291#0" expanded="true" />
-                <element signature="e#3323#3324#0" expanded="true" />
-                <element signature="e#3372#3373#0" expanded="true" />
-                <element signature="e#3416#3417#0" expanded="true" />
-                <element signature="e#3447#3448#0" expanded="true" />
-                <element signature="e#3477#3478#0" expanded="true" />
-                <element signature="e#3520#3521#0" expanded="true" />
-                <element signature="e#3558#3559#0" expanded="true" />
-                <element signature="e#3590#3591#0" expanded="true" />
-                <element signature="e#3621#3622#0" expanded="true" />
-                <element signature="e#3666#3667#0" expanded="true" />
-                <element signature="e#3706#3707#0" expanded="true" />
-                <element signature="e#3739#3740#0" expanded="true" />
-                <element signature="e#3771#3772#0" expanded="true" />
-                <element signature="e#3818#3819#0" expanded="true" />
-                <element signature="e#3860#3861#0" expanded="true" />
-                <element signature="e#3891#3892#0" expanded="true" />
-                <element signature="e#3919#3920#0" expanded="true" />
-                <element signature="e#3960#3961#0" expanded="true" />
-                <element signature="e#3994#3995#0" expanded="true" />
-                <element signature="e#4026#4027#0" expanded="true" />
-                <element signature="e#4055#4056#0" expanded="true" />
-                <element signature="e#4098#4099#0" expanded="true" />
-                <element signature="e#4134#4135#0" expanded="true" />
-                <element signature="e#4216#4217#0" expanded="true" />
-                <element signature="e#4280#4281#0" expanded="true" />
-                <element signature="e#4336#4337#0" expanded="true" />
+                <element signature="e#3039#3040#0" expanded="true" />
+                <element signature="e#3065#3066#0" expanded="true" />
+                <element signature="e#3103#3104#0" expanded="true" />
+                <element signature="e#3133#3134#0" expanded="true" />
+                <element signature="e#3166#3167#0" expanded="true" />
+                <element signature="e#3195#3196#0" expanded="true" />
+                <element signature="e#3239#3240#0" expanded="true" />
+                <element signature="e#3275#3276#0" expanded="true" />
+                <element signature="e#3307#3308#0" expanded="true" />
+                <element signature="e#3335#3336#0" expanded="true" />
+                <element signature="e#3377#3378#0" expanded="true" />
+                <element signature="e#3411#3412#0" expanded="true" />
+                <element signature="e#3443#3444#0" expanded="true" />
+                <element signature="e#3471#3472#0" expanded="true" />
+                <element signature="e#3513#3514#0" expanded="true" />
+                <element signature="e#3547#3548#0" expanded="true" />
+                <element signature="e#3584#3585#0" expanded="true" />
+                <element signature="e#3617#3618#0" expanded="true" />
+                <element signature="e#3669#3670#0" expanded="true" />
+                <element signature="e#3713#3714#0" expanded="true" />
+                <element signature="e#3740#3741#0" expanded="true" />
+                <element signature="e#3766#3767#0" expanded="true" />
+                <element signature="e#3801#3802#0" expanded="true" />
+                <element signature="e#3831#3832#0" expanded="true" />
+                <element signature="e#3865#3866#0" expanded="true" />
+                <element signature="e#3898#3899#0" expanded="true" />
+                <element signature="e#3947#3948#0" expanded="true" />
+                <element signature="e#3991#3992#0" expanded="true" />
+                <element signature="e#4022#4023#0" expanded="true" />
+                <element signature="e#4052#4053#0" expanded="true" />
+                <element signature="e#4095#4096#0" expanded="true" />
+                <element signature="e#4133#4134#0" expanded="true" />
+                <element signature="e#4165#4166#0" expanded="true" />
+                <element signature="e#4196#4197#0" expanded="true" />
+                <element signature="e#4241#4242#0" expanded="true" />
+                <element signature="e#4281#4282#0" expanded="true" />
+                <element signature="e#4314#4315#0" expanded="true" />
+                <element signature="e#4346#4347#0" expanded="true" />
+                <element signature="e#4393#4394#0" expanded="true" />
+                <element signature="e#4435#4436#0" expanded="true" />
+                <element signature="e#4466#4467#0" expanded="true" />
+                <element signature="e#4494#4495#0" expanded="true" />
+                <element signature="e#4535#4536#0" expanded="true" />
+                <element signature="e#4569#4570#0" expanded="true" />
+                <element signature="e#4601#4602#0" expanded="true" />
+                <element signature="e#4630#4631#0" expanded="true" />
+                <element signature="e#4673#4674#0" expanded="true" />
+                <element signature="e#4709#4710#0" expanded="true" />
+                <element signature="e#4752#4753#0" expanded="true" />
+                <element signature="e#4791#4792#0" expanded="true" />
+                <element signature="e#4855#4856#0" expanded="true" />
+                <element signature="e#4911#4912#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JTable.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/JTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2717" column="72" lean-forward="true" selection-start-line="2716" selection-start-column="5" selection-end-line="2717" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Modele.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="398" column="43" lean-forward="false" selection-start-line="398" selection-start-column="43" selection-end-line="398" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2724#2730#0" expanded="true" />
+                <element signature="e#6133#6141#0" expanded="true" />
+                <element signature="e#9617#9627#0" expanded="true" />
+                <element signature="e#15132#15144#0" expanded="true" />
+                <marker date="1519731800834" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+                <marker date="1519731800834" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+                <marker date="1519731800834" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+                <marker date="1519731800834" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+                <marker date="1519731800834" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+                <marker date="1519731800834" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+                <marker date="1519731800834" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+                <marker date="1519731800834" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
+                <marker date="1519731800834" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
+                <marker date="1519731800834" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
+                <marker date="1519731800834" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
+                <marker date="1519731800834" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
+                <marker date="1519731800834" expanded="true" signature="15169:15194" ph="SELECT * FRO... " />
+                <marker date="1519731800834" expanded="true" signature="18222:18274" ph="SELECT Libel... equipe" />
+                <marker date="1519731800834" expanded="true" signature="19054:19105" ph="SELECT id_eq... Equipe" />
+                <marker date="1519731800834" expanded="true" signature="19054:19108" ph="SELECT id_eq... Equipe" />
+                <marker date="1519731800834" expanded="true" signature="19054:19129" ph="SELECT id_sp... Sport" />
+                <marker date="1519731800834" expanded="true" signature="19054:19131" ph="SELECT id_eq... Equipe" />
+                <marker date="1519731800834" expanded="true" signature="19054:19132" ph="SELECT id_eq... Equipe" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tableau.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controleur/Tableau.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VueAthletes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="292" column="38" lean-forward="false" selection-start-line="292" selection-start-column="38" selection-end-line="292" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1962#1963#0" expanded="true" />
+                <element signature="e#2006#2007#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,6 +179,7 @@
       <find>panelEdition</find>
       <find>array</find>
       <find>recupererLesAthletes</find>
+      <find>untableau</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,8 +198,9 @@
         <option value="$PROJECT_DIR$/src/controleur/Equipes.java" />
         <option value="$PROJECT_DIR$/src/vue/VueGeneral.java" />
         <option value="$PROJECT_DIR$/src/controleur/Athletes.java" />
-        <option value="$PROJECT_DIR$/src/vue/VueAthletes.java" />
         <option value="$PROJECT_DIR$/src/modele/Modele.java" />
+        <option value="$PROJECT_DIR$/src/vue/VueAthletes.java" />
+        <option value="$PROJECT_DIR$/src/controleur/Tableau.java" />
       </list>
     </option>
   </component>
@@ -215,7 +211,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="132" />
+    <option name="x" value="-8" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
   </component>
@@ -236,8 +232,6 @@
     <panes>
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,12 +266,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/Cours/Calculatrice" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -421,16 +418,19 @@
       <workItem from="1517905125493" duration="2699000" />
       <workItem from="1518531164600" duration="1762000" />
       <workItem from="1518532954436" duration="997000" />
-      <workItem from="1518974729132" duration="635000" />
+      <workItem from="1518974729132" duration="979000" />
+      <workItem from="1519151052567" duration="9000" />
+      <workItem from="1519461468542" duration="763000" />
+      <workItem from="1519726058582" duration="2264000" />
+      <workItem from="1519729070141" duration="4585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54640000" />
+    <option name="totallyTimeSpent" value="62605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -441,11 +441,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.322691" sideWeight="0.5042965" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.322691" sideWeight="0.49570355" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.322691" sideWeight="0.49570355" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05907626" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29444444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -508,57 +508,58 @@
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="e#2464#2465#0" expanded="true" />
-            <element signature="e#2490#2491#0" expanded="true" />
-            <element signature="e#2528#2529#0" expanded="true" />
-            <element signature="e#2558#2559#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#2664#2665#0" expanded="true" />
-            <element signature="e#2700#2701#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2836#2837#0" expanded="true" />
-            <element signature="e#2868#2869#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2938#2939#0" expanded="true" />
-            <element signature="e#2972#2973#0" expanded="true" />
-            <element signature="e#3009#3010#0" expanded="true" />
-            <element signature="e#3042#3043#0" expanded="true" />
-            <element signature="e#3094#3095#0" expanded="true" />
-            <element signature="e#3138#3139#0" expanded="true" />
-            <element signature="e#3165#3166#0" expanded="true" />
-            <element signature="e#3191#3192#0" expanded="true" />
-            <element signature="e#3226#3227#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-            <element signature="e#3290#3291#0" expanded="true" />
-            <element signature="e#3323#3324#0" expanded="true" />
-            <element signature="e#3372#3373#0" expanded="true" />
-            <element signature="e#3416#3417#0" expanded="true" />
-            <element signature="e#3447#3448#0" expanded="true" />
-            <element signature="e#3477#3478#0" expanded="true" />
-            <element signature="e#3520#3521#0" expanded="true" />
-            <element signature="e#3558#3559#0" expanded="true" />
-            <element signature="e#3590#3591#0" expanded="true" />
-            <element signature="e#3621#3622#0" expanded="true" />
-            <element signature="e#3666#3667#0" expanded="true" />
-            <element signature="e#3706#3707#0" expanded="true" />
-            <element signature="e#3739#3740#0" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3818#3819#0" expanded="true" />
-            <element signature="e#3860#3861#0" expanded="true" />
-            <element signature="e#3891#3892#0" expanded="true" />
-            <element signature="e#3919#3920#0" expanded="true" />
-            <element signature="e#3960#3961#0" expanded="true" />
-            <element signature="e#3994#3995#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
-            <element signature="e#4055#4056#0" expanded="true" />
-            <element signature="e#4098#4099#0" expanded="true" />
-            <element signature="e#4134#4135#0" expanded="true" />
-            <element signature="e#4216#4217#0" expanded="true" />
-            <element signature="e#4280#4281#0" expanded="true" />
-            <element signature="e#4336#4337#0" expanded="true" />
+            <element signature="e#3039#3040#0" expanded="true" />
+            <element signature="e#3065#3066#0" expanded="true" />
+            <element signature="e#3103#3104#0" expanded="true" />
+            <element signature="e#3133#3134#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="e#3195#3196#0" expanded="true" />
+            <element signature="e#3239#3240#0" expanded="true" />
+            <element signature="e#3275#3276#0" expanded="true" />
+            <element signature="e#3307#3308#0" expanded="true" />
+            <element signature="e#3335#3336#0" expanded="true" />
+            <element signature="e#3377#3378#0" expanded="true" />
+            <element signature="e#3411#3412#0" expanded="true" />
+            <element signature="e#3443#3444#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+            <element signature="e#3513#3514#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3584#3585#0" expanded="true" />
+            <element signature="e#3617#3618#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3713#3714#0" expanded="true" />
+            <element signature="e#3740#3741#0" expanded="true" />
+            <element signature="e#3766#3767#0" expanded="true" />
+            <element signature="e#3801#3802#0" expanded="true" />
+            <element signature="e#3831#3832#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
+            <element signature="e#3898#3899#0" expanded="true" />
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#3991#3992#0" expanded="true" />
+            <element signature="e#4022#4023#0" expanded="true" />
+            <element signature="e#4052#4053#0" expanded="true" />
+            <element signature="e#4095#4096#0" expanded="true" />
+            <element signature="e#4133#4134#0" expanded="true" />
+            <element signature="e#4165#4166#0" expanded="true" />
+            <element signature="e#4196#4197#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#4281#4282#0" expanded="true" />
+            <element signature="e#4314#4315#0" expanded="true" />
+            <element signature="e#4346#4347#0" expanded="true" />
+            <element signature="e#4393#4394#0" expanded="true" />
+            <element signature="e#4435#4436#0" expanded="true" />
+            <element signature="e#4466#4467#0" expanded="true" />
+            <element signature="e#4494#4495#0" expanded="true" />
+            <element signature="e#4535#4536#0" expanded="true" />
+            <element signature="e#4569#4570#0" expanded="true" />
+            <element signature="e#4601#4602#0" expanded="true" />
+            <element signature="e#4630#4631#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="e#4709#4710#0" expanded="true" />
+            <element signature="e#4752#4753#0" expanded="true" />
+            <element signature="e#4791#4792#0" expanded="true" />
+            <element signature="e#4855#4856#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -569,25 +570,29 @@
           <caret line="135" column="55" lean-forward="false" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1518533306814" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1518533306814" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1518533306814" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1518533306814" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1518533306814" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
-            <marker date="1518533306814" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
-            <marker date="1518533306814" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
-            <marker date="1518533306814" expanded="true" signature="14080:14105" ph="SELECT * FRO... " />
-            <marker date="1518533306814" expanded="true" signature="17133:17185" ph="SELECT Libel... equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18016" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18019" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18040" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="17965:18042" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18043" ph="SELECT id_eq... Equipe" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6133#6141#0" expanded="true" />
+            <element signature="e#9617#9627#0" expanded="true" />
+            <element signature="e#15132#15144#0" expanded="true" />
+            <marker date="1519731800834" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1519731800834" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1519731800834" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1519731800834" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1519731800834" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
+            <marker date="1519731800834" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
+            <marker date="1519731800834" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
+            <marker date="1519731800834" expanded="true" signature="15169:15194" ph="SELECT * FRO... " />
+            <marker date="1519731800834" expanded="true" signature="18222:18274" ph="SELECT Libel... equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19105" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19108" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19129" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="19054:19131" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19132" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -606,8 +611,8 @@
           <caret line="139" column="34" lean-forward="true" selection-start-line="139" selection-start-column="34" selection-end-line="139" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#2001#2002#0" expanded="true" />
+            <element signature="e#1962#1963#0" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -632,57 +637,58 @@
         <state relative-caret-position="68">
           <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="15" />
           <folding>
-            <element signature="e#2464#2465#0" expanded="true" />
-            <element signature="e#2490#2491#0" expanded="true" />
-            <element signature="e#2528#2529#0" expanded="true" />
-            <element signature="e#2558#2559#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#2664#2665#0" expanded="true" />
-            <element signature="e#2700#2701#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2836#2837#0" expanded="true" />
-            <element signature="e#2868#2869#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2938#2939#0" expanded="true" />
-            <element signature="e#2972#2973#0" expanded="true" />
-            <element signature="e#3009#3010#0" expanded="true" />
-            <element signature="e#3042#3043#0" expanded="true" />
-            <element signature="e#3094#3095#0" expanded="true" />
-            <element signature="e#3138#3139#0" expanded="true" />
-            <element signature="e#3165#3166#0" expanded="true" />
-            <element signature="e#3191#3192#0" expanded="true" />
-            <element signature="e#3226#3227#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-            <element signature="e#3290#3291#0" expanded="true" />
-            <element signature="e#3323#3324#0" expanded="true" />
-            <element signature="e#3372#3373#0" expanded="true" />
-            <element signature="e#3416#3417#0" expanded="true" />
-            <element signature="e#3447#3448#0" expanded="true" />
-            <element signature="e#3477#3478#0" expanded="true" />
-            <element signature="e#3520#3521#0" expanded="true" />
-            <element signature="e#3558#3559#0" expanded="true" />
-            <element signature="e#3590#3591#0" expanded="true" />
-            <element signature="e#3621#3622#0" expanded="true" />
-            <element signature="e#3666#3667#0" expanded="true" />
-            <element signature="e#3706#3707#0" expanded="true" />
-            <element signature="e#3739#3740#0" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3818#3819#0" expanded="true" />
-            <element signature="e#3860#3861#0" expanded="true" />
-            <element signature="e#3891#3892#0" expanded="true" />
-            <element signature="e#3919#3920#0" expanded="true" />
-            <element signature="e#3960#3961#0" expanded="true" />
-            <element signature="e#3994#3995#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
-            <element signature="e#4055#4056#0" expanded="true" />
-            <element signature="e#4098#4099#0" expanded="true" />
-            <element signature="e#4134#4135#0" expanded="true" />
-            <element signature="e#4216#4217#0" expanded="true" />
-            <element signature="e#4280#4281#0" expanded="true" />
-            <element signature="e#4336#4337#0" expanded="true" />
+            <element signature="e#3039#3040#0" expanded="true" />
+            <element signature="e#3065#3066#0" expanded="true" />
+            <element signature="e#3103#3104#0" expanded="true" />
+            <element signature="e#3133#3134#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="e#3195#3196#0" expanded="true" />
+            <element signature="e#3239#3240#0" expanded="true" />
+            <element signature="e#3275#3276#0" expanded="true" />
+            <element signature="e#3307#3308#0" expanded="true" />
+            <element signature="e#3335#3336#0" expanded="true" />
+            <element signature="e#3377#3378#0" expanded="true" />
+            <element signature="e#3411#3412#0" expanded="true" />
+            <element signature="e#3443#3444#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+            <element signature="e#3513#3514#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3584#3585#0" expanded="true" />
+            <element signature="e#3617#3618#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3713#3714#0" expanded="true" />
+            <element signature="e#3740#3741#0" expanded="true" />
+            <element signature="e#3766#3767#0" expanded="true" />
+            <element signature="e#3801#3802#0" expanded="true" />
+            <element signature="e#3831#3832#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
+            <element signature="e#3898#3899#0" expanded="true" />
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#3991#3992#0" expanded="true" />
+            <element signature="e#4022#4023#0" expanded="true" />
+            <element signature="e#4052#4053#0" expanded="true" />
+            <element signature="e#4095#4096#0" expanded="true" />
+            <element signature="e#4133#4134#0" expanded="true" />
+            <element signature="e#4165#4166#0" expanded="true" />
+            <element signature="e#4196#4197#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#4281#4282#0" expanded="true" />
+            <element signature="e#4314#4315#0" expanded="true" />
+            <element signature="e#4346#4347#0" expanded="true" />
+            <element signature="e#4393#4394#0" expanded="true" />
+            <element signature="e#4435#4436#0" expanded="true" />
+            <element signature="e#4466#4467#0" expanded="true" />
+            <element signature="e#4494#4495#0" expanded="true" />
+            <element signature="e#4535#4536#0" expanded="true" />
+            <element signature="e#4569#4570#0" expanded="true" />
+            <element signature="e#4601#4602#0" expanded="true" />
+            <element signature="e#4630#4631#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="e#4709#4710#0" expanded="true" />
+            <element signature="e#4752#4753#0" expanded="true" />
+            <element signature="e#4791#4792#0" expanded="true" />
+            <element signature="e#4855#4856#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -707,25 +713,29 @@
           <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1518533306814" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1518533306814" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1518533306814" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1518533306814" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1518533306814" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
-            <marker date="1518533306814" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
-            <marker date="1518533306814" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
-            <marker date="1518533306814" expanded="true" signature="14080:14105" ph="SELECT * FRO... " />
-            <marker date="1518533306814" expanded="true" signature="17133:17185" ph="SELECT Libel... equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18016" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18019" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18040" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="17965:18042" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18043" ph="SELECT id_eq... Equipe" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6133#6141#0" expanded="true" />
+            <element signature="e#9617#9627#0" expanded="true" />
+            <element signature="e#15132#15144#0" expanded="true" />
+            <marker date="1519731800834" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1519731800834" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1519731800834" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1519731800834" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1519731800834" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
+            <marker date="1519731800834" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
+            <marker date="1519731800834" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
+            <marker date="1519731800834" expanded="true" signature="15169:15194" ph="SELECT * FRO... " />
+            <marker date="1519731800834" expanded="true" signature="18222:18274" ph="SELECT Libel... equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19105" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19108" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19129" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="19054:19131" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19132" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -752,25 +762,29 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1518533306814" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1518533306814" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1518533306814" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1518533306814" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1518533306814" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
-            <marker date="1518533306814" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
-            <marker date="1518533306814" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
-            <marker date="1518533306814" expanded="true" signature="14080:14105" ph="SELECT * FRO... " />
-            <marker date="1518533306814" expanded="true" signature="17133:17185" ph="SELECT Libel... equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18016" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18019" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18040" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="17965:18042" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18043" ph="SELECT id_eq... Equipe" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6133#6141#0" expanded="true" />
+            <element signature="e#9617#9627#0" expanded="true" />
+            <element signature="e#15132#15144#0" expanded="true" />
+            <marker date="1519731800834" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1519731800834" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1519731800834" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1519731800834" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1519731800834" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
+            <marker date="1519731800834" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
+            <marker date="1519731800834" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
+            <marker date="1519731800834" expanded="true" signature="15169:15194" ph="SELECT * FRO... " />
+            <marker date="1519731800834" expanded="true" signature="18222:18274" ph="SELECT Libel... equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19105" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19108" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19129" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="19054:19131" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19132" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -780,57 +794,58 @@
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="e#2464#2465#0" expanded="true" />
-            <element signature="e#2490#2491#0" expanded="true" />
-            <element signature="e#2528#2529#0" expanded="true" />
-            <element signature="e#2558#2559#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#2664#2665#0" expanded="true" />
-            <element signature="e#2700#2701#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2836#2837#0" expanded="true" />
-            <element signature="e#2868#2869#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2938#2939#0" expanded="true" />
-            <element signature="e#2972#2973#0" expanded="true" />
-            <element signature="e#3009#3010#0" expanded="true" />
-            <element signature="e#3042#3043#0" expanded="true" />
-            <element signature="e#3094#3095#0" expanded="true" />
-            <element signature="e#3138#3139#0" expanded="true" />
-            <element signature="e#3165#3166#0" expanded="true" />
-            <element signature="e#3191#3192#0" expanded="true" />
-            <element signature="e#3226#3227#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-            <element signature="e#3290#3291#0" expanded="true" />
-            <element signature="e#3323#3324#0" expanded="true" />
-            <element signature="e#3372#3373#0" expanded="true" />
-            <element signature="e#3416#3417#0" expanded="true" />
-            <element signature="e#3447#3448#0" expanded="true" />
-            <element signature="e#3477#3478#0" expanded="true" />
-            <element signature="e#3520#3521#0" expanded="true" />
-            <element signature="e#3558#3559#0" expanded="true" />
-            <element signature="e#3590#3591#0" expanded="true" />
-            <element signature="e#3621#3622#0" expanded="true" />
-            <element signature="e#3666#3667#0" expanded="true" />
-            <element signature="e#3706#3707#0" expanded="true" />
-            <element signature="e#3739#3740#0" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3818#3819#0" expanded="true" />
-            <element signature="e#3860#3861#0" expanded="true" />
-            <element signature="e#3891#3892#0" expanded="true" />
-            <element signature="e#3919#3920#0" expanded="true" />
-            <element signature="e#3960#3961#0" expanded="true" />
-            <element signature="e#3994#3995#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
-            <element signature="e#4055#4056#0" expanded="true" />
-            <element signature="e#4098#4099#0" expanded="true" />
-            <element signature="e#4134#4135#0" expanded="true" />
-            <element signature="e#4216#4217#0" expanded="true" />
-            <element signature="e#4280#4281#0" expanded="true" />
-            <element signature="e#4336#4337#0" expanded="true" />
+            <element signature="e#3039#3040#0" expanded="true" />
+            <element signature="e#3065#3066#0" expanded="true" />
+            <element signature="e#3103#3104#0" expanded="true" />
+            <element signature="e#3133#3134#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="e#3195#3196#0" expanded="true" />
+            <element signature="e#3239#3240#0" expanded="true" />
+            <element signature="e#3275#3276#0" expanded="true" />
+            <element signature="e#3307#3308#0" expanded="true" />
+            <element signature="e#3335#3336#0" expanded="true" />
+            <element signature="e#3377#3378#0" expanded="true" />
+            <element signature="e#3411#3412#0" expanded="true" />
+            <element signature="e#3443#3444#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+            <element signature="e#3513#3514#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3584#3585#0" expanded="true" />
+            <element signature="e#3617#3618#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3713#3714#0" expanded="true" />
+            <element signature="e#3740#3741#0" expanded="true" />
+            <element signature="e#3766#3767#0" expanded="true" />
+            <element signature="e#3801#3802#0" expanded="true" />
+            <element signature="e#3831#3832#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
+            <element signature="e#3898#3899#0" expanded="true" />
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#3991#3992#0" expanded="true" />
+            <element signature="e#4022#4023#0" expanded="true" />
+            <element signature="e#4052#4053#0" expanded="true" />
+            <element signature="e#4095#4096#0" expanded="true" />
+            <element signature="e#4133#4134#0" expanded="true" />
+            <element signature="e#4165#4166#0" expanded="true" />
+            <element signature="e#4196#4197#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#4281#4282#0" expanded="true" />
+            <element signature="e#4314#4315#0" expanded="true" />
+            <element signature="e#4346#4347#0" expanded="true" />
+            <element signature="e#4393#4394#0" expanded="true" />
+            <element signature="e#4435#4436#0" expanded="true" />
+            <element signature="e#4466#4467#0" expanded="true" />
+            <element signature="e#4494#4495#0" expanded="true" />
+            <element signature="e#4535#4536#0" expanded="true" />
+            <element signature="e#4569#4570#0" expanded="true" />
+            <element signature="e#4601#4602#0" expanded="true" />
+            <element signature="e#4630#4631#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="e#4709#4710#0" expanded="true" />
+            <element signature="e#4752#4753#0" expanded="true" />
+            <element signature="e#4791#4792#0" expanded="true" />
+            <element signature="e#4855#4856#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -841,25 +856,29 @@
           <caret line="135" column="55" lean-forward="false" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1518533306814" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1518533306814" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1518533306814" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1518533306814" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1518533306814" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
-            <marker date="1518533306814" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
-            <marker date="1518533306814" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
-            <marker date="1518533306814" expanded="true" signature="14080:14105" ph="SELECT * FRO... " />
-            <marker date="1518533306814" expanded="true" signature="17133:17185" ph="SELECT Libel... equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18016" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18019" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18040" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="17965:18042" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18043" ph="SELECT id_eq... Equipe" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6133#6141#0" expanded="true" />
+            <element signature="e#9617#9627#0" expanded="true" />
+            <element signature="e#15132#15144#0" expanded="true" />
+            <marker date="1519731800834" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1519731800834" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1519731800834" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1519731800834" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1519731800834" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
+            <marker date="1519731800834" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
+            <marker date="1519731800834" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
+            <marker date="1519731800834" expanded="true" signature="15169:15194" ph="SELECT * FRO... " />
+            <marker date="1519731800834" expanded="true" signature="18222:18274" ph="SELECT Libel... equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19105" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19108" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19129" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="19054:19131" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19132" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -907,25 +926,29 @@
           <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1518533306814" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1518533306814" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1518533306814" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1518533306814" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1518533306814" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
-            <marker date="1518533306814" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
-            <marker date="1518533306814" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
-            <marker date="1518533306814" expanded="true" signature="14080:14105" ph="SELECT * FRO... " />
-            <marker date="1518533306814" expanded="true" signature="17133:17185" ph="SELECT Libel... equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18016" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18019" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18040" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="17965:18042" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18043" ph="SELECT id_eq... Equipe" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6133#6141#0" expanded="true" />
+            <element signature="e#9617#9627#0" expanded="true" />
+            <element signature="e#15132#15144#0" expanded="true" />
+            <marker date="1519731800834" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1519731800834" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1519731800834" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1519731800834" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1519731800834" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
+            <marker date="1519731800834" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
+            <marker date="1519731800834" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
+            <marker date="1519731800834" expanded="true" signature="15169:15194" ph="SELECT * FRO... " />
+            <marker date="1519731800834" expanded="true" signature="18222:18274" ph="SELECT Libel... equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19105" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19108" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19129" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="19054:19131" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19132" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -943,57 +966,58 @@
         <state relative-caret-position="68">
           <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding>
-            <element signature="e#2464#2465#0" expanded="true" />
-            <element signature="e#2490#2491#0" expanded="true" />
-            <element signature="e#2528#2529#0" expanded="true" />
-            <element signature="e#2558#2559#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#2664#2665#0" expanded="true" />
-            <element signature="e#2700#2701#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2836#2837#0" expanded="true" />
-            <element signature="e#2868#2869#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2938#2939#0" expanded="true" />
-            <element signature="e#2972#2973#0" expanded="true" />
-            <element signature="e#3009#3010#0" expanded="true" />
-            <element signature="e#3042#3043#0" expanded="true" />
-            <element signature="e#3094#3095#0" expanded="true" />
-            <element signature="e#3138#3139#0" expanded="true" />
-            <element signature="e#3165#3166#0" expanded="true" />
-            <element signature="e#3191#3192#0" expanded="true" />
-            <element signature="e#3226#3227#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-            <element signature="e#3290#3291#0" expanded="true" />
-            <element signature="e#3323#3324#0" expanded="true" />
-            <element signature="e#3372#3373#0" expanded="true" />
-            <element signature="e#3416#3417#0" expanded="true" />
-            <element signature="e#3447#3448#0" expanded="true" />
-            <element signature="e#3477#3478#0" expanded="true" />
-            <element signature="e#3520#3521#0" expanded="true" />
-            <element signature="e#3558#3559#0" expanded="true" />
-            <element signature="e#3590#3591#0" expanded="true" />
-            <element signature="e#3621#3622#0" expanded="true" />
-            <element signature="e#3666#3667#0" expanded="true" />
-            <element signature="e#3706#3707#0" expanded="true" />
-            <element signature="e#3739#3740#0" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3818#3819#0" expanded="true" />
-            <element signature="e#3860#3861#0" expanded="true" />
-            <element signature="e#3891#3892#0" expanded="true" />
-            <element signature="e#3919#3920#0" expanded="true" />
-            <element signature="e#3960#3961#0" expanded="true" />
-            <element signature="e#3994#3995#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
-            <element signature="e#4055#4056#0" expanded="true" />
-            <element signature="e#4098#4099#0" expanded="true" />
-            <element signature="e#4134#4135#0" expanded="true" />
-            <element signature="e#4216#4217#0" expanded="true" />
-            <element signature="e#4280#4281#0" expanded="true" />
-            <element signature="e#4336#4337#0" expanded="true" />
+            <element signature="e#3039#3040#0" expanded="true" />
+            <element signature="e#3065#3066#0" expanded="true" />
+            <element signature="e#3103#3104#0" expanded="true" />
+            <element signature="e#3133#3134#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="e#3195#3196#0" expanded="true" />
+            <element signature="e#3239#3240#0" expanded="true" />
+            <element signature="e#3275#3276#0" expanded="true" />
+            <element signature="e#3307#3308#0" expanded="true" />
+            <element signature="e#3335#3336#0" expanded="true" />
+            <element signature="e#3377#3378#0" expanded="true" />
+            <element signature="e#3411#3412#0" expanded="true" />
+            <element signature="e#3443#3444#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+            <element signature="e#3513#3514#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3584#3585#0" expanded="true" />
+            <element signature="e#3617#3618#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3713#3714#0" expanded="true" />
+            <element signature="e#3740#3741#0" expanded="true" />
+            <element signature="e#3766#3767#0" expanded="true" />
+            <element signature="e#3801#3802#0" expanded="true" />
+            <element signature="e#3831#3832#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
+            <element signature="e#3898#3899#0" expanded="true" />
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#3991#3992#0" expanded="true" />
+            <element signature="e#4022#4023#0" expanded="true" />
+            <element signature="e#4052#4053#0" expanded="true" />
+            <element signature="e#4095#4096#0" expanded="true" />
+            <element signature="e#4133#4134#0" expanded="true" />
+            <element signature="e#4165#4166#0" expanded="true" />
+            <element signature="e#4196#4197#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#4281#4282#0" expanded="true" />
+            <element signature="e#4314#4315#0" expanded="true" />
+            <element signature="e#4346#4347#0" expanded="true" />
+            <element signature="e#4393#4394#0" expanded="true" />
+            <element signature="e#4435#4436#0" expanded="true" />
+            <element signature="e#4466#4467#0" expanded="true" />
+            <element signature="e#4494#4495#0" expanded="true" />
+            <element signature="e#4535#4536#0" expanded="true" />
+            <element signature="e#4569#4570#0" expanded="true" />
+            <element signature="e#4601#4602#0" expanded="true" />
+            <element signature="e#4630#4631#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="e#4709#4710#0" expanded="true" />
+            <element signature="e#4752#4753#0" expanded="true" />
+            <element signature="e#4791#4792#0" expanded="true" />
+            <element signature="e#4855#4856#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1004,8 +1028,8 @@
           <caret line="169" column="31" lean-forward="true" selection-start-line="169" selection-start-column="31" selection-end-line="169" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#2001#2002#0" expanded="true" />
+            <element signature="e#1962#1963#0" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1023,25 +1047,29 @@
           <caret line="227" column="5" lean-forward="true" selection-start-line="227" selection-start-column="5" selection-end-line="227" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1518533306814" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1518533306814" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1518533306814" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1518533306814" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1518533306814" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
-            <marker date="1518533306814" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
-            <marker date="1518533306814" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
-            <marker date="1518533306814" expanded="true" signature="14080:14105" ph="SELECT * FRO... " />
-            <marker date="1518533306814" expanded="true" signature="17133:17185" ph="SELECT Libel... equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18016" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18019" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18040" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="17965:18042" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18043" ph="SELECT id_eq... Equipe" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6133#6141#0" expanded="true" />
+            <element signature="e#9617#9627#0" expanded="true" />
+            <element signature="e#15132#15144#0" expanded="true" />
+            <marker date="1519731800834" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1519731800834" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1519731800834" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1519731800834" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1519731800834" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
+            <marker date="1519731800834" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
+            <marker date="1519731800834" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
+            <marker date="1519731800834" expanded="true" signature="15169:15194" ph="SELECT * FRO... " />
+            <marker date="1519731800834" expanded="true" signature="18222:18274" ph="SELECT Libel... equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19105" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19108" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19129" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="19054:19131" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19132" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -1059,57 +1087,58 @@
         <state relative-caret-position="84">
           <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
           <folding>
-            <element signature="e#2464#2465#0" expanded="true" />
-            <element signature="e#2490#2491#0" expanded="true" />
-            <element signature="e#2528#2529#0" expanded="true" />
-            <element signature="e#2558#2559#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#2664#2665#0" expanded="true" />
-            <element signature="e#2700#2701#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2836#2837#0" expanded="true" />
-            <element signature="e#2868#2869#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2938#2939#0" expanded="true" />
-            <element signature="e#2972#2973#0" expanded="true" />
-            <element signature="e#3009#3010#0" expanded="true" />
-            <element signature="e#3042#3043#0" expanded="true" />
-            <element signature="e#3094#3095#0" expanded="true" />
-            <element signature="e#3138#3139#0" expanded="true" />
-            <element signature="e#3165#3166#0" expanded="true" />
-            <element signature="e#3191#3192#0" expanded="true" />
-            <element signature="e#3226#3227#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-            <element signature="e#3290#3291#0" expanded="true" />
-            <element signature="e#3323#3324#0" expanded="true" />
-            <element signature="e#3372#3373#0" expanded="true" />
-            <element signature="e#3416#3417#0" expanded="true" />
-            <element signature="e#3447#3448#0" expanded="true" />
-            <element signature="e#3477#3478#0" expanded="true" />
-            <element signature="e#3520#3521#0" expanded="true" />
-            <element signature="e#3558#3559#0" expanded="true" />
-            <element signature="e#3590#3591#0" expanded="true" />
-            <element signature="e#3621#3622#0" expanded="true" />
-            <element signature="e#3666#3667#0" expanded="true" />
-            <element signature="e#3706#3707#0" expanded="true" />
-            <element signature="e#3739#3740#0" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3818#3819#0" expanded="true" />
-            <element signature="e#3860#3861#0" expanded="true" />
-            <element signature="e#3891#3892#0" expanded="true" />
-            <element signature="e#3919#3920#0" expanded="true" />
-            <element signature="e#3960#3961#0" expanded="true" />
-            <element signature="e#3994#3995#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
-            <element signature="e#4055#4056#0" expanded="true" />
-            <element signature="e#4098#4099#0" expanded="true" />
-            <element signature="e#4134#4135#0" expanded="true" />
-            <element signature="e#4216#4217#0" expanded="true" />
-            <element signature="e#4280#4281#0" expanded="true" />
-            <element signature="e#4336#4337#0" expanded="true" />
+            <element signature="e#3039#3040#0" expanded="true" />
+            <element signature="e#3065#3066#0" expanded="true" />
+            <element signature="e#3103#3104#0" expanded="true" />
+            <element signature="e#3133#3134#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="e#3195#3196#0" expanded="true" />
+            <element signature="e#3239#3240#0" expanded="true" />
+            <element signature="e#3275#3276#0" expanded="true" />
+            <element signature="e#3307#3308#0" expanded="true" />
+            <element signature="e#3335#3336#0" expanded="true" />
+            <element signature="e#3377#3378#0" expanded="true" />
+            <element signature="e#3411#3412#0" expanded="true" />
+            <element signature="e#3443#3444#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+            <element signature="e#3513#3514#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3584#3585#0" expanded="true" />
+            <element signature="e#3617#3618#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3713#3714#0" expanded="true" />
+            <element signature="e#3740#3741#0" expanded="true" />
+            <element signature="e#3766#3767#0" expanded="true" />
+            <element signature="e#3801#3802#0" expanded="true" />
+            <element signature="e#3831#3832#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
+            <element signature="e#3898#3899#0" expanded="true" />
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#3991#3992#0" expanded="true" />
+            <element signature="e#4022#4023#0" expanded="true" />
+            <element signature="e#4052#4053#0" expanded="true" />
+            <element signature="e#4095#4096#0" expanded="true" />
+            <element signature="e#4133#4134#0" expanded="true" />
+            <element signature="e#4165#4166#0" expanded="true" />
+            <element signature="e#4196#4197#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#4281#4282#0" expanded="true" />
+            <element signature="e#4314#4315#0" expanded="true" />
+            <element signature="e#4346#4347#0" expanded="true" />
+            <element signature="e#4393#4394#0" expanded="true" />
+            <element signature="e#4435#4436#0" expanded="true" />
+            <element signature="e#4466#4467#0" expanded="true" />
+            <element signature="e#4494#4495#0" expanded="true" />
+            <element signature="e#4535#4536#0" expanded="true" />
+            <element signature="e#4569#4570#0" expanded="true" />
+            <element signature="e#4601#4602#0" expanded="true" />
+            <element signature="e#4630#4631#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="e#4709#4710#0" expanded="true" />
+            <element signature="e#4752#4753#0" expanded="true" />
+            <element signature="e#4791#4792#0" expanded="true" />
+            <element signature="e#4855#4856#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1127,8 +1156,8 @@
           <caret line="235" column="44" lean-forward="false" selection-start-line="235" selection-start-column="44" selection-end-line="235" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#2001#2002#0" expanded="true" />
+            <element signature="e#1962#1963#0" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1153,25 +1182,29 @@
           <caret line="249" column="7" lean-forward="true" selection-start-line="249" selection-start-column="7" selection-end-line="249" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1518533306814" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1518533306814" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1518533306814" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1518533306814" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1518533306814" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
-            <marker date="1518533306814" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
-            <marker date="1518533306814" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
-            <marker date="1518533306814" expanded="true" signature="14080:14105" ph="SELECT * FRO... " />
-            <marker date="1518533306814" expanded="true" signature="17133:17185" ph="SELECT Libel... equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18016" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18019" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18040" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="17965:18042" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18043" ph="SELECT id_eq... Equipe" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6133#6141#0" expanded="true" />
+            <element signature="e#9617#9627#0" expanded="true" />
+            <element signature="e#15132#15144#0" expanded="true" />
+            <marker date="1519731800834" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1519731800834" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1519731800834" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1519731800834" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1519731800834" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
+            <marker date="1519731800834" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
+            <marker date="1519731800834" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
+            <marker date="1519731800834" expanded="true" signature="15169:15194" ph="SELECT * FRO... " />
+            <marker date="1519731800834" expanded="true" signature="18222:18274" ph="SELECT Libel... equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19105" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19108" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19129" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="19054:19131" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19132" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -1198,25 +1231,29 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1518533306814" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1518533306814" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1518533306814" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1518533306814" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1518533306814" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
-            <marker date="1518533306814" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
-            <marker date="1518533306814" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
-            <marker date="1518533306814" expanded="true" signature="14080:14105" ph="SELECT * FRO... " />
-            <marker date="1518533306814" expanded="true" signature="17133:17185" ph="SELECT Libel... equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18016" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18019" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18040" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="17965:18042" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18043" ph="SELECT id_eq... Equipe" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6133#6141#0" expanded="true" />
+            <element signature="e#9617#9627#0" expanded="true" />
+            <element signature="e#15132#15144#0" expanded="true" />
+            <marker date="1519731800834" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1519731800834" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1519731800834" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1519731800834" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1519731800834" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
+            <marker date="1519731800834" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
+            <marker date="1519731800834" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
+            <marker date="1519731800834" expanded="true" signature="15169:15194" ph="SELECT * FRO... " />
+            <marker date="1519731800834" expanded="true" signature="18222:18274" ph="SELECT Libel... equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19105" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19108" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19129" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="19054:19131" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19132" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -1226,57 +1263,58 @@
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="e#2464#2465#0" expanded="true" />
-            <element signature="e#2490#2491#0" expanded="true" />
-            <element signature="e#2528#2529#0" expanded="true" />
-            <element signature="e#2558#2559#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#2664#2665#0" expanded="true" />
-            <element signature="e#2700#2701#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2836#2837#0" expanded="true" />
-            <element signature="e#2868#2869#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2938#2939#0" expanded="true" />
-            <element signature="e#2972#2973#0" expanded="true" />
-            <element signature="e#3009#3010#0" expanded="true" />
-            <element signature="e#3042#3043#0" expanded="true" />
-            <element signature="e#3094#3095#0" expanded="true" />
-            <element signature="e#3138#3139#0" expanded="true" />
-            <element signature="e#3165#3166#0" expanded="true" />
-            <element signature="e#3191#3192#0" expanded="true" />
-            <element signature="e#3226#3227#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-            <element signature="e#3290#3291#0" expanded="true" />
-            <element signature="e#3323#3324#0" expanded="true" />
-            <element signature="e#3372#3373#0" expanded="true" />
-            <element signature="e#3416#3417#0" expanded="true" />
-            <element signature="e#3447#3448#0" expanded="true" />
-            <element signature="e#3477#3478#0" expanded="true" />
-            <element signature="e#3520#3521#0" expanded="true" />
-            <element signature="e#3558#3559#0" expanded="true" />
-            <element signature="e#3590#3591#0" expanded="true" />
-            <element signature="e#3621#3622#0" expanded="true" />
-            <element signature="e#3666#3667#0" expanded="true" />
-            <element signature="e#3706#3707#0" expanded="true" />
-            <element signature="e#3739#3740#0" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3818#3819#0" expanded="true" />
-            <element signature="e#3860#3861#0" expanded="true" />
-            <element signature="e#3891#3892#0" expanded="true" />
-            <element signature="e#3919#3920#0" expanded="true" />
-            <element signature="e#3960#3961#0" expanded="true" />
-            <element signature="e#3994#3995#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
-            <element signature="e#4055#4056#0" expanded="true" />
-            <element signature="e#4098#4099#0" expanded="true" />
-            <element signature="e#4134#4135#0" expanded="true" />
-            <element signature="e#4216#4217#0" expanded="true" />
-            <element signature="e#4280#4281#0" expanded="true" />
-            <element signature="e#4336#4337#0" expanded="true" />
+            <element signature="e#3039#3040#0" expanded="true" />
+            <element signature="e#3065#3066#0" expanded="true" />
+            <element signature="e#3103#3104#0" expanded="true" />
+            <element signature="e#3133#3134#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="e#3195#3196#0" expanded="true" />
+            <element signature="e#3239#3240#0" expanded="true" />
+            <element signature="e#3275#3276#0" expanded="true" />
+            <element signature="e#3307#3308#0" expanded="true" />
+            <element signature="e#3335#3336#0" expanded="true" />
+            <element signature="e#3377#3378#0" expanded="true" />
+            <element signature="e#3411#3412#0" expanded="true" />
+            <element signature="e#3443#3444#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+            <element signature="e#3513#3514#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3584#3585#0" expanded="true" />
+            <element signature="e#3617#3618#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3713#3714#0" expanded="true" />
+            <element signature="e#3740#3741#0" expanded="true" />
+            <element signature="e#3766#3767#0" expanded="true" />
+            <element signature="e#3801#3802#0" expanded="true" />
+            <element signature="e#3831#3832#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
+            <element signature="e#3898#3899#0" expanded="true" />
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#3991#3992#0" expanded="true" />
+            <element signature="e#4022#4023#0" expanded="true" />
+            <element signature="e#4052#4053#0" expanded="true" />
+            <element signature="e#4095#4096#0" expanded="true" />
+            <element signature="e#4133#4134#0" expanded="true" />
+            <element signature="e#4165#4166#0" expanded="true" />
+            <element signature="e#4196#4197#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#4281#4282#0" expanded="true" />
+            <element signature="e#4314#4315#0" expanded="true" />
+            <element signature="e#4346#4347#0" expanded="true" />
+            <element signature="e#4393#4394#0" expanded="true" />
+            <element signature="e#4435#4436#0" expanded="true" />
+            <element signature="e#4466#4467#0" expanded="true" />
+            <element signature="e#4494#4495#0" expanded="true" />
+            <element signature="e#4535#4536#0" expanded="true" />
+            <element signature="e#4569#4570#0" expanded="true" />
+            <element signature="e#4601#4602#0" expanded="true" />
+            <element signature="e#4630#4631#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="e#4709#4710#0" expanded="true" />
+            <element signature="e#4752#4753#0" expanded="true" />
+            <element signature="e#4791#4792#0" expanded="true" />
+            <element signature="e#4855#4856#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1287,25 +1325,29 @@
           <caret line="135" column="55" lean-forward="false" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1518533306814" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1518533306814" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1518533306814" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1518533306814" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1518533306814" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
-            <marker date="1518533306814" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
-            <marker date="1518533306814" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
-            <marker date="1518533306814" expanded="true" signature="14080:14105" ph="SELECT * FRO... " />
-            <marker date="1518533306814" expanded="true" signature="17133:17185" ph="SELECT Libel... equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18016" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18019" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18040" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="17965:18042" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18043" ph="SELECT id_eq... Equipe" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6133#6141#0" expanded="true" />
+            <element signature="e#9617#9627#0" expanded="true" />
+            <element signature="e#15132#15144#0" expanded="true" />
+            <marker date="1519731800834" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1519731800834" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1519731800834" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1519731800834" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1519731800834" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
+            <marker date="1519731800834" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
+            <marker date="1519731800834" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
+            <marker date="1519731800834" expanded="true" signature="15169:15194" ph="SELECT * FRO... " />
+            <marker date="1519731800834" expanded="true" signature="18222:18274" ph="SELECT Libel... equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19105" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19108" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19129" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="19054:19131" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19132" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -1321,13 +1363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
           <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/JTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="2716" column="0" lean-forward="false" selection-start-line="2716" selection-start-column="0" selection-end-line="2716" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1352,22 +1387,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controleur/Tableau.java">
+    <entry file="file://$PROJECT_DIR$/src/controleur/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="294">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
+    <entry file="file://$PROJECT_DIR$/src/vue/VueConnexion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5775">
-          <caret line="290" column="57" lean-forward="false" selection-start-line="290" selection-start-column="57" selection-end-line="290" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#2001#2002#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="494">
+          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1379,108 +1411,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vue/VueConnexion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2331">
-          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controleur/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controleur/Athletes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2583">
-          <caret line="175" column="41" lean-forward="false" selection-start-line="175" selection-start-column="41" selection-end-line="175" selection-end-column="41" />
+        <state relative-caret-position="242">
+          <caret line="73" column="29" lean-forward="true" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
           <folding>
-            <element signature="e#2464#2465#0" expanded="true" />
-            <element signature="e#2490#2491#0" expanded="true" />
-            <element signature="e#2528#2529#0" expanded="true" />
-            <element signature="e#2558#2559#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#2664#2665#0" expanded="true" />
-            <element signature="e#2700#2701#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2836#2837#0" expanded="true" />
-            <element signature="e#2868#2869#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2938#2939#0" expanded="true" />
-            <element signature="e#2972#2973#0" expanded="true" />
-            <element signature="e#3009#3010#0" expanded="true" />
-            <element signature="e#3042#3043#0" expanded="true" />
-            <element signature="e#3094#3095#0" expanded="true" />
-            <element signature="e#3138#3139#0" expanded="true" />
-            <element signature="e#3165#3166#0" expanded="true" />
-            <element signature="e#3191#3192#0" expanded="true" />
-            <element signature="e#3226#3227#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-            <element signature="e#3290#3291#0" expanded="true" />
-            <element signature="e#3323#3324#0" expanded="true" />
-            <element signature="e#3372#3373#0" expanded="true" />
-            <element signature="e#3416#3417#0" expanded="true" />
-            <element signature="e#3447#3448#0" expanded="true" />
-            <element signature="e#3477#3478#0" expanded="true" />
-            <element signature="e#3520#3521#0" expanded="true" />
-            <element signature="e#3558#3559#0" expanded="true" />
-            <element signature="e#3590#3591#0" expanded="true" />
-            <element signature="e#3621#3622#0" expanded="true" />
-            <element signature="e#3666#3667#0" expanded="true" />
-            <element signature="e#3706#3707#0" expanded="true" />
-            <element signature="e#3739#3740#0" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3818#3819#0" expanded="true" />
-            <element signature="e#3860#3861#0" expanded="true" />
-            <element signature="e#3891#3892#0" expanded="true" />
-            <element signature="e#3919#3920#0" expanded="true" />
-            <element signature="e#3960#3961#0" expanded="true" />
-            <element signature="e#3994#3995#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
-            <element signature="e#4055#4056#0" expanded="true" />
-            <element signature="e#4098#4099#0" expanded="true" />
-            <element signature="e#4134#4135#0" expanded="true" />
-            <element signature="e#4216#4217#0" expanded="true" />
-            <element signature="e#4280#4281#0" expanded="true" />
-            <element signature="e#4336#4337#0" expanded="true" />
+            <element signature="e#3039#3040#0" expanded="true" />
+            <element signature="e#3065#3066#0" expanded="true" />
+            <element signature="e#3103#3104#0" expanded="true" />
+            <element signature="e#3133#3134#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="e#3195#3196#0" expanded="true" />
+            <element signature="e#3239#3240#0" expanded="true" />
+            <element signature="e#3275#3276#0" expanded="true" />
+            <element signature="e#3307#3308#0" expanded="true" />
+            <element signature="e#3335#3336#0" expanded="true" />
+            <element signature="e#3377#3378#0" expanded="true" />
+            <element signature="e#3411#3412#0" expanded="true" />
+            <element signature="e#3443#3444#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+            <element signature="e#3513#3514#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3584#3585#0" expanded="true" />
+            <element signature="e#3617#3618#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3713#3714#0" expanded="true" />
+            <element signature="e#3740#3741#0" expanded="true" />
+            <element signature="e#3766#3767#0" expanded="true" />
+            <element signature="e#3801#3802#0" expanded="true" />
+            <element signature="e#3831#3832#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
+            <element signature="e#3898#3899#0" expanded="true" />
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#3991#3992#0" expanded="true" />
+            <element signature="e#4022#4023#0" expanded="true" />
+            <element signature="e#4052#4053#0" expanded="true" />
+            <element signature="e#4095#4096#0" expanded="true" />
+            <element signature="e#4133#4134#0" expanded="true" />
+            <element signature="e#4165#4166#0" expanded="true" />
+            <element signature="e#4196#4197#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="e#4281#4282#0" expanded="true" />
+            <element signature="e#4314#4315#0" expanded="true" />
+            <element signature="e#4346#4347#0" expanded="true" />
+            <element signature="e#4393#4394#0" expanded="true" />
+            <element signature="e#4435#4436#0" expanded="true" />
+            <element signature="e#4466#4467#0" expanded="true" />
+            <element signature="e#4494#4495#0" expanded="true" />
+            <element signature="e#4535#4536#0" expanded="true" />
+            <element signature="e#4569#4570#0" expanded="true" />
+            <element signature="e#4601#4602#0" expanded="true" />
+            <element signature="e#4630#4631#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="e#4709#4710#0" expanded="true" />
+            <element signature="e#4752#4753#0" expanded="true" />
+            <element signature="e#4791#4792#0" expanded="true" />
+            <element signature="e#4855#4856#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="473">
+          <caret line="398" column="43" lean-forward="false" selection-start-line="398" selection-start-column="43" selection-end-line="398" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1518533306814" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1518533306814" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1518533306814" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1518533306814" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
-            <marker date="1518533306814" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1518533306814" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
-            <marker date="1518533306814" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
-            <marker date="1518533306814" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
-            <marker date="1518533306814" expanded="true" signature="14080:14105" ph="SELECT * FRO... " />
-            <marker date="1518533306814" expanded="true" signature="17133:17185" ph="SELECT Libel... equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18016" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18019" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18040" ph="SELECT id_sp... Sport" />
-            <marker date="1518533306814" expanded="true" signature="17965:18042" ph="SELECT id_eq... Equipe" />
-            <marker date="1518533306814" expanded="true" signature="17965:18043" ph="SELECT id_eq... Equipe" />
+            <element signature="e#2724#2730#0" expanded="true" />
+            <element signature="e#6133#6141#0" expanded="true" />
+            <element signature="e#9617#9627#0" expanded="true" />
+            <element signature="e#15132#15144#0" expanded="true" />
+            <marker date="1519731800834" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1519731800834" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1519731800834" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1519731800834" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4678" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4679" ph="SELECT Libel... Pays" />
+            <marker date="1519731800834" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1519731800834" expanded="true" signature="6166:6235" ph="SELECT id_sp... " />
+            <marker date="1519731800834" expanded="true" signature="6166:6240" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="7266:7339" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="8436:8485" ph="SELECT Libel... Sport" />
+            <marker date="1519731800834" expanded="true" signature="9656:9683" ph="SELECT * FRO... athletes_java" />
+            <marker date="1519731800834" expanded="true" signature="15169:15194" ph="SELECT * FRO... " />
+            <marker date="1519731800834" expanded="true" signature="18222:18274" ph="SELECT Libel... equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19105" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19108" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19129" ph="SELECT id_sp... Sport" />
+            <marker date="1519731800834" expanded="true" signature="19054:19131" ph="SELECT id_eq... Equipe" />
+            <marker date="1519731800834" expanded="true" signature="19054:19132" ph="SELECT id_eq... Equipe" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/JTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2717" column="72" lean-forward="true" selection-start-line="2716" selection-start-column="5" selection-end-line="2717" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="292" column="38" lean-forward="false" selection-start-line="292" selection-start-column="38" selection-end-line="292" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1962#1963#0" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Tableau.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
