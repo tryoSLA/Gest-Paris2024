@@ -338,7 +338,7 @@ public class Modele {
 
 	public static void insertAthleteAvecEquipe(Athletes unAthlete) {
 		String requete =
-				"CALL insert_athlete ( '" + unAthlete.getNom() + "','" +
+				"CALL insert_athlete ('" + unAthlete.getNom() + "','" +
 						unAthlete.getPrenom() + "'," +
 						unAthlete.getAge() + ",'" +
 						unAthlete.getGenre() + "'," +
@@ -374,34 +374,58 @@ public class Modele {
 		ExecutionBdd(uneBdd, requete);
 	}
 
-	public static void updateAthlete(Athletes unAthlete) {
+	public static void updateAthleteAvecEquipe(Athletes unAthlete) {
 		String requete =
-				"UPDATE athlete_java SET nom = '" + unAthlete.getNom() +
-						"',prenom = '" + unAthlete.getPrenom() +
-						"',age = " + unAthlete.getAge() +
-						",genre = '" + unAthlete.getGenre() +
-						"',photo = '" + unAthlete.getPhoto() +
-						"',biographie = '" + unAthlete.getBiographie() +
-						"',poids = " + unAthlete.getPoids() +
-						",taille = " + unAthlete.getTaille() +
-						",id_sport = " + unAthlete.getId_sport() +
-						",id_pays = " + unAthlete.getId_pays() +
-						",id_equipe = " + unAthlete.getId_equipe() +
-						" WHERE id_personne = " + unAthlete.getIdAthletes() +
-						";";
+				"Call update_athlete (" + unAthlete.getIdAthletes() +
+						",'" + unAthlete.getNom() +
+						"','" + unAthlete.getPrenom() +
+						"'," + unAthlete.getAge() +
+						",'" + unAthlete.getGenre() +
+						"'," + unAthlete.getTaille()+
+						"," + unAthlete.getPoids() +
+						",'" + unAthlete.getPhoto() +
+						"','" + unAthlete.getBiographie() +
+						"'," + unAthlete.getId_pays() +
+						"," + unAthlete.getId_equipe() +
+						"," + unAthlete.getId_sport() +");";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		System.out.println(requete);
 		ExecutionBdd(uneBdd, requete);
 	}
 
+    public static void updateAthleteSansEquipe(Athletes unAthlete) {
+        String requete =
+                "Call update_athlete (" + unAthlete.getIdAthletes() +
+                        ",'" + unAthlete.getNom() +
+                        "','" + unAthlete.getPrenom() +
+                        "'," + unAthlete.getAge() +
+                        ",'" + unAthlete.getGenre() +
+                        "'," + unAthlete.getTaille()+
+                        "," + unAthlete.getPoids() +
+                        ",'" + unAthlete.getPhoto() +
+                        "','" + unAthlete.getBiographie() +
+                        "'," + unAthlete.getId_pays() +
+                        "," + unAthlete.getId_equipe_string() +
+                        "," + unAthlete.getId_sport() + ");";
+
+        Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+        System.out.println(requete);
+        ExecutionBdd(uneBdd, requete);
+    }
+
 	public static void deleteAthlete(Athletes unAthlete) {
 		String requete =
-				"DELETE FROM athlete WHERE id_personne = " + unAthlete.getIdAthletes() + "";
+				"DELETE FROM athlete WHERE id_personne = " + unAthlete.getIdAthletes() + "; ";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		System.out.println(requete);
 		ExecutionBdd(uneBdd, requete);
+
+		String requete2 = "DELETE FROM personne WHERE id_personne = "+ unAthlete.getIdAthletes() + ";";
+        Bdd uneBdd2 = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+        System.out.println(requete2);
+        ExecutionBdd(uneBdd2, requete2);
 	}
 
 	/*
