@@ -3,7 +3,7 @@ package controleur;
 public class Sports
 {
     private int idSports;
-    private static int nbChampSports = 3;
+    private static int nbChampSports = 4;
     private String libelle, description, image;
 
     public Sports()
