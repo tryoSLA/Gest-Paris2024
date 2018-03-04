@@ -93,9 +93,6 @@ public class VueSports extends JPanel implements ActionListener {
         this.panelEdition.setLayout(new GridLayout(3,8));
         //construction du panel d'édition d'un client
         this.panelEdition.setBounds(20, 290, 800, 200);
-        this.panelEdition.add(new JLabel("Id : "));
-        this.panelEdition.add(txtId);
-        this.panelEdition.add(new JLabel(""));
         this.panelEdition.add(new JLabel("Libelle : "));
         this.panelEdition.add(txtLibelle);
         this.panelEdition.add(new JLabel(""));
@@ -159,13 +156,11 @@ public class VueSports extends JPanel implements ActionListener {
             Object data [] = {unSport.getIdSports(), unSport.getLibelle(), unSport.getImage(), unSport.getDescription()};
             this.unTableau.add(data);
 
-
             JOptionPane.showMessageDialog(this, "Insertion réussie");
             txtId.setText("");
             txtLibelle.setText("");
             txtImage.setText("");
             txtDescription.setText("");
-
         }
         else if (e.getSource() == this.btAnnuler)
         {
@@ -200,7 +195,6 @@ public class VueSports extends JPanel implements ActionListener {
             System.out.println(rowIndex);
             if (unTableau != null)
                 this.unTableau.update(rowIndex, data);
-
         }
     }
     //recuperer les données sous formes d'une matrice

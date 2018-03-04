@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f4042c-d636-4152-a9f6-12878f75117a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/controleur/Sports.java" afterPath="$PROJECT_DIR$/src/controleur/Sports.java" />
-      <change beforePath="$PROJECT_DIR$/src/modele/Modele.java" afterPath="$PROJECT_DIR$/src/modele/Modele.java" />
-      <change beforePath="$PROJECT_DIR$/src/vue/VueGeneral.java" afterPath="$PROJECT_DIR$/src/vue/VueGeneral.java" />
+      <change beforePath="$PROJECT_DIR$/src/vue/VueSports.java" afterPath="$PROJECT_DIR$/src/vue/VueSports.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <ignored path=".idea/" />
@@ -41,66 +38,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Sports.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controleur/Sports.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Modele.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="199" column="43" lean-forward="true" selection-start-line="199" selection-start-column="43" selection-end-line="199" selection-end-column="43" />
+            <state relative-caret-position="0">
+              <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
               <folding>
-                <marker date="1520173457376" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-                <marker date="1520173457376" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-                <marker date="1520173457376" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-                <marker date="1520173457376" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-                <marker date="1520173457376" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-                <marker date="1520173457376" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
-                <marker date="1520173457376" expanded="true" signature="6166:6185" ph="SELECT * FRO... Sport" />
-                <marker date="1520173457376" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
-                <marker date="1520173457376" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
-                <marker date="1520173457376" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
-                <marker date="1520173457376" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
-                <marker date="1520173457376" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
-                <marker date="1520173457376" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
+                <marker date="1520185985797" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+                <marker date="1520185985797" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+                <marker date="1520185985797" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+                <marker date="1520185985797" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+                <marker date="1520185985797" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+                <marker date="1520185985797" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
+                <marker date="1520185985797" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
+                <marker date="1520185985797" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
+                <marker date="1520185985797" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
+                <marker date="1520185985797" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
+                <marker date="1520185985797" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
+                <marker date="1520185985797" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controleur/Main.java">
+      <file leaf-file-name="Sports.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controleur/Sports.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VueGeneral.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
+      <file leaf-file-name="VueAthletes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="78" column="48" lean-forward="true" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VueConnexion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueConnexion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="85">
+              <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,8 +86,8 @@
       <file leaf-file-name="VueSports.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/vue/VueSports.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="209" column="81" lean-forward="false" selection-start-line="209" selection-start-column="65" selection-end-line="209" selection-end-column="81" />
+            <state relative-caret-position="2159">
+              <caret line="127" column="28" lean-forward="true" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1431#1432#0" expanded="true" />
@@ -119,30 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VueAthletes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
+      <file leaf-file-name="Pays.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controleur/Pays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5964">
-              <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bdd.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modele/Bdd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Athletes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controleur/Athletes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
+            <state relative-caret-position="34">
               <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
@@ -178,9 +136,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/modele/Modele.java" />
-        <option value="$PROJECT_DIR$/src/vue/VueSports.java" />
         <option value="$PROJECT_DIR$/src/controleur/Sports.java" />
         <option value="$PROJECT_DIR$/src/vue/VueGeneral.java" />
+        <option value="$PROJECT_DIR$/src/vue/VueSports.java" />
       </list>
     </option>
   </component>
@@ -211,9 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,28 +187,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="controleur" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Gest-Paris2024" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gest-Paris2024" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gest-Paris2024" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gest-Paris2024" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modele" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gest-Paris2024" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gest-Paris2024" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -402,7 +342,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5943000" />
+    <option name="totallyTimeSpent" value="6931000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -414,31 +354,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13913043" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2631579" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17590618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990878" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -454,6 +392,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -462,6 +401,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17270789" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
@@ -506,6 +446,228 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3315">
+          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+          <folding>
+            <marker date="1520185985797" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1520185985797" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1520185985797" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1520185985797" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1520185985797" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1520185985797" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
+            <marker date="1520185985797" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
+            <marker date="1520185985797" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
+            <marker date="1520185985797" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
+            <marker date="1520185985797" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
+            <marker date="1520185985797" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
+            <marker date="1520185985797" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Sports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueSports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="98" column="49" lean-forward="false" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3315">
+          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+          <folding>
+            <marker date="1520185985797" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1520185985797" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1520185985797" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1520185985797" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1520185985797" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1520185985797" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
+            <marker date="1520185985797" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
+            <marker date="1520185985797" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
+            <marker date="1520185985797" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
+            <marker date="1520185985797" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
+            <marker date="1520185985797" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
+            <marker date="1520185985797" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Sports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueSports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="98" column="49" lean-forward="true" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Sports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Sports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding>
+            <marker date="1520185985797" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1520185985797" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1520185985797" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1520185985797" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1520185985797" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1520185985797" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
+            <marker date="1520185985797" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
+            <marker date="1520185985797" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
+            <marker date="1520185985797" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
+            <marker date="1520185985797" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
+            <marker date="1520185985797" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
+            <marker date="1520185985797" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Sports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Sports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueSports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="98" column="49" lean-forward="false" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3315">
+          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+          <folding>
+            <marker date="1520185985797" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1520185985797" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1520185985797" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1520185985797" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1520185985797" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1520185985797" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
+            <marker date="1520185985797" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
+            <marker date="1520185985797" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
+            <marker date="1520185985797" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
+            <marker date="1520185985797" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
+            <marker date="1520185985797" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
+            <marker date="1520185985797" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controleur/Sports.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -519,19 +681,18 @@
         <state relative-caret-position="105">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <marker date="1520173457376" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1520173457376" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1520173457376" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1520173457376" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1520173457376" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1520173457376" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
-            <marker date="1520173457376" expanded="true" signature="6166:6185" ph="SELECT * FRO... Sport" />
-            <marker date="1520173457376" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
-            <marker date="1520173457376" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
-            <marker date="1520173457376" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
-            <marker date="1520173457376" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
-            <marker date="1520173457376" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
-            <marker date="1520173457376" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
+            <marker date="1520185985797" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1520185985797" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1520185985797" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1520185985797" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1520185985797" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1520185985797" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
+            <marker date="1520185985797" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
+            <marker date="1520185985797" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
+            <marker date="1520185985797" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
+            <marker date="1520185985797" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
+            <marker date="1520185985797" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
+            <marker date="1520185985797" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -573,19 +734,18 @@
         <state relative-caret-position="252">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <marker date="1520173457376" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1520173457376" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1520173457376" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1520173457376" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1520173457376" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1520173457376" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
-            <marker date="1520173457376" expanded="true" signature="6166:6185" ph="SELECT * FRO... Sport" />
-            <marker date="1520173457376" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
-            <marker date="1520173457376" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
-            <marker date="1520173457376" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
-            <marker date="1520173457376" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
-            <marker date="1520173457376" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
-            <marker date="1520173457376" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
+            <marker date="1520185985797" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1520185985797" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1520185985797" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1520185985797" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1520185985797" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1520185985797" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
+            <marker date="1520185985797" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
+            <marker date="1520185985797" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
+            <marker date="1520185985797" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
+            <marker date="1520185985797" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
+            <marker date="1520185985797" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
+            <marker date="1520185985797" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -619,19 +779,18 @@
         <state relative-caret-position="105">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <marker date="1520173457376" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1520173457376" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1520173457376" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1520173457376" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1520173457376" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1520173457376" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
-            <marker date="1520173457376" expanded="true" signature="6166:6185" ph="SELECT * FRO... Sport" />
-            <marker date="1520173457376" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
-            <marker date="1520173457376" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
-            <marker date="1520173457376" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
-            <marker date="1520173457376" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
-            <marker date="1520173457376" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
-            <marker date="1520173457376" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
+            <marker date="1520185985797" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1520185985797" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1520185985797" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1520185985797" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1520185985797" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1520185985797" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
+            <marker date="1520185985797" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
+            <marker date="1520185985797" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
+            <marker date="1520185985797" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
+            <marker date="1520185985797" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
+            <marker date="1520185985797" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
+            <marker date="1520185985797" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -665,19 +824,18 @@
         <state relative-caret-position="105">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <marker date="1520173457376" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1520173457376" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1520173457376" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1520173457376" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1520173457376" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1520173457376" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
-            <marker date="1520173457376" expanded="true" signature="6166:6185" ph="SELECT * FRO... Sport" />
-            <marker date="1520173457376" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
-            <marker date="1520173457376" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
-            <marker date="1520173457376" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
-            <marker date="1520173457376" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
-            <marker date="1520173457376" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
-            <marker date="1520173457376" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
+            <marker date="1520185985797" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1520185985797" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1520185985797" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1520185985797" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1520185985797" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1520185985797" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
+            <marker date="1520185985797" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
+            <marker date="1520185985797" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
+            <marker date="1520185985797" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
+            <marker date="1520185985797" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
+            <marker date="1520185985797" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
+            <marker date="1520185985797" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -703,19 +861,18 @@
         <state relative-caret-position="391">
           <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
           <folding>
-            <marker date="1520173457376" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1520173457376" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1520173457376" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1520173457376" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1520173457376" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1520173457376" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
-            <marker date="1520173457376" expanded="true" signature="6166:6185" ph="SELECT * FRO... Sport" />
-            <marker date="1520173457376" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
-            <marker date="1520173457376" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
-            <marker date="1520173457376" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
-            <marker date="1520173457376" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
-            <marker date="1520173457376" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
-            <marker date="1520173457376" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
+            <marker date="1520185985797" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1520185985797" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1520185985797" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1520185985797" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1520185985797" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1520185985797" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
+            <marker date="1520185985797" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
+            <marker date="1520185985797" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
+            <marker date="1520185985797" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
+            <marker date="1520185985797" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
+            <marker date="1520185985797" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
+            <marker date="1520185985797" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
           </folding>
         </state>
       </provider>
@@ -736,14 +893,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/24f44415-5e9e-4b05-ad53-a05360796442/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/24f44415-5e9e-4b05-ad53-a05360796442/console.sql" />
     <entry file="file://$PROJECT_DIR$/src/vue/VueConnexion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -754,16 +904,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5964">
+        <state relative-caret-position="85">
           <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+          <folding>
+            <marker date="1520185985797" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1520185985797" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
+            <marker date="1520185985797" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
+            <marker date="1520185985797" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
+            <marker date="1520185985797" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
+            <marker date="1520185985797" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
+            <marker date="1520185985797" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
+            <marker date="1520185985797" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
+            <marker date="1520185985797" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
+            <marker date="1520185985797" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
+            <marker date="1520185985797" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
+            <marker date="1520185985797" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="49" column="39" lean-forward="false" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vue/VueSports.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="209" column="81" lean-forward="false" selection-start-line="209" selection-start-column="65" selection-end-line="209" selection-end-column="81" />
+        <state relative-caret-position="2159">
+          <caret line="127" column="28" lean-forward="true" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1431#1432#0" expanded="true" />
@@ -772,40 +953,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controleur/Sports.java">
+    <entry file="file://$PROJECT_DIR$/src/controleur/Pays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
+    <entry file="file://$PROJECT_DIR$/src/controleur/Sports.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="199" column="43" lean-forward="true" selection-start-line="199" selection-start-column="43" selection-end-line="199" selection-end-column="43" />
-          <folding>
-            <marker date="1520173457376" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1520173457376" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1520173457376" expanded="true" signature="2755:2825" ph="SELECT id_pa... " />
-            <marker date="1520173457376" expanded="true" signature="3823:3869" ph="SELECT Libel... Pays" />
-            <marker date="1520173457376" expanded="true" signature="4633:4702" ph="SELECT id_pa... Pays" />
-            <marker date="1520173457376" expanded="true" signature="6166:6173" ph="SELECT id_sp... Sport" />
-            <marker date="1520173457376" expanded="true" signature="6166:6185" ph="SELECT * FRO... Sport" />
-            <marker date="1520173457376" expanded="true" signature="7210:7283" ph="SELECT id_sp... sport" />
-            <marker date="1520173457376" expanded="true" signature="8380:8429" ph="SELECT Libel... Sport" />
-            <marker date="1520173457376" expanded="true" signature="10349:10376" ph="SELECT * FRO... athletes_java" />
-            <marker date="1520173457376" expanded="true" signature="15862:15887" ph="SELECT * FRO... " />
-            <marker date="1520173457376" expanded="true" signature="18915:18967" ph="SELECT Libel... equipe" />
-            <marker date="1520173457376" expanded="true" signature="19747:19824" ph="SELECT id_eq... Equipe" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="78" column="48" lean-forward="true" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="48" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
