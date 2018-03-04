@@ -193,7 +193,7 @@ public class Modele {
 	public static ArrayList<Sports> selectAllSports() {
 		ArrayList<Sports> listSports = new ArrayList<Sports>();
 
-		String requete = "SELECT id_sports, Libelle_sport, Description_sport, Image_sport FROM Sport";
+		String requete = "SELECT id_sport, Libelle_sport, Description_sport, Image_sport FROM Sport;";
 		System.out.println(requete);
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
@@ -226,7 +226,7 @@ public class Modele {
 	public static int selectIdWhereSport(String libelleSport) {
 		int idsport = 0;
 
-		String requete = "SELECT id_sport FROM Sport WHERE libelle_sport = \"" + libelleSport + "\";";
+		String requete = "SELECT id_sport FROM sport WHERE libelle_sport = \"" + libelleSport + "\";";
 		System.out.println(requete);
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
@@ -251,7 +251,7 @@ public class Modele {
 	}
 
 	public static void insertSports(Sports unSports) {
-		String requete = "INSERT INTO Sport values (" +
+		String requete = "INSERT INTO sport values (" +
 				"null," +
 				" '" + unSports.getLibelle() + "'," +
 				" '" + unSports.getImage() + "," +
@@ -288,6 +288,29 @@ public class Modele {
 			//exp.printStackTrace();
 		}
 		return libelleSport;
+	}
+
+	public static void updateSport(Sports unSport) {
+		String requete =
+				"UPDATE sport " +
+						"SET id_sport = '"+unSport.getIdSports()+"'," +
+						"	Libelle_sport = '"+unSport.getLibelle()+"'," +
+						"	Image_sport = '"+unSport.getImage()+"'," +
+						"	Description_sport = '"+unSport.getDescription()+"'";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+	}
+
+	public static void deleteSports(Sports unSports) {
+		String requete =
+				"DELETE FROM sport WHERE id_sport = " + unSports.getIdSports() + "; ";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+
 	}
 
 	/*
