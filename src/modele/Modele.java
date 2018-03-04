@@ -193,7 +193,7 @@ public class Modele {
 	public static ArrayList<Sports> selectAllSports() {
 		ArrayList<Sports> listSports = new ArrayList<Sports>();
 
-		String requete = "SELECT id_sport, Libelle_sport, Description_sport, Image_sport FROM Sport;";
+		String requete = "SELECT * FROM Sport;";
 		System.out.println(requete);
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
@@ -205,13 +205,12 @@ public class Modele {
 			ResultSet rs = unStat.executeQuery(requete);
 			while (rs.next()) {
 				//récupération des Champs par valeur
-				int idSports = rs.getInt("id_sports");
+				int idSports = rs.getInt("id_sport");
 				String nameSports = rs.getString("Libelle_sport");
 				String descSports = rs.getString("Description_sport");
 				String imageSports = rs.getString("Image_sport");
 				//Mise à jour de la liste
 				listSports.add(new Sports(idSports, nameSports, descSports, imageSports));
-
 			}
 
 			//Fermeture de la connexion à la base de données
