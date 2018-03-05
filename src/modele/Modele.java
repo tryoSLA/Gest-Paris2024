@@ -87,7 +87,7 @@ public class Modele {
 		//list via le controleur des pays
 		ArrayList<Pays> listPays = new ArrayList<Pays>();
 
-		String requete = "SELECT id_pays, Libelle_pays, Description_pays, Image_pays FROM 'Pays'";
+		String requete = "SELECT id_pays, Libelle_pays, Description_pays, Image_pays FROM Pays;";
 		System.out.println(requete);
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
@@ -172,7 +172,6 @@ public class Modele {
 		return idpays;
 	}
 
-
 	public static void insertPays(Pays unPays) {
 		String requete = "INSERT INTO Pays values (" +
 				"null," +
@@ -182,6 +181,28 @@ public class Modele {
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 
+		ExecutionBdd(uneBdd, requete);
+	}
+
+	public static void deletePays(Pays unPays)
+	{
+		String requete = "DELETE FROM sport WHERE id_sport = " + unPays.getIdPays() + "; ";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+	}
+
+	public static void updatePays(Pays unPays)
+	{
+		String requete = "UPDATE Pays " +
+				"SET id_pays = '"+unPays.getIdPays()+"'," +
+				"	Libelle_pays = '"+unPays.getLibelle()+"'," +
+				"	Image_pays = '"+unPays.getImage()+"'," +
+				"	Description_pays = '"+unPays.getDescription()+"'";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete);
 		ExecutionBdd(uneBdd, requete);
 	}
 
