@@ -176,12 +176,13 @@ public class Modele {
 		String requete = "INSERT INTO Pays values (" +
 				"null," +
 				" '" + unPays.getLibelle() + "'," +
-				" '" + unPays.getImage() + "," +
+				" '" + unPays.getImage() + "' ," +
 				" '" + unPays.getDescription() + "');";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 
 		ExecutionBdd(uneBdd, requete);
+		System.out.println(requete);
 	}
 
 	public static void deletePays(Pays unPays)
@@ -195,11 +196,11 @@ public class Modele {
 
 	public static void updatePays(Pays unPays)
 	{
-		String requete = "UPDATE Pays " +
-				"SET id_pays = '"+unPays.getIdPays()+"'," +
-				"	Libelle_pays = '"+unPays.getLibelle()+"'," +
+		String requete = "UPDATE pays " +
+				"SET Libelle_pays = '"+unPays.getLibelle()+"'," +
 				"	Image_pays = '"+unPays.getImage()+"'," +
-				"	Description_pays = '"+unPays.getDescription()+"'";
+				"	Description_pays = '"+unPays.getDescription()+"' " +
+				"WHERE id_pays = '"+unPays.getIdPays()+"'";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		System.out.println(requete);
@@ -274,7 +275,7 @@ public class Modele {
 		String requete = "INSERT INTO sport values (" +
 				"null," +
 				" '" + unSports.getLibelle() + "'," +
-				" '" + unSports.getImage() + "," +
+				" '" + unSports.getImage() + "' ," +
 				" '" + unSports.getDescription() + "');";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
@@ -313,13 +314,12 @@ public class Modele {
 	public static void updateSport(Sports unSport) {
 		String requete =
 				"UPDATE sport " +
-						"SET id_sport = '"+unSport.getIdSports()+"'," +
-						"	Libelle_sport = '"+unSport.getLibelle()+"'," +
+						"SET Libelle_sport = '"+unSport.getLibelle()+"'," +
 						"	Image_sport = '"+unSport.getImage()+"'," +
-						"	Description_sport = '"+unSport.getDescription()+"'";
+						"	Description_sport = '"+unSport.getDescription()+"' " +
+						"WHERE id_sport = '"+unSport.getIdSports()+"'";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
 		ExecutionBdd(uneBdd, requete);
 	}
 
