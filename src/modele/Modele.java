@@ -203,7 +203,6 @@ public class Modele {
 				"WHERE id_pays = '"+unPays.getIdPays()+"'";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
 		ExecutionBdd(uneBdd, requete);
 	}
 

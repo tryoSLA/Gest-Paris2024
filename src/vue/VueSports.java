@@ -191,10 +191,13 @@ public class VueSports extends JPanel implements ActionListener {
             Sports unSport = new Sports(idSport, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
             Modele.updateSport(unSport);
             Object data [] = {unSport.getIdSports(), unSport.getLibelle(), unSport.getImage(), unSport.getDescription()};
+
             int rowIndex = tableSports.getSelectedRow();
             System.out.println(rowIndex);
             if (unTableau != null)
+            {
                 this.unTableau.update(rowIndex, data);
+            }
         }
     }
     //recuperer les données sous formes d'une matrice

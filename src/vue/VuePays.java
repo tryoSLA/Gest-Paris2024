@@ -200,11 +200,13 @@ public class VuePays extends JPanel implements ActionListener
 
             Pays unPays = new Pays(idPays, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
             Modele.updatePays(unPays);
-            Object data [] = {unPays.getIdPays(), unPays.getLibelle(), unPays.getImage(), unPays.getDescription()};
+            Object data [] = {unPays.getIdPays()+"", unPays.getLibelle(), unPays.getImage(), unPays.getDescription()};
             int rowIndex = tablePays.getSelectedRow();
             System.out.println(rowIndex);
             if (unTableau != null)
+            {
                 this.unTableau.update(rowIndex, data);
+            }
         }
     }
 }
