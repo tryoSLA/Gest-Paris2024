@@ -17,6 +17,7 @@ public class VueGeneral extends JFrame implements ActionListener
 
 	private VueAthletes uneVueAthletes = new VueAthletes();
  	private VueSports uneVueSports = new VueSports();
+ 	private VuePays uneVuePays = new VuePays();
 
 	 public VueGeneral(String droits)
 	 {
@@ -51,6 +52,8 @@ public class VueGeneral extends JFrame implements ActionListener
 		 this.setVisible(true);
 		 this.add(this.uneVueSports);
 		 this.setVisible(true);
+		 this.add(this.uneVuePays);
+		 this.setVisible(true);
 
 	 }
 
@@ -64,19 +67,21 @@ public class VueGeneral extends JFrame implements ActionListener
 		}
 		else if (e.getSource()==this.tabButton[0])
 		{
-			/*uneVueClient.setVisible(true);
-			uneVueInters.setVisible(false);
-			uneVueTech.setVisible(false);*/
+			this.uneVuePays.setVisible(true);
+			this.uneVueSports.setVisible(false);
+			this.uneVueAthletes.setVisible(false);
 		}
 		else if (e.getSource()==this.tabButton[1])
 		{
 			this.uneVueSports.setVisible(true);
 			this.uneVueAthletes.setVisible(false);
+			this.uneVuePays.setVisible(false);
 		}
 		else if (e.getSource()==this.tabButton[2])
 		{
 			this.uneVueAthletes.setVisible(true);
 			this.uneVueSports.setVisible(false);
+			this.uneVuePays.setVisible(false);
 		}
 
 	}

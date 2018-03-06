@@ -2,7 +2,7 @@ package controleur;
 
 import  vue.VueConnexion;
 
-public class Main 
+public class Main
 {
 
 	private static VueConnexion uneConnexion ;

@@ -28,14 +28,13 @@ public class Tableau extends AbstractTableModel
 	{
 		return entetes[columnIndex];
 	}
-	
+
 	public Object getValueAt(int rowIndex, int columnIndex)
 	{
 		System.out.println("case : " +rowIndex+ "   " +columnIndex);
 		return donnees[rowIndex][columnIndex];
-
 	}
-	
+
 	public void add(Object[] data)
 	{
 		Object [][] newDonnees = new Object [this.donnees.length+1][];
@@ -63,7 +62,8 @@ public class Tableau extends AbstractTableModel
 		this.fireTableDataChanged();
 	}
 	
-	public void update(int rowIndex, Object data[]) {
+	public void update(int rowIndex, Object data[])
+	{
         Object[][] newDonnees = new Object[this.donnees.length][];
         for (int i=0; i<this.donnees.length; i++) {
             if (i != rowIndex) {
@@ -71,9 +71,9 @@ public class Tableau extends AbstractTableModel
             } else {
                 newDonnees[i] = data;
             }
-            this.donnees = newDonnees;
-            this.fireTableDataChanged();
         }
+		this.donnees = newDonnees;
+		this.fireTableDataChanged();
     }
 }
 
