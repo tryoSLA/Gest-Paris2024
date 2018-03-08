@@ -181,6 +181,7 @@ public class VuePays extends JPanel implements ActionListener
         }
         else if (e.getSource() == this.btSupprimer)
         {
+            JOptionPane.showMessageDialog(this, "Vous risquez d'endommager la base de donnée, vérifiez qu'aucun(e) athlete (ou equipe) n'est lier a ce pays !", "!!!!!! Attention !!!!!!", JOptionPane.WARNING_MESSAGE);
             int idPays = Integer.parseInt(txtId.getText());
             Pays unPays = new Pays(idPays, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
 
@@ -200,6 +201,7 @@ public class VuePays extends JPanel implements ActionListener
 
             Pays unPays = new Pays(idPays, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
             Modele.updatePays(unPays);
+            JOptionPane.showMessageDialog(this, "Modification réussie");
             Object data [] = {unPays.getIdPays()+"", unPays.getLibelle(), unPays.getImage(), unPays.getDescription()};
             int rowIndex = tablePays.getSelectedRow();
             System.out.println(rowIndex);

@@ -172,6 +172,7 @@ public class VueSports extends JPanel implements ActionListener {
         else if (e.getSource() == this.btSupprimer)
         {
             int idSport = Integer.parseInt(txtId.getText());
+            JOptionPane.showMessageDialog(this, "Vous risquez d'endommager la base de donnée, vérifiez qu'aucun(e) athlete (ou equipe) n'est lier a ce sport !", "!!!!!! Attention !!!!!!", JOptionPane.WARNING_MESSAGE);
             Sports unSport = new Sports(idSport, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
 
             Modele.deleteSports(unSport);
@@ -190,6 +191,7 @@ public class VueSports extends JPanel implements ActionListener {
 
             Sports unSport = new Sports(idSport, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
             Modele.updateSport(unSport);
+            JOptionPane.showMessageDialog(this, "Modification réussie");
             Object data [] = {unSport.getIdSports(), unSport.getLibelle(), unSport.getImage(), unSport.getDescription()};
 
             int rowIndex = tableSports.getSelectedRow();
