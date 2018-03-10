@@ -181,18 +181,26 @@ public class VuePays extends JPanel implements ActionListener
         }
         else if (e.getSource() == this.btSupprimer)
         {
-            int idPays = Integer.parseInt(txtId.getText());
-            Pays unPays = new Pays(idPays, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
+            int dialogButton = JOptionPane.YES_NO_OPTION;
+            int dialogResult = JOptionPane.showConfirmDialog (null, "Vous risquez d'endommager la base de données, \n vérifiez qu'aucun(e) athlete (ou sport) n'est lier a ce pays ! \n Voulez-vous continuer ?","Warning",dialogButton);
+            if(dialogResult == JOptionPane.NO_OPTION)
+            {
+                System.out.println("Rien n'a ete suppr");
+            }
+            else {
+                int idPays = Integer.parseInt(txtId.getText());
+                Pays unPays = new Pays(idPays, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
 
-            Modele.deletePays(unPays);
-            JOptionPane.showMessageDialog(this, "Supression effectuée");
-            txtId.setText("");
-            txtLibelle.setText("");
-            txtImage.setText("");
-            txtDescription.setText("");
+                Modele.deletePays(unPays);
+                JOptionPane.showMessageDialog(this, "Supression effectuée");
+                txtId.setText("");
+                txtLibelle.setText("");
+                txtImage.setText("");
+                txtDescription.setText("");
 
-            int rowIndex = tablePays.getSelectedRow();
-            unTableau.remove(rowIndex);
+                int rowIndex = tablePays.getSelectedRow();
+                unTableau.remove(rowIndex);
+            }
         }
         else if (e.getSource() == this.btMiseAJour)
         {
@@ -200,6 +208,7 @@ public class VuePays extends JPanel implements ActionListener
 
             Pays unPays = new Pays(idPays, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
             Modele.updatePays(unPays);
+            JOptionPane.showMessageDialog(this, "Modification réussie");
             Object data [] = {unPays.getIdPays()+"", unPays.getLibelle(), unPays.getImage(), unPays.getDescription()};
             int rowIndex = tablePays.getSelectedRow();
             System.out.println(rowIndex);

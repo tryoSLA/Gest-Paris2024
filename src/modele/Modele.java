@@ -187,7 +187,7 @@ public class Modele {
 
 	public static void deletePays(Pays unPays)
 	{
-		String requete = "DELETE FROM sport WHERE id_sport = " + unPays.getIdPays() + "; ";
+		String requete = "DELETE FROM pays WHERE id_pays = " + unPays.getIdPays() + "; ";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		System.out.println(requete);
