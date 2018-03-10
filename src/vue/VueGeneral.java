@@ -13,15 +13,17 @@ public class VueGeneral extends JFrame implements ActionListener
 {
 	private JPanel panelMenu = new JPanel();
 	private JButton tabButton [] = new JButton[4];
-	private final String tabNom [] = {"Pays", "Sport", "Athlètes", "Quitter"};
+	private final String tabNom [] = {"Pays", "Sport", "Athlètes","Evenement","Utilisateur", "Quitter"};
 
 	private VueAthletes uneVueAthletes = new VueAthletes();
  	private VueSports uneVueSports = new VueSports();
  	private VuePays uneVuePays = new VuePays();
+	private VueEvenement uneVueEvenement = new VueEvenement();
+	private VueUtilisateur uneVueUtilisateur = new VueUtilisateur();
 
 	 public VueGeneral(String droits)
 	 {
-		 this.setTitle("Gestion des pays");
+		 this.setTitle("Gest Paris 2024");
 		 this.setLayout(null); 
 		 this.setResizable(false); 
 		 this.setBounds(200, 200, 1000, 800);
@@ -47,12 +49,16 @@ public class VueGeneral extends JFrame implements ActionListener
 		 
 		 //this.btPays.addActionListener(this);
 
-		 //Ajout des 3 pannels
+		 //Ajout des pannels
 		 this.add(this.uneVueAthletes);
 		 this.setVisible(true);
 		 this.add(this.uneVueSports);
 		 this.setVisible(true);
 		 this.add(this.uneVuePays);
+		 this.setVisible(true);
+		 this.add(this.uneVueEvenement);
+		 this.setVisible(true);
+		 this.add(this.uneVueUtilisateur);
 		 this.setVisible(true);
 
 	 }
@@ -70,18 +76,39 @@ public class VueGeneral extends JFrame implements ActionListener
 			this.uneVuePays.setVisible(true);
 			this.uneVueSports.setVisible(false);
 			this.uneVueAthletes.setVisible(false);
+			this.uneVueUtilisateur.setVisible(false);
+			this.uneVueEvenement.setVisible(false);
 		}
 		else if (e.getSource()==this.tabButton[1])
 		{
 			this.uneVueSports.setVisible(true);
 			this.uneVueAthletes.setVisible(false);
 			this.uneVuePays.setVisible(false);
+			this.uneVueUtilisateur.setVisible(false);
+			this.uneVueEvenement.setVisible(false);
 		}
 		else if (e.getSource()==this.tabButton[2])
 		{
 			this.uneVueAthletes.setVisible(true);
 			this.uneVueSports.setVisible(false);
 			this.uneVuePays.setVisible(false);
+			this.uneVueEvenement.setVisible(false);
+		}
+		else if (e.getSource()==this.tabButton[3])
+		{
+			this.uneVueAthletes.setVisible(false);
+			this.uneVueSports.setVisible(false);
+			this.uneVuePays.setVisible(false);
+			this.uneVueUtilisateur.setVisible(false);
+			this.uneVueEvenement.setVisible(true);
+		}
+		else if (e.getSource()==this.tabButton[4])
+		{
+			this.uneVueAthletes.setVisible(false);
+			this.uneVueSports.setVisible(false);
+			this.uneVuePays.setVisible(false);
+			this.uneVueEvenement.setVisible(false);
+			this.uneVueUtilisateur.setVisible(true);
 		}
 
 	}
