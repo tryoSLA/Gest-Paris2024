@@ -171,19 +171,26 @@ public class VueSports extends JPanel implements ActionListener {
         }
         else if (e.getSource() == this.btSupprimer)
         {
-            int idSport = Integer.parseInt(txtId.getText());
-            JOptionPane.showMessageDialog(this, "Vous risquez d'endommager la base de donnée, vérifiez qu'aucun(e) athlete (ou equipe) n'est lier a ce sport !", "!!!!!! Attention !!!!!!", JOptionPane.WARNING_MESSAGE);
-            Sports unSport = new Sports(idSport, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
+            int dialogButton = JOptionPane.YES_NO_OPTION;
+            int dialogResult = JOptionPane.showConfirmDialog (null, "Vous risquez d'endommager la base de données, \n vérifiez qu'aucun(e) athlete (ou sport) n'est lier a ce sport ! \n Voulez-vous continuer ?","Warning",dialogButton);
+            if(dialogResult == JOptionPane.NO_OPTION)
+            {
+                System.out.println("Rien n'a ete suppr");
+            }
+            else {
+                int idSport = Integer.parseInt(txtId.getText());
+                Sports unSport = new Sports(idSport, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
 
-            Modele.deleteSports(unSport);
-            JOptionPane.showMessageDialog(this, "Supression effectuée");
-            txtId.setText("");
-            txtLibelle.setText("");
-            txtImage.setText("");
-            txtDescription.setText("");
+                Modele.deleteSports(unSport);
+                JOptionPane.showMessageDialog(this, "Supression effectuée");
+                txtId.setText("");
+                txtLibelle.setText("");
+                txtImage.setText("");
+                txtDescription.setText("");
 
-            int rowIndex = tableSports.getSelectedRow();
-            unTableau.remove(rowIndex);
+                int rowIndex = tableSports.getSelectedRow();
+                unTableau.remove(rowIndex);
+            }
         }
         else if (e.getSource() == this.btMiseAJour)
         {

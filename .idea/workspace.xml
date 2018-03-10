@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="20f4042c-d636-4152-a9f6-12878f75117a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bin/modele/Modele.class" afterPath="$PROJECT_DIR$/bin/modele/Modele.class" />
-      <change beforePath="$PROJECT_DIR$/bin/vue/VuePays.class" afterPath="$PROJECT_DIR$/bin/vue/VuePays.class" />
-      <change beforePath="$PROJECT_DIR$/src/modele/Modele.java" afterPath="$PROJECT_DIR$/src/modele/Modele.java" />
       <change beforePath="$PROJECT_DIR$/src/vue/VuePays.java" afterPath="$PROJECT_DIR$/src/vue/VuePays.java" />
       <change beforePath="$PROJECT_DIR$/src/vue/VueSports.java" afterPath="$PROJECT_DIR$/src/vue/VueSports.java" />
     </list>
@@ -41,12 +38,40 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="VuePays.java" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="VueSports.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vue/VueSports.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="192" column="13" lean-forward="false" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#VueSports#0;class#VueSports#0" expanded="false" />
+                <element signature="method#recupererLesSports#0;class#VueSports#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tableau.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controleur/Tableau.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="65" column="4" lean-forward="false" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+              <folding>
+                <element signature="method#Tableau#0;class#Tableau#0" expanded="false" />
+                <element signature="method#getValueAt#0;class#Tableau#0" expanded="false" />
+                <element signature="method#remove#0;class#Tableau#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VuePays.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/vue/VuePays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="203" column="12" lean-forward="false" selection-start-line="203" selection-start-column="12" selection-end-line="203" selection-end-column="72" />
+            <state relative-caret-position="2574">
+              <caret line="184" column="178" lean-forward="false" selection-start-line="184" selection-start-column="178" selection-end-line="184" selection-end-column="178" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,15 +79,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VueSports.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueSports.java">
+      <file leaf-file-name="Modele.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="193" column="72" lean-forward="false" selection-start-line="193" selection-start-column="72" selection-end-line="193" selection-end-column="72" />
+            <state relative-caret-position="118">
+              <caret line="324" column="0" lean-forward="false" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#VueSports#0;class#VueSports#0" expanded="false" />
-                <element signature="method#recupererLesSports#0;class#VueSports#0" expanded="false" />
+                <element signature="method#Combo#0;class#Modele#0" expanded="false" />
+                <element signature="method#selectAllPays#0;class#Modele#0" expanded="false" />
+                <element signature="method#selectWherePays#0;class#Modele#0" expanded="false" />
+                <element signature="method#selectIdWherePays#0;class#Modele#0" expanded="false" />
+                <element signature="method#insertPays#0;class#Modele#0" expanded="false" />
+                <element signature="method#deletePays#0;class#Modele#0" expanded="false" />
+                <element signature="method#updatePays#0;class#Modele#0" expanded="false" />
+                <element signature="method#selectAllSports#0;class#Modele#0" expanded="false" />
+                <element signature="method#selectIdWhereSport#0;class#Modele#0" expanded="false" />
+                <element signature="method#insertSports#0;class#Modele#0" expanded="false" />
+                <element signature="method#selectWhereSport#0;class#Modele#0" expanded="false" />
+                <element signature="method#updateSport#0;class#Modele#0" expanded="false" />
+                <element signature="method#deleteSports#0;class#Modele#0" expanded="false" />
+                <element signature="method#selectAllAthletes#0;class#Modele#0" expanded="false" />
+                <element signature="method#insertAthleteAvecEquipe#0;class#Modele#0" expanded="false" />
+                <element signature="method#insertAthleteSansEquipe#0;class#Modele#0" expanded="false" />
+                <element signature="method#updateAthleteAvecEquipe#0;class#Modele#0" expanded="false" />
+                <element signature="method#updateAthleteSansEquipe#0;class#Modele#0" expanded="false" />
+                <element signature="method#deleteAthlete#0;class#Modele#0" expanded="false" />
+                <element signature="method#selectAllEvents#0;class#Modele#0" expanded="false" />
+                <element signature="method#insertEvents#0;class#Modele#0" expanded="false" />
+                <element signature="e#18344#18399#0" expanded="false" />
+                <element signature="method#selectWhereEquipe#0;class#Modele#0" expanded="false" />
+                <element signature="method#selectIdWhereEquipe#0;class#Modele#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -103,8 +149,8 @@
         <option value="$PROJECT_DIR$/src/controleur/Pays.java" />
         <option value="$PROJECT_DIR$/src/controleur/Tableau.java" />
         <option value="$PROJECT_DIR$/src/modele/Modele.java" />
-        <option value="$PROJECT_DIR$/src/vue/VuePays.java" />
         <option value="$PROJECT_DIR$/src/vue/VueSports.java" />
+        <option value="$PROJECT_DIR$/src/vue/VuePays.java" />
       </list>
     </option>
   </component>
@@ -135,7 +181,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,9 +217,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,7 +383,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -348,7 +394,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31743422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18381241" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18986385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -401,7 +447,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -468,8 +514,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#VueSports#0;class#VueSports#0" expanded="false" />
-            <element signature="e#1431#1432#0" expanded="false" />
-            <element signature="e#1475#1476#0" expanded="false" />
             <element signature="method#recupererLesSports#0;class#VueSports#0" expanded="false" />
           </folding>
         </state>
@@ -569,8 +613,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#VueSports#0;class#VueSports#0" expanded="false" />
-            <element signature="e#1431#1432#0" expanded="false" />
-            <element signature="e#1475#1476#0" expanded="false" />
             <element signature="method#recupererLesSports#0;class#VueSports#0" expanded="false" />
           </folding>
         </state>
@@ -991,14 +1033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="67" column="50" lean-forward="true" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/javax/swing/JTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1007,31 +1041,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="67" column="50" lean-forward="true" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controleur/Pays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="18">
           <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controleur/Tableau.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="65" column="4" lean-forward="false" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
-          <folding>
-            <element signature="method#Tableau#0;class#Tableau#0" expanded="false" />
-            <element signature="method#getValueAt#0;class#Tableau#0" expanded="false" />
-            <element signature="method#add#0;class#Tableau#0" expanded="false" />
-            <element signature="method#remove#0;class#Tableau#0" expanded="false" />
-            <element signature="method#update#0;class#Tableau#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
+        <state relative-caret-position="118">
           <caret line="324" column="0" lean-forward="false" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
           <folding>
             <element signature="method#Combo#0;class#Modele#0" expanded="false" />
@@ -1062,24 +1090,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vue/VuePays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="203" column="12" lean-forward="false" selection-start-line="203" selection-start-column="12" selection-end-line="203" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/vue/VueSports.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="193" column="72" lean-forward="false" selection-start-line="193" selection-start-column="72" selection-end-line="193" selection-end-column="72" />
+        <state relative-caret-position="459">
+          <caret line="192" column="13" lean-forward="false" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#VueSports#0;class#VueSports#0" expanded="false" />
             <element signature="method#recupererLesSports#0;class#VueSports#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controleur/Tableau.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="65" column="4" lean-forward="false" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+          <folding>
+            <element signature="method#Tableau#0;class#Tableau#0" expanded="false" />
+            <element signature="method#getValueAt#0;class#Tableau#0" expanded="false" />
+            <element signature="method#remove#0;class#Tableau#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VuePays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2574">
+          <caret line="184" column="178" lean-forward="false" selection-start-line="184" selection-start-column="178" selection-end-line="184" selection-end-column="178" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
