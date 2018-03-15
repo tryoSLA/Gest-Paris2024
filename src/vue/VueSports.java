@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+import java.io.*;
 import java.util.ArrayList;
 import javax.swing.*;
 
@@ -17,8 +18,11 @@ import controleur.Tableau;
 public class VueSports extends JPanel implements ActionListener {
 
     private JTable tableSports;
+
     private JPanel panelEdition = new JPanel();
     private JPanel panelEdition2 = new JPanel();
+    private JPanel panelEdition3 = new JPanel();
+    private JButton btChoisir = new JButton("Choisir");
     private JButton btAnnuler = new JButton("Annuler");
     private JButton btAjouter = new JButton("Ajouter");
     private JButton btMiseAJour = new JButton("Mettre à jour");
@@ -26,13 +30,13 @@ public class VueSports extends JPanel implements ActionListener {
 
     private JTextField txtId = new JTextField();
     private JTextField txtLibelle = new JTextField();
+    private JFileChooser choseImage = new JFileChooser();
     private JTextField txtImage = new JTextField();
     private TextArea txtDescription = new TextArea();
     private Tableau unTableau;
 
-    public VueSports()
-    {
-        this.setBounds(20, 70, 850, 790);
+    public VueSports() {
+        this.setBounds(20, 70, 850, 900);
         this.setLayout(null);
 
 
@@ -41,8 +45,8 @@ public class VueSports extends JPanel implements ActionListener {
 
         this.unTableau = new Tableau(this.recupererLesSports(), entete);
 
-        this.tableSports = new JTable(unTableau){
-            public boolean isCellEditable(int row, int column){
+        this.tableSports = new JTable(unTableau) {
+            public boolean isCellEditable(int row, int column) {
                 return false;
             }
         };
@@ -54,8 +58,7 @@ public class VueSports extends JPanel implements ActionListener {
             }
 
             @Override
-            public void mouseClicked(MouseEvent m)
-            {
+            public void mouseClicked(MouseEvent m) {
                 int ligne = tableSports.getSelectedRow();
                 txtId.setText(tableSports.getValueAt(ligne, 0).toString());
                 txtLibelle.setText(tableSports.getValueAt(ligne, 1).toString());
@@ -82,7 +85,7 @@ public class VueSports extends JPanel implements ActionListener {
             }
         });
 
-        this.txtDescription.setBounds(10,10,100,50);
+        this.txtDescription.setBounds(10, 10, 100, 50);
 
         //Affichage de la JTable dans une ScrollTable
         JScrollPane uneScroll = new JScrollPane(this.tableSports);
@@ -90,45 +93,63 @@ public class VueSports extends JPanel implements ActionListener {
         uneScroll.setBackground(Color.black);
         this.add(uneScroll);
         this.tableSports.setEnabled(true);
-        this.panelEdition.setLayout(new GridLayout(3,8));
-        //construction du panel d'édition d'un client
-        this.panelEdition.setBounds(20, 290, 800, 200);
-        this.panelEdition.add(new JLabel("Libelle : "));
-        this.panelEdition.add(txtLibelle);
-        this.panelEdition.add(new JLabel(""));
 
-        this.panelEdition2.setBounds(20, 500, 800, 83);
-        this.panelEdition2.setLayout(new GridBagLayout());
+        this.panelEdition.setBounds(20, 300, 800, 150);
+        this.panelEdition.setLayout(new GridBagLayout());
         GridBagConstraints gridBC = new GridBagConstraints();
+        gridBC.gridx = gridBC.gridy = 0;
+        gridBC.weightx = gridBC.weighty = 1;
+        gridBC.fill = GridBagConstraints.HORIZONTAL;
 
-        this.panelEdition2.add(new JLabel("Image : "), gridBC);
+        //this.txtLibelle.setSize(150,20);
+
+        this.panelEdition.add(new JLabel("Libelle : "), gridBC);
         gridBC.gridx = 1;
         gridBC.gridy = 0;
-        gridBC.weightx = 1;
-        this.panelEdition2.add(txtImage, gridBC);
+
+        this.panelEdition.add(txtLibelle, gridBC);
         gridBC.gridx = 2;
         gridBC.gridy = 0;
-        gridBC.weightx = 1;
-        this.panelEdition2.add(new JLabel("Description : "), gridBC);
+
+        this.panelEdition.add(new JLabel(""), gridBC);
         gridBC.gridx = 3;
         gridBC.gridy = 0;
-        gridBC.weightx = 1;
-        this.panelEdition2.add(txtDescription, gridBC);
+
+        this.panelEdition.add(new JLabel("Description : "), gridBC);
         gridBC.gridx = 4;
         gridBC.gridy = 0;
-        gridBC.weightx = 2;
 
+        this.panelEdition.add(txtDescription, gridBC);
+        gridBC.gridx = 5;
+        gridBC.gridy = 0;
+
+
+        this.panelEdition2.setBounds(20, 400, 400, 150);
+        this.panelEdition2.setLayout(new GridBagLayout());
+        GridBagConstraints gridBC2 = new GridBagConstraints();
+        gridBC2.gridx = gridBC2.gridy = 0;
+        gridBC2.weightx = gridBC2.weighty = 1;
+        gridBC2.fill = GridBagConstraints.HORIZONTAL;
+
+        this.panelEdition2.add(new JLabel("Image : "), gridBC2);
+        gridBC2.gridx = 1;
+        gridBC2.gridy = 0;
+
+        this.panelEdition2.add(btChoisir, gridBC2);
+        gridBC2.gridx = 2;
+        gridBC2.gridy = 0;
 
         this.add(this.panelEdition);
         this.add(this.panelEdition2);
 
-        this.btAnnuler.setBounds(100, 600, 100, 20);
+
+        this.btAnnuler.setBounds(100, 550, 100, 20);
         this.add(btAnnuler);
-        this.btAjouter.setBounds(220, 600, 100, 20);
+        this.btAjouter.setBounds(220, 550, 100, 20);
         this.add(btAjouter);
-        this.btMiseAJour.setBounds(340, 600, 100, 20);
+        this.btMiseAJour.setBounds(340, 550, 100, 20);
         this.add(btMiseAJour);
-        this.btSupprimer.setBounds(460, 600, 100, 20);
+        this.btSupprimer.setBounds(460, 550, 100, 20);
         this.add(btSupprimer);
 
         //this.txtIdClient.setEditable(false);
@@ -138,6 +159,7 @@ public class VueSports extends JPanel implements ActionListener {
         this.btAjouter.addActionListener(this);
         this.btSupprimer.addActionListener(this);
         this.btMiseAJour.addActionListener(this);
+        this.btChoisir.addActionListener(this);
 
 
         this.setVisible(false);
@@ -145,15 +167,21 @@ public class VueSports extends JPanel implements ActionListener {
     }
 
     @Override
-    public void actionPerformed(ActionEvent e)
-    {
-        if (e.getSource() == this.btAjouter)
-        {
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == this.btAjouter) {
+            String pathImage = choseImage.getSelectedFile().getAbsolutePath();
+            String nameImage = choseImage.getSelectedFile().getName();
+            String pathDestination = "C:\\wamp64\\www\\paris2024\\Web\\Images\\Sports\\"+nameImage;
+            File source = new File(pathImage);
+            File destination = new File(pathDestination);
+            //System.out.println(pathImage + "_____" + nameImage + "___"+ source +"_____"+destination);
+            source.renameTo(destination);
+
             int idSport = Integer.parseInt(txtId.getText());
 
-            Sports unSport = new Sports(idSport, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
+            Sports unSport = new Sports(idSport, txtLibelle.getText(), txtDescription.getText(), nameImage);
             Modele.insertSports(unSport);
-            Object data [] = {unSport.getIdSports(), unSport.getLibelle(), unSport.getImage(), unSport.getDescription()};
+            Object data[] = {unSport.getIdSports(), unSport.getLibelle(), unSport.getImage(), unSport.getDescription()};
             this.unTableau.add(data);
 
             JOptionPane.showMessageDialog(this, "Insertion réussie");
@@ -161,6 +189,9 @@ public class VueSports extends JPanel implements ActionListener {
             txtLibelle.setText("");
             txtImage.setText("");
             txtDescription.setText("");
+        } else if (e.getSource() == this.btChoisir)
+        {
+            this.choseImage.showOpenDialog(this);
         }
         else if (e.getSource() == this.btAnnuler)
         {
@@ -172,12 +203,11 @@ public class VueSports extends JPanel implements ActionListener {
         else if (e.getSource() == this.btSupprimer)
         {
             int dialogButton = JOptionPane.YES_NO_OPTION;
-            int dialogResult = JOptionPane.showConfirmDialog (null, "Vous risquez d'endommager la base de données, \n vérifiez qu'aucun(e) athlete (ou sport) n'est lier a ce sport ! \n Voulez-vous continuer ?","Warning",dialogButton);
-            if(dialogResult == JOptionPane.NO_OPTION)
+            int dialogResult = JOptionPane.showConfirmDialog(null, "Vous risquez d'endommager la base de données, \n vérifiez qu'aucun(e) athlete (ou sport) n'est lier a ce sport ! \n Voulez-vous continuer ?", "Warning", dialogButton);
+            if (dialogResult == JOptionPane.NO_OPTION)
             {
                 System.out.println("Rien n'a ete suppr");
-            }
-            else {
+            } else {
                 int idSport = Integer.parseInt(txtId.getText());
                 Sports unSport = new Sports(idSport, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
 
@@ -191,32 +221,28 @@ public class VueSports extends JPanel implements ActionListener {
                 int rowIndex = tableSports.getSelectedRow();
                 unTableau.remove(rowIndex);
             }
-        }
-        else if (e.getSource() == this.btMiseAJour)
-        {
+        } else if (e.getSource() == this.btMiseAJour) {
             int idSport = Integer.parseInt(txtId.getText());
 
             Sports unSport = new Sports(idSport, txtLibelle.getText(), txtDescription.getText(), txtImage.getText());
             Modele.updateSport(unSport);
             JOptionPane.showMessageDialog(this, "Modification réussie");
-            Object data [] = {unSport.getIdSports(), unSport.getLibelle(), unSport.getImage(), unSport.getDescription()};
+            Object data[] = {unSport.getIdSports(), unSport.getLibelle(), unSport.getImage(), unSport.getDescription()};
 
             int rowIndex = tableSports.getSelectedRow();
             System.out.println(rowIndex);
-            if (unTableau != null)
-            {
+            if (unTableau != null) {
                 this.unTableau.update(rowIndex, data);
             }
         }
     }
+
     //recuperer les données sous formes d'une matrice
-    private Object[][] recupererLesSports ()
-    {
+    private Object[][] recupererLesSports() {
         ArrayList<Sports> lesSports = Modele.selectAllSports();
         Object[][] donnees = new Object[lesSports.size()][Sports.getNbChampSports()];
         int i = 0;
-        for (Sports unSports : lesSports)
-        {
+        for (Sports unSports : lesSports) {
             donnees[i][0] = unSports.getIdSports();
             donnees[i][1] = unSports.getLibelle();
             donnees[i][2] = unSports.getImage();
@@ -225,4 +251,5 @@ public class VueSports extends JPanel implements ActionListener {
         }
         return donnees;
     }
+
 }
