@@ -12,19 +12,20 @@ import controleur.Main;
 public class VueGeneral extends JFrame implements ActionListener
 {
 	private JPanel panelMenu = new JPanel();
-	private JButton tabButton [] = new JButton[4];
-	private final String tabNom [] = {"Pays", "Sport", "Athlètes", "Quitter"};
+	private JButton tabButton [] = new JButton[5];
+	private final String tabNom [] = {"Pays", "Sport", "Athlètes","Utilisateurs", "Quitter"};
 
 	private VueAthletes uneVueAthletes = new VueAthletes();
  	private VueSports uneVueSports = new VueSports();
  	private VuePays uneVuePays = new VuePays();
+ 	private VueUtilisateurs uneVueUtilisateurs = new VueUtilisateurs();
 
 	 public VueGeneral(String droits)
 	 {
 		 this.setTitle("Gestion des pays");
 		 this.setLayout(null); 
-		 this.setResizable(false); 
-		 this.setBounds(200, 200, 1000, 800);
+		 this.setResizable(true);
+		 this.setBounds(200, 200, 1000, 1000);
 		 this.getContentPane().setBackground(Color.gray);
 		 this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		 
@@ -36,7 +37,7 @@ public class VueGeneral extends JFrame implements ActionListener
 		 ImageIcon logopetit = new ImageIcon("src/images/Logo_paris_2024_simple.png");
 		 this.setIconImage(logopetit.getImage());
 					 
-		for (int i = 0; i<4; i++)
+		for (int i = 0; i<5; i++)
 		{
 			this.tabButton[i] = new JButton(tabNom[i]);
 			this.panelMenu.add(this.tabButton[i]);
@@ -47,12 +48,14 @@ public class VueGeneral extends JFrame implements ActionListener
 		 
 		 //this.btPays.addActionListener(this);
 
-		 //Ajout des 3 pannels
+		 //Ajout des 4 pannels
 		 this.add(this.uneVueAthletes);
 		 this.setVisible(true);
 		 this.add(this.uneVueSports);
 		 this.setVisible(true);
 		 this.add(this.uneVuePays);
+		 this.setVisible(true);
+		 this.add(this.uneVueUtilisateurs);
 		 this.setVisible(true);
 
 	 }
@@ -60,7 +63,7 @@ public class VueGeneral extends JFrame implements ActionListener
 	@Override
 	public void actionPerformed(ActionEvent e)
 	{
-		if (e.getSource()==this.tabButton[3])
+		if (e.getSource()==this.tabButton[4])
 		{
 			this.dispose();
 			Main.rendreVisible(true);
@@ -70,18 +73,28 @@ public class VueGeneral extends JFrame implements ActionListener
 			this.uneVuePays.setVisible(true);
 			this.uneVueSports.setVisible(false);
 			this.uneVueAthletes.setVisible(false);
+			this.uneVueUtilisateurs.setVisible(false);
 		}
 		else if (e.getSource()==this.tabButton[1])
 		{
 			this.uneVueSports.setVisible(true);
 			this.uneVueAthletes.setVisible(false);
 			this.uneVuePays.setVisible(false);
+			this.uneVueUtilisateurs.setVisible(false);
 		}
 		else if (e.getSource()==this.tabButton[2])
 		{
 			this.uneVueAthletes.setVisible(true);
 			this.uneVueSports.setVisible(false);
 			this.uneVuePays.setVisible(false);
+			this.uneVueUtilisateurs.setVisible(false);
+		}
+		else if (e.getSource()==this.tabButton[3])
+		{
+			this.uneVueAthletes.setVisible(false);
+			this.uneVueSports.setVisible(false);
+			this.uneVuePays.setVisible(false);
+			this.uneVueUtilisateurs.setVisible(true);
 		}
 
 	}

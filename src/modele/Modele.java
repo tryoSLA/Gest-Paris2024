@@ -185,8 +185,7 @@ public class Modele {
 		System.out.println(requete);
 	}
 
-	public static void deletePays(Pays unPays)
-	{
+	public static void deletePays(Pays unPays) {
 		String requete = "DELETE FROM pays WHERE id_pays = " + unPays.getIdPays() + "; ";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
@@ -194,13 +193,12 @@ public class Modele {
 		ExecutionBdd(uneBdd, requete);
 	}
 
-	public static void updatePays(Pays unPays)
-	{
+	public static void updatePays(Pays unPays) {
 		String requete = "UPDATE pays " +
-				"SET Libelle_pays = '"+unPays.getLibelle()+"'," +
-				"	Image_pays = '"+unPays.getImage()+"'," +
-				"	Description_pays = '"+unPays.getDescription()+"' " +
-				"WHERE id_pays = '"+unPays.getIdPays()+"'";
+				"SET Libelle_pays = '" + unPays.getLibelle() + "'," +
+				"	Image_pays = '" + unPays.getImage() + "'," +
+				"	Description_pays = '" + unPays.getDescription() + "' " +
+				"WHERE id_pays = '" + unPays.getIdPays() + "'";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		ExecutionBdd(uneBdd, requete);
@@ -313,10 +311,10 @@ public class Modele {
 	public static void updateSport(Sports unSport) {
 		String requete =
 				"UPDATE sport " +
-						"SET Libelle_sport = '"+unSport.getLibelle()+"'," +
-						"	Image_sport = '"+unSport.getImage()+"'," +
-						"	Description_sport = '"+unSport.getDescription()+"' " +
-						"WHERE id_sport = '"+unSport.getIdSports()+"'";
+						"SET Libelle_sport = '" + unSport.getLibelle() + "'," +
+						"	Image_sport = '" + unSport.getImage() + "'," +
+						"	Description_sport = '" + unSport.getDescription() + "' " +
+						"WHERE id_sport = '" + unSport.getIdSports() + "'";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		ExecutionBdd(uneBdd, requete);
@@ -423,38 +421,38 @@ public class Modele {
 						"','" + unAthlete.getPrenom() +
 						"'," + unAthlete.getAge() +
 						",'" + unAthlete.getGenre() +
-						"'," + unAthlete.getTaille()+
+						"'," + unAthlete.getTaille() +
 						"," + unAthlete.getPoids() +
 						",'" + unAthlete.getPhoto() +
 						"','" + unAthlete.getBiographie() +
 						"'," + unAthlete.getId_pays() +
 						"," + unAthlete.getId_equipe() +
-						"," + unAthlete.getId_sport() +");";
+						"," + unAthlete.getId_sport() + ");";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		System.out.println(requete);
 		ExecutionBdd(uneBdd, requete);
 	}
 
-    public static void updateAthleteSansEquipe(Athletes unAthlete) {
-        String requete =
-                "Call update_athlete (" + unAthlete.getIdAthletes() +
-                        ",'" + unAthlete.getNom() +
-                        "','" + unAthlete.getPrenom() +
-                        "'," + unAthlete.getAge() +
-                        ",'" + unAthlete.getGenre() +
-                        "'," + unAthlete.getTaille()+
-                        "," + unAthlete.getPoids() +
-                        ",'" + unAthlete.getPhoto() +
-                        "','" + unAthlete.getBiographie() +
-                        "'," + unAthlete.getId_pays() +
-                        "," + unAthlete.getId_equipe_string() +
-                        "," + unAthlete.getId_sport() + ");";
+	public static void updateAthleteSansEquipe(Athletes unAthlete) {
+		String requete =
+				"Call update_athlete (" + unAthlete.getIdAthletes() +
+						",'" + unAthlete.getNom() +
+						"','" + unAthlete.getPrenom() +
+						"'," + unAthlete.getAge() +
+						",'" + unAthlete.getGenre() +
+						"'," + unAthlete.getTaille() +
+						"," + unAthlete.getPoids() +
+						",'" + unAthlete.getPhoto() +
+						"','" + unAthlete.getBiographie() +
+						"'," + unAthlete.getId_pays() +
+						"," + unAthlete.getId_equipe_string() +
+						"," + unAthlete.getId_sport() + ");";
 
-        Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-        System.out.println(requete);
-        ExecutionBdd(uneBdd, requete);
-    }
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+	}
 
 	public static void deleteAthlete(Athletes unAthlete) {
 		String requete =
@@ -464,10 +462,10 @@ public class Modele {
 		System.out.println(requete);
 		ExecutionBdd(uneBdd, requete);
 
-		String requete2 = "DELETE FROM personne WHERE id_personne = "+ unAthlete.getIdAthletes() + ";";
-        Bdd uneBdd2 = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-        System.out.println(requete2);
-        ExecutionBdd(uneBdd2, requete2);
+		String requete2 = "DELETE FROM personne WHERE id_personne = " + unAthlete.getIdAthletes() + ";";
+		Bdd uneBdd2 = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete2);
+		ExecutionBdd(uneBdd2, requete2);
 	}
 
 	/*
@@ -590,14 +588,13 @@ public class Modele {
 		return libelleEquipe;
 	}
 
-	public static int selectIdWhereEquipe (String libelleEquipe)
-	{
+	public static int selectIdWhereEquipe(String libelleEquipe) {
 		int idequipe = 0;
 
 		String requete = "SELECT id_equipe FROM Equipe WHERE libelle_equipe = \"" + libelleEquipe + "\";";
 		System.out.println(requete);
-		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
-		try{
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
 			//Connexion à la base de donnée
 			uneBdd.seConnecter();
 			Statement unStat = uneBdd.getMaConnexion().createStatement();
@@ -611,13 +608,102 @@ public class Modele {
 			}
 			//Fermeture de la connexion à la base de données
 			uneBdd.seDeConnecter();
-		}
-		catch( SQLException exp)
-		{
-			System.out.println("Erreur : "+ requete);
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
 			//exp.printStackTrace();
 		}
 		return idequipe;
 	}
 
+
+	/*
+	********************************************************************************************************************
+	---------------------------------------------       Utilisateurs    ------------------------------------------------
+	********************************************************************************************************************
+	 */
+	public static ArrayList<Utilisateurs> selectAllUsers() {
+		//list via le controleur des Users
+		ArrayList<Utilisateurs> listUsers = new ArrayList<Utilisateurs>();
+
+		String requete = "SELECT * FROM utilisateur_detaille;";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+			while (rs.next()) {
+				//récupération des Champs par valeur
+				int idUser = rs.getInt("id_personne");
+				String nomUser = rs.getString("Nom");
+				String prenomUser = rs.getString("Prenom");
+				int ageUser = rs.getInt("Age");
+				String genreUser = rs.getString("Genre");
+				String emailUser = rs.getString("email");
+				String mdpUser = rs.getString("mot_de_passe");
+				String pseudoUser = rs.getString("pseudo");
+				String roleUser = rs.getString("role");
+				//Mise à jour de la liste
+				listUsers.add(new Utilisateurs(idUser, nomUser, prenomUser, ageUser, genreUser, roleUser,pseudoUser,emailUser, mdpUser));
+			}
+
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
+			//exp.printStackTrace();
+		}
+		return listUsers;
+	}
+
+	public static void insertUtilisateur(Utilisateurs unUtilisateur) {
+		String requete =
+				"CALL insert_user ('" + unUtilisateur.getNom() + "','" +
+						unUtilisateur.getPrenom() + "'," +
+						unUtilisateur.getAge() + ",'" +
+						unUtilisateur.getGenre() + "','" +
+						unUtilisateur.getEmail() + "','" +
+						unUtilisateur.getPseudo() + "','" +
+						unUtilisateur.getMot_de_passe() + "','" +
+						unUtilisateur.getRole() + "');";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+	}
+
+	public static void deleteUtilisateur(Utilisateurs unUtilisateur) {
+		String requete =
+				"DELETE FROM utilisateur WHERE id_personne = " + unUtilisateur.getId_personne() + "; ";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+
+		String requete2 = "DELETE FROM personne WHERE id_personne = " + unUtilisateur.getId_personne() + ";";
+		Bdd uneBdd2 = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete2);
+		ExecutionBdd(uneBdd2, requete2);
+	}
+
+	public static void updateUtilisateur(Utilisateurs unUtilisateur) {
+		String requete =
+				"Call update_user (" + unUtilisateur.getId_personne() + ",'" +
+						unUtilisateur.getNom() + "','" +
+						unUtilisateur.getPrenom() + "'," +
+						unUtilisateur.getAge() + ",'" +
+						unUtilisateur.getGenre() + "','" +
+						unUtilisateur.getEmail() + "','" +
+						unUtilisateur.getPseudo() + "','" +
+						unUtilisateur.getMot_de_passe() + "','" +
+						unUtilisateur.getRole() + "');";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+
+	}
 }

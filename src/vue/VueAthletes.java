@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+import java.io.File;
 import java.util.ArrayList;
 import javax.swing.*;
 
@@ -21,6 +22,9 @@ public class VueAthletes extends JPanel implements ActionListener {
     private JTable tableAthletes;
     private JPanel panelEdition = new JPanel();
     private JPanel panelEdition2 = new JPanel();
+    private JPanel panelEdition3 = new JPanel();
+    private JFileChooser choseImage = new JFileChooser();
+    private JButton btChoisir = new JButton("Choisir");
     private JButton btAnnuler = new JButton("Annuler");
     private JButton btAjouter = new JButton("Ajouter");
     private JButton btMiseAJour = new JButton("Mettre à jour");
@@ -52,7 +56,6 @@ public class VueAthletes extends JPanel implements ActionListener {
         String entete[] = {"Id","Nom", "Prénom", "Age", "Genre", "Taille","Poids","Photo", "Biographie", "Equipe", "Sport","Pays"};
 
         this.unTableau = new Tableau(this.recupererLesAthletes(), entete);
-
         this.tableAthletes = new JTable(unTableau){
             public boolean isCellEditable(int row, int column){
                 return false;
@@ -165,34 +168,43 @@ public class VueAthletes extends JPanel implements ActionListener {
         this.panelEdition2.setLayout(new GridBagLayout());
         GridBagConstraints gridBC = new GridBagConstraints();
 
-        this.panelEdition2.add(new JLabel("Photo : "), gridBC);
+        this.panelEdition2.add(new JLabel("Biographie : "), gridBC);
         gridBC.gridx = 1;
         gridBC.gridy = 0;
         gridBC.weightx = 1;
-        this.panelEdition2.add(txtPhoto, gridBC);
+        this.panelEdition2.add(txtBiographie, gridBC);
         gridBC.gridx = 2;
         gridBC.gridy = 0;
-        gridBC.weightx = 1;
-        this.panelEdition2.add(new JLabel("Biographie : "), gridBC);
-        gridBC.gridx = 3;
-        gridBC.gridy = 0;
-        gridBC.weightx = 1;
-        this.panelEdition2.add(txtBiographie, gridBC);
-        gridBC.gridx = 4;
-        gridBC.gridy = 0;
         gridBC.weightx = 2;
+
+        this.panelEdition3.setBounds(20, 550, 400, 150);
+        this.panelEdition3.setLayout(new GridBagLayout());
+        GridBagConstraints gridBC2 = new GridBagConstraints();
+        gridBC2.gridx = gridBC2.gridy = 0;
+        gridBC2.weightx = gridBC2.weighty = 1;
+        gridBC2.fill = GridBagConstraints.HORIZONTAL;
+
+        this.panelEdition3.add(new JLabel("Image : "), gridBC2);
+        gridBC2.gridx = 1;
+        gridBC2.gridy = 0;
+
+        this.panelEdition3.add(btChoisir, gridBC2);
+        gridBC2.gridx = 2;
+        gridBC2.gridy = 0;
+
 
 
         this.add(this.panelEdition);
         this.add(this.panelEdition2);
+        this.add(this.panelEdition3);
 
-        this.btAnnuler.setBounds(100, 600, 100, 20);
+        this.btAnnuler.setBounds(100, 700, 100, 20);
         this.add(btAnnuler);
-        this.btAjouter.setBounds(220, 600, 100, 20);
+        this.btAjouter.setBounds(220, 700, 100, 20);
         this.add(btAjouter);
-        this.btMiseAJour.setBounds(340, 600, 100, 20);
+        this.btMiseAJour.setBounds(340, 700, 100, 20);
         this.add(btMiseAJour);
-        this.btSupprimer.setBounds(460, 600, 100, 20);
+        this.btSupprimer.setBounds(460, 700, 100, 20);
         this.add(btSupprimer);
 
         //this.txtIdClient.setEditable(false);
@@ -202,6 +214,7 @@ public class VueAthletes extends JPanel implements ActionListener {
         this.btAjouter.addActionListener(this);
         this.btSupprimer.addActionListener(this);
         this.btMiseAJour.addActionListener(this);
+        this.btChoisir.addActionListener(this);
 
 
         this.setVisible(false);
@@ -213,15 +226,23 @@ public class VueAthletes extends JPanel implements ActionListener {
     {
         if (e.getSource() == this.btAjouter)
         {
+            String pathImage = choseImage.getSelectedFile().getAbsolutePath();
+            String nameImage = choseImage.getSelectedFile().getName();
+            String pathDestination = "C:\\wamp64\\www\\paris2024\\Web\\Images\\Athlete\\"+nameImage;
+            File source = new File(pathImage);
+            File destination = new File(pathDestination);
+            //System.out.println(pathImage + "_____" + nameImage + "___"+ source +"_____"+destination);
+            source.renameTo(destination);
+
             if (comboEquipe.getSelectedItem().toString().equals(""))
             {
                 String equipe = "NULL";
-                Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),txtPhoto.getText(),txtBiographie.getText(),equipe, Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
+                Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),nameImage,txtBiographie.getText(),equipe, Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
                 Modele.insertAthleteSansEquipe(unAthlete);
                 Object data [] = {unAthlete.getIdAthletes(),unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), "NULL", unAthlete.getId_pays()};
                 this.unTableau.add(data);
             }else{
-                Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),txtPhoto.getText(),txtBiographie.getText(), Modele.selectIdWhereEquipe(comboEquipe.getSelectedItem().toString()), Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
+                Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),nameImage,txtBiographie.getText(), Modele.selectIdWhereEquipe(comboEquipe.getSelectedItem().toString()), Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
                 Modele.insertAthleteAvecEquipe(unAthlete);
                 Object data [] = {unAthlete.getIdAthletes(),unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), unAthlete.getId_sport(), unAthlete.getId_pays()};
                 this.unTableau.add(data);
@@ -241,6 +262,10 @@ public class VueAthletes extends JPanel implements ActionListener {
             comboEquipe.setSelectedItem("");
             txtAge.setText("");
 
+        }
+        else if (e.getSource() == this.btChoisir)
+        {
+            this.choseImage.showOpenDialog(this);
         }
         else if (e.getSource() == this.btAnnuler)
         {

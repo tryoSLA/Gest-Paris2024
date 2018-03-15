@@ -2,7 +2,7 @@ package controleur;
 
 public class Utilisateurs {
     private int id_personne;
-    private static int nbChampAthletes = 7;
+    private static int nbChampUtilisateur = 9;
     private String nom, prenom, genre, email, pseudo, mot_de_passe, role;
     private int age;
 
@@ -12,7 +12,7 @@ public class Utilisateurs {
         this.age = 0;
     }
 
-    public Utilisateurs(int id_personne, String nom, String prenom, String genre, String email, String pseudo, String mot_de_passe, String role, int age) {
+    public Utilisateurs(int id_personne, String nom, String prenom, int age,String genre, String role,String pseudo,String email, String mot_de_passe) {
         this.id_personne = id_personne;
         this.nom = nom;
         this.prenom = prenom;
@@ -24,7 +24,7 @@ public class Utilisateurs {
         this.age = age;
     }
 
-    public Utilisateurs(String nom, String prenom, String genre, String email, String pseudo, String mot_de_passe, String role, int age) {
+    public Utilisateurs(String nom, String prenom, int age,String genre, String role,String pseudo,String email,String mot_de_passe) {
         this.id_personne = 0;
         this.nom = nom;
         this.prenom = prenom;
@@ -44,12 +44,12 @@ public class Utilisateurs {
         this.id_personne = id_personne;
     }
 
-    public static int getNbChampAthletes() {
-        return nbChampAthletes;
+    public static int getNbChampUtilisateur() {
+        return nbChampUtilisateur;
     }
 
-    public static void setNbChampAthletes(int nbChampAthletes) {
-        Utilisateurs.nbChampAthletes = nbChampAthletes;
+    public static void setNbChampUtilisateur(int nbChampUtilisateur) {
+        Utilisateurs.nbChampUtilisateur = nbChampUtilisateur;
     }
 
     public String getNom() {
