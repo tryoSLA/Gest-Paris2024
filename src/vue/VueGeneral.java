@@ -12,13 +12,14 @@ import controleur.Main;
 public class VueGeneral extends JFrame implements ActionListener
 {
 	private JPanel panelMenu = new JPanel();
-	private JButton tabButton [] = new JButton[5];
-	private final String tabNom [] = {"Pays", "Sport", "Athlètes","Utilisateurs", "Quitter"};
+	private JButton tabButton [] = new JButton[6];
+	private final String tabNom [] = {"Pays", "Sport", "Athlètes","Utilisateurs", "Localisation","Quitter"};
 
 	private VueAthletes uneVueAthletes = new VueAthletes();
  	private VueSports uneVueSports = new VueSports();
  	private VuePays uneVuePays = new VuePays();
  	private VueUtilisateurs uneVueUtilisateurs = new VueUtilisateurs();
+ 	private VueLocalisation uneVueLocalisation = new VueLocalisation();
 
 	 public VueGeneral(String droits)
 	 {
@@ -29,15 +30,15 @@ public class VueGeneral extends JFrame implements ActionListener
 		 this.getContentPane().setBackground(Color.gray);
 		 this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		 
-		 this.panelMenu.setBounds(0, 20, 700, 30);
-		 this.panelMenu.setLayout(new GridLayout(1,4));
+		 this.panelMenu.setBounds(0, 20, 800, 30);
+		 this.panelMenu.setLayout(new GridLayout(1,6));
 
 
 		 //changer icone application
 		 ImageIcon logopetit = new ImageIcon("src/images/Logo_paris_2024_simple.png");
 		 this.setIconImage(logopetit.getImage());
 					 
-		for (int i = 0; i<5; i++)
+		for (int i = 0; i<6; i++)
 		{
 			this.tabButton[i] = new JButton(tabNom[i]);
 			this.panelMenu.add(this.tabButton[i]);
@@ -57,13 +58,15 @@ public class VueGeneral extends JFrame implements ActionListener
 		 this.setVisible(true);
 		 this.add(this.uneVueUtilisateurs);
 		 this.setVisible(true);
+		 this.add(this.uneVueLocalisation);
+		 this.setVisible(true);
 
 	 }
 
 	@Override
 	public void actionPerformed(ActionEvent e)
 	{
-		if (e.getSource()==this.tabButton[4])
+		if (e.getSource()==this.tabButton[5])
 		{
 			this.dispose();
 			Main.rendreVisible(true);
@@ -74,6 +77,7 @@ public class VueGeneral extends JFrame implements ActionListener
 			this.uneVueSports.setVisible(false);
 			this.uneVueAthletes.setVisible(false);
 			this.uneVueUtilisateurs.setVisible(false);
+            this.uneVueLocalisation.setVisible(false);
 		}
 		else if (e.getSource()==this.tabButton[1])
 		{
@@ -81,6 +85,7 @@ public class VueGeneral extends JFrame implements ActionListener
 			this.uneVueAthletes.setVisible(false);
 			this.uneVuePays.setVisible(false);
 			this.uneVueUtilisateurs.setVisible(false);
+			this.uneVueLocalisation.setVisible(false);
 		}
 		else if (e.getSource()==this.tabButton[2])
 		{
@@ -88,13 +93,23 @@ public class VueGeneral extends JFrame implements ActionListener
 			this.uneVueSports.setVisible(false);
 			this.uneVuePays.setVisible(false);
 			this.uneVueUtilisateurs.setVisible(false);
+			this.uneVueLocalisation.setVisible(false);
 		}
 		else if (e.getSource()==this.tabButton[3])
 		{
 			this.uneVueAthletes.setVisible(false);
 			this.uneVueSports.setVisible(false);
 			this.uneVuePays.setVisible(false);
+			this.uneVueLocalisation.setVisible(false);
 			this.uneVueUtilisateurs.setVisible(true);
+		}
+		else if (e.getSource()==this.tabButton[4])
+		{
+			this.uneVueAthletes.setVisible(false);
+			this.uneVueSports.setVisible(false);
+			this.uneVuePays.setVisible(false);
+			this.uneVueUtilisateurs.setVisible(false);
+			this.uneVueLocalisation.setVisible(true);
 		}
 
 	}

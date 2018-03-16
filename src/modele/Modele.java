@@ -706,4 +706,68 @@ public class Modele {
 		ExecutionBdd(uneBdd, requete);
 
 	}
+
+
+	/*
+	********************************************************************************************************************
+	---------------------------------------------		   Ville 		------------------------------------------------
+	********************************************************************************************************************
+	 */
+	public static ArrayList<Ville> selectAllVilles() {
+		ArrayList<Ville> listVille = new ArrayList<Ville>();
+
+		String requete = "SELECT * FROM ville";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+			while (rs.next()) {
+				//récupération des Champs par valeur
+				int idVille = rs.getInt("id_ville");
+				String libelle_ville = rs.getString("Libelle_ville");
+
+				//Mise à jour de la liste
+				listVille.add(new Ville(idVille,libelle_ville));
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
+			//exp.printStackTrace();
+		}
+		return listVille;
+	}
+
+	public static void insertVille(Ville uneVille) {
+		String requete = "INSERT INTO ville values (null,'"
+				+ uneVille.getLibelle_ville() + "');";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+        System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+	}
+
+	public static void updateVille(Ville uneVille) {
+		String requete =
+				"UPDATE ville " +
+						"SET Libelle_ville = '" + uneVille.getLibelle_ville() +
+						"' WHERE id_ville = " + uneVille.getId_ville() + "";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+        System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+	}
+
+	public static void deleteVille(Ville uneVille) {
+		String requete = "DELETE FROM ville WHERE id_ville = " + uneVille.getId_ville() + "; ";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+	}
 }
