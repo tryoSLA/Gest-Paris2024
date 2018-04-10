@@ -110,7 +110,7 @@ public class VueUtilisateurs extends JPanel implements ActionListener {
         this.add(uneScroll);
         this.tableUtilisateur.setEnabled(true);
 
-        this.panelEdition2.setBounds(20, 200, 700, 83);
+        this.panelEdition2.setBounds(20, 200, 800, 83);
         this.panelEdition2.setLayout(new GridBagLayout());
         GridBagConstraints gridBC = new GridBagConstraints();
         gridBC.gridx = gridBC.gridy = 0;
@@ -150,7 +150,7 @@ public class VueUtilisateurs extends JPanel implements ActionListener {
         gridBC.gridy = 0;
 
 
-        this.panelEdition3.setBounds(20, 300, 700, 83);
+        this.panelEdition3.setBounds(20, 300, 800, 83);
         this.panelEdition3.setLayout(new GridBagLayout());
         GridBagConstraints gridBC1 = new GridBagConstraints();
         gridBC1.gridx = gridBC1.gridy = 0;
@@ -178,7 +178,7 @@ public class VueUtilisateurs extends JPanel implements ActionListener {
         gridBC1.gridy = 0;
 
 
-        this.panelEdition4.setBounds(20, 400, 700, 83);
+        this.panelEdition4.setBounds(20, 400, 800, 83);
         this.panelEdition4.setLayout(new GridBagLayout());
         GridBagConstraints gridBC2 = new GridBagConstraints();
         gridBC2.gridx = gridBC2.gridy = 0;

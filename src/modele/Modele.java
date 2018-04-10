@@ -770,4 +770,40 @@ public class Modele {
 		System.out.println(requete);
 		ExecutionBdd(uneBdd, requete);
 	}
+
+
+	/*
+	********************************************************************************************************************
+	---------------------------------------------       Accueil   ------------------------------------------------
+	********************************************************************************************************************
+	 */
+
+
+	public static int SelectNbAthlete() {
+		int NbAthletes = 0;
+		String requete = "SELECT COUNT(*) AS NbAthletes FROM athlete;";
+
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+
+			if (rs.next()) {
+				//récupération des Champs par valeur
+				NbAthletes = rs.getInt("NbAthletes");
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
+			//exp.printStackTrace();
+		}
+		return NbAthletes;
+	}
+
 }

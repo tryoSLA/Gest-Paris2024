@@ -25,7 +25,7 @@ public class VueGeneral extends JFrame implements ActionListener
 	 {
 		 this.setTitle("Gest'Paris2024");
 		 this.setLayout(null); 
-		 this.setResizable(true);
+		 this.setResizable(false);
 
 		 Dimension dimension = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
 		 int height = (int)(dimension.getHeight()/2 - 440);
