@@ -128,6 +128,13 @@ public class Athletes
     public String getBiographie() {
         return biographie;
     }
+    public String getBiographieClean()
+    {
+        String apo = "'";
+        String AntiSlash = "\\'";
+        String biographieClean = biographie.replace(apo,AntiSlash);
+        return biographieClean;
+    }
 
     public void setBiographie(String biographie) {
         this.biographie = biographie;

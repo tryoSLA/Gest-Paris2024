@@ -36,8 +36,9 @@ public class VueSports extends JPanel implements ActionListener {
     private Tableau unTableau;
 
     public VueSports() {
-        this.setBounds(20, 70, 850, 900);
+        this.setBounds(20, 70, 850, 750);
         this.setLayout(null);
+        //this.setBackground(Color.gray);
 
 
         //Construction de la Jtable
@@ -89,7 +90,7 @@ public class VueSports extends JPanel implements ActionListener {
 
         //Affichage de la JTable dans une ScrollTable
         JScrollPane uneScroll = new JScrollPane(this.tableSports);
-        uneScroll.setBounds(20, 20, 600, 250);
+        uneScroll.setBounds(20, 20, 820, 250);
         uneScroll.setBackground(Color.black);
         this.add(uneScroll);
         this.tableSports.setEnabled(true);
@@ -143,14 +144,16 @@ public class VueSports extends JPanel implements ActionListener {
         this.add(this.panelEdition2);
 
 
-        this.btAnnuler.setBounds(100, 550, 100, 20);
+        this.btAnnuler.setBounds(100, 550, 150, 20);
         this.add(btAnnuler);
-        this.btAjouter.setBounds(220, 550, 100, 20);
+        this.btAjouter.setBounds(270, 550, 150, 20);
         this.add(btAjouter);
-        this.btMiseAJour.setBounds(340, 550, 100, 20);
+        this.btMiseAJour.setBounds(440, 550, 150, 20);
         this.add(btMiseAJour);
-        this.btSupprimer.setBounds(460, 550, 100, 20);
+        this.btSupprimer.setBounds(610, 550, 150, 20);
         this.add(btSupprimer);
+
+
 
         //this.txtIdClient.setEditable(false);
 
@@ -160,7 +163,6 @@ public class VueSports extends JPanel implements ActionListener {
         this.btSupprimer.addActionListener(this);
         this.btMiseAJour.addActionListener(this);
         this.btChoisir.addActionListener(this);
-
 
         this.setVisible(false);
 
@@ -177,9 +179,9 @@ public class VueSports extends JPanel implements ActionListener {
             //System.out.println(pathImage + "_____" + nameImage + "___"+ source +"_____"+destination);
             source.renameTo(destination);
 
-            int idSport = Integer.parseInt(txtId.getText());
+            //int idSport = Integer.parseInt(txtId.getText());
 
-            Sports unSport = new Sports(idSport, txtLibelle.getText(), txtDescription.getText(), nameImage);
+            Sports unSport = new Sports(txtLibelle.getText(), txtDescription.getText(), nameImage);
             Modele.insertSports(unSport);
             Object data[] = {unSport.getIdSports(), unSport.getLibelle(), unSport.getImage(), unSport.getDescription()};
             this.unTableau.add(data);

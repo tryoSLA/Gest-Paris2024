@@ -56,6 +56,14 @@ public class Evenements
         return descriptionEvents;
     }
 
+    public String getDescriptionEventsClean()
+    {
+        String apo = "'";
+        String AntiSlash = "\\'";
+        String DescriptionClean = descriptionEvents.replace(apo,AntiSlash);
+        return DescriptionClean;
+    }
+
     public void setDescriptionEvents(String descriptionEvents) {
         this.descriptionEvents = descriptionEvents;
     }

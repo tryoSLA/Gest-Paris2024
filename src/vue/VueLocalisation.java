@@ -12,7 +12,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
-public class VueLocalisation extends JFrame implements ActionListener {
+public class VueLocalisation extends JPanel implements ActionListener {
 
     //variables de class
     private JTable tableVille;

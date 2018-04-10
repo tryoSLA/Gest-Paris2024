@@ -48,7 +48,7 @@ public class VueAthletes extends JPanel implements ActionListener {
 
     public VueAthletes()
     {
-        this.setBounds(20, 70, 850, 790);
+        this.setBounds(20, 70, 850, 750);
         this.setLayout(null);
 
 
@@ -129,7 +129,7 @@ public class VueAthletes extends JPanel implements ActionListener {
 
         //Affichage de la JTable dans une ScrollTable
         JScrollPane uneScroll = new JScrollPane(this.tableAthletes);
-        uneScroll.setBounds(20, 20, 600, 250);
+        uneScroll.setBounds(20, 20, 820, 250);
         uneScroll.setBackground(Color.black);
         this.add(uneScroll);
         this.tableAthletes.setEnabled(true);
@@ -198,13 +198,13 @@ public class VueAthletes extends JPanel implements ActionListener {
         this.add(this.panelEdition2);
         this.add(this.panelEdition3);
 
-        this.btAnnuler.setBounds(100, 700, 100, 20);
+        this.btAnnuler.setBounds(100, 700, 150, 20);
         this.add(btAnnuler);
-        this.btAjouter.setBounds(220, 700, 100, 20);
+        this.btAjouter.setBounds(270, 700, 150, 20);
         this.add(btAjouter);
-        this.btMiseAJour.setBounds(340, 700, 100, 20);
+        this.btMiseAJour.setBounds(440, 700, 150, 20);
         this.add(btMiseAJour);
-        this.btSupprimer.setBounds(460, 700, 100, 20);
+        this.btSupprimer.setBounds(610, 700, 150, 20);
         this.add(btSupprimer);
 
         //this.txtIdClient.setEditable(false);
@@ -236,9 +236,11 @@ public class VueAthletes extends JPanel implements ActionListener {
 
             if (comboEquipe.getSelectedItem().toString().equals(""))
             {
+
                 String equipe = "NULL";
                 Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),nameImage,txtBiographie.getText(),equipe, Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
                 Modele.insertAthleteSansEquipe(unAthlete);
+                System.out.println("Bio : "+ unAthlete.getBiographie());
                 Object data [] = {unAthlete.getIdAthletes(),unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), "NULL", unAthlete.getId_pays()};
                 this.unTableau.add(data);
             }else{

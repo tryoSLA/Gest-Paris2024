@@ -57,6 +57,14 @@ public class Sports
         return description;
     }
 
+    public String getDescriptionClean()
+    {
+        String apo = "'";
+        String AntiSlash = "\\'";
+        String descriptionClean = description.replace(apo,AntiSlash);
+        return descriptionClean;
+    }
+
     public void setDescription(String description) {
         this.description = description;
     }

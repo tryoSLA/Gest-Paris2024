@@ -1,6 +1,5 @@
 package vue;
-import java.awt.Color;
-import java.awt.GridLayout;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -31,13 +30,20 @@ public class VueConnexion extends JFrame implements ActionListener,KeyListener
 	
 	public VueConnexion()
 	{
-		this.setTitle("Gest'Paris2024 - Connexion");
-		this.setBounds(200, 200, 500, 400);
-		this.setLayout(null); 
-		this.setResizable(false);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
 
-		
+		Dimension dimension = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+		int height = (int)(dimension.getHeight()/2 - 200);
+		int width  = (int)(dimension.getWidth()/2 - 250);
+
+		this.setTitle("Gest'Paris2024 - Connexion");
+		this.setBounds(width, height, 500, 400);
+		this.setLayout(null);
+		this.setResizable(false);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+
+
+
 		//construction du pannel 
 		this.unPanel.setBounds(50, 200, 400, 120);
 		this.unPanel.setLayout(new GridLayout(5,2));

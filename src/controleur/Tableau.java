@@ -31,7 +31,7 @@ public class Tableau extends AbstractTableModel
 
 	public Object getValueAt(int rowIndex, int columnIndex)
 	{
-		System.out.println("case : " +rowIndex+ "   " +columnIndex);
+		//System.out.println("case : " +rowIndex+ "   " +columnIndex);
 		return donnees[rowIndex][columnIndex];
 	}
 

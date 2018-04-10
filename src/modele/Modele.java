@@ -177,7 +177,7 @@ public class Modele {
 				"null," +
 				" '" + unPays.getLibelle() + "'," +
 				" '" + unPays.getImage() + "' ," +
-				" '" + unPays.getDescription() + "');";
+				" '" + unPays.getDescriptionClean() + "');";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 
@@ -197,7 +197,7 @@ public class Modele {
 		String requete = "UPDATE pays " +
 				"SET Libelle_pays = '" + unPays.getLibelle() + "'," +
 				"	Image_pays = '" + unPays.getImage() + "'," +
-				"	Description_pays = '" + unPays.getDescription() + "' " +
+				"	Description_pays = '" + unPays.getDescriptionClean() + "' " +
 				"WHERE id_pays = '" + unPays.getIdPays() + "'";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
@@ -273,7 +273,7 @@ public class Modele {
 				"null," +
 				" '" + unSports.getLibelle() + "'," +
 				" '" + unSports.getImage() + "' ," +
-				" '" + unSports.getDescription() + "');";
+				" '" + unSports.getDescriptionClean() + "');";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 
@@ -313,7 +313,7 @@ public class Modele {
 				"UPDATE sport " +
 						"SET Libelle_sport = '" + unSport.getLibelle() + "'," +
 						"	Image_sport = '" + unSport.getImage() + "'," +
-						"	Description_sport = '" + unSport.getDescription() + "' " +
+						"	Description_sport = '" + unSport.getDescriptionClean() + "' " +
 						"WHERE id_sport = '" + unSport.getIdSports() + "'";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
@@ -385,7 +385,7 @@ public class Modele {
 						unAthlete.getTaille() + "," +
 						unAthlete.getPoids() + ",'" +
 						unAthlete.getPhoto() + "','" +
-						unAthlete.getBiographie() + "'," +
+						unAthlete.getBiographieClean() + "'," +
 						unAthlete.getId_pays() + "," +
 						unAthlete.getId_equipe() + "," +
 						unAthlete.getId_sport() + ");";
@@ -404,7 +404,7 @@ public class Modele {
 						unAthlete.getTaille() + "," +
 						unAthlete.getPoids() + ",'" +
 						unAthlete.getPhoto() + "','" +
-						unAthlete.getBiographie() + "'," +
+						unAthlete.getBiographieClean() + "'," +
 						unAthlete.getId_pays() + "," +
 						unAthlete.getId_equipe_string() + "," +
 						unAthlete.getId_sport() + ");";
@@ -424,7 +424,7 @@ public class Modele {
 						"'," + unAthlete.getTaille() +
 						"," + unAthlete.getPoids() +
 						",'" + unAthlete.getPhoto() +
-						"','" + unAthlete.getBiographie() +
+						"','" + unAthlete.getBiographieClean() +
 						"'," + unAthlete.getId_pays() +
 						"," + unAthlete.getId_equipe() +
 						"," + unAthlete.getId_sport() + ");";
@@ -444,7 +444,7 @@ public class Modele {
 						"'," + unAthlete.getTaille() +
 						"," + unAthlete.getPoids() +
 						",'" + unAthlete.getPhoto() +
-						"','" + unAthlete.getBiographie() +
+						"','" + unAthlete.getBiographieClean() +
 						"'," + unAthlete.getId_pays() +
 						"," + unAthlete.getId_equipe_string() +
 						"," + unAthlete.getId_sport() + ");";
@@ -509,7 +509,7 @@ public class Modele {
 		String requete = "INSERT INTO Sport values (" +
 				"null," +
 				" '" + unEvents.getTitleEvents() + "'," +
-				" '" + unEvents.getDescriptionEvents() + "," +
+				" '" + unEvents.getDescriptionEventsClean() + "," +
 				" '" + unEvents.getDateEvents() + "'," +
 				" '" + unEvents.getPhotoEvents() + "');";
 

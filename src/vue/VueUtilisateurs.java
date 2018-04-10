@@ -40,7 +40,8 @@ public class VueUtilisateurs extends JPanel implements ActionListener {
 
     public VueUtilisateurs ()
     {
-        this.setBounds(20, 70, 850, 790);
+        this.setBounds(20, 70, 850, 750
+        );
         this.setLayout(null);
 
         //Construction de la Jtable
@@ -104,8 +105,8 @@ public class VueUtilisateurs extends JPanel implements ActionListener {
 
         //Affichage de la JTable dans une ScrollTable
         JScrollPane uneScroll = new JScrollPane(this.tableUtilisateur);
-        uneScroll.setBounds(20, 20, 700, 150);
-        uneScroll.setBackground(Color.black);
+        uneScroll.setBounds(20, 20, 820, 150);
+        //uneScroll.setBackground(Color.black);
         this.add(uneScroll);
         this.tableUtilisateur.setEnabled(true);
 
@@ -216,14 +217,15 @@ public class VueUtilisateurs extends JPanel implements ActionListener {
         this.add(this.panelEdition3);
         this.add(this.panelEdition4);
 
-        this.btAnnuler.setBounds(100, 500, 100, 20);
+        this.btAnnuler.setBounds(100, 500, 150, 20);
         this.add(btAnnuler);
-        this.btAjouter.setBounds(220, 500, 100, 20);
+        this.btAjouter.setBounds(270, 500, 150, 20);
         this.add(btAjouter);
-        this.btMiseAJour.setBounds(340, 500, 100, 20);
+        this.btMiseAJour.setBounds(440, 500, 150, 20);
         this.add(btMiseAJour);
-        this.btSupprimer.setBounds(460, 500, 100, 20);
+        this.btSupprimer.setBounds(610, 500, 150, 20);
         this.add(btSupprimer);
+
 
         //rendre les boutons cliquables
         this.btAnnuler.addActionListener(this);
