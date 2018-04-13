@@ -266,8 +266,9 @@ public class VueUtilisateurs extends JPanel implements ActionListener {
             //int idUser = Integer.parseInt(txtId.getText());
             //System.out.println("id = "+idUser);
             Utilisateurs unUtilisateur = new Utilisateurs(txtNom.getText(), txtPrenom.getText(), Integer.parseInt(txtAge.getText()),cbGenre.getSelectedItem().toString(),cbRole.getSelectedItem().toString(),txtPseudo.getText(),txtEmail.getText(),txtMdp.getText());
-            Modele.insertUtilisateur(unUtilisateur);
-            Object data [] = {unUtilisateur.getId_personne(),unUtilisateur.getNom(), unUtilisateur.getPrenom(), unUtilisateur.getAge(), unUtilisateur.getGenre(),unUtilisateur.getRole(),unUtilisateur.getPseudo(),unUtilisateur.getPseudo(),unUtilisateur.getMot_de_passe()};
+            //Modele.insertUtilisateur(unUtilisateur);
+            Integer idUser = Modele.insertUtilisateur(unUtilisateur);
+            Object data [] = {idUser,unUtilisateur.getId_personne(),unUtilisateur.getNom(), unUtilisateur.getPrenom(), unUtilisateur.getAge(), unUtilisateur.getGenre(),unUtilisateur.getRole(),unUtilisateur.getPseudo(),unUtilisateur.getPseudo(),unUtilisateur.getMot_de_passe()};
             this.unTableau.add(data);
 
             JOptionPane.showMessageDialog(this, "Insertion réussie");

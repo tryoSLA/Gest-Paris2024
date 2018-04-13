@@ -659,7 +659,8 @@ public class Modele {
 		return listUsers;
 	}
 
-	public static void insertUtilisateur(Utilisateurs unUtilisateur) {
+	public static int insertUtilisateur(Utilisateurs unUtilisateur)
+	{
 		String requete =
 				"CALL insert_user ('" + unUtilisateur.getNom() + "','" +
 						unUtilisateur.getPrenom() + "'," +
@@ -671,8 +672,8 @@ public class Modele {
 						unUtilisateur.getRole() + "');";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
-		ExecutionBdd(uneBdd, requete);
+		int key = Modele.selectLasInsertId(requete,uneBdd);
+		return key;
 	}
 
 	public static void deleteUtilisateur(Utilisateurs unUtilisateur) {
@@ -743,13 +744,73 @@ public class Modele {
 		return listVille;
 	}
 
-	public static void insertVille(Ville uneVille) {
+	public static int selectIdWhereVille(String libelleVille) {
+		int idville = 0;
+
+		String requete = "SELECT id_ville FROM ville WHERE libelle_ville = \"" + libelleVille + "\";";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+
+			if (rs.next()) {
+				//récupération des Champs par valeur
+				idville = rs.getInt("id_ville");
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
+			//exp.printStackTrace();
+		}
+		return idville;
+	}
+
+	public static String selectWhereVille(int idVille) {
+		String libelleVille = "";
+
+		String requete = "SELECT Libelle_ville FROM Ville WHERE id_ville = " + idVille + ";";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+
+			if (rs.next()) {
+				//récupération des Champs par valeur
+				libelleVille = rs.getString("Libelle_ville");
+
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
+			//exp.printStackTrace();
+		}
+		return libelleVille;
+	}
+
+	public static int insertVille(Ville uneVille) {
 		String requete = "INSERT INTO ville values (null,'"
 				+ uneVille.getLibelle_ville() + "');";
 
+//		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+//        System.out.println(requete);
+//		ExecutionBdd(uneBdd, requete);
+
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-        System.out.println(requete);
-		ExecutionBdd(uneBdd, requete);
+		int key = Modele.selectLasInsertId(requete,uneBdd);
+		System.out.println("key : " + key);
+		return key;
 	}
 
 	public static void updateVille(Ville uneVille) {
@@ -771,6 +832,73 @@ public class Modele {
 		ExecutionBdd(uneBdd, requete);
 	}
 
+	/*
+********************************************************************************************************************
+---------------------------------------------		   Lieu 		------------------------------------------------
+********************************************************************************************************************
+ */
+	public static ArrayList<Lieu> selectAllLieux() {
+		ArrayList<Lieu> listLieu = new ArrayList<Lieu>();
+
+		String requete = "SELECT * FROM lieu";
+		System.out.println(requete);
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+			while (rs.next()) {
+				//récupération des Champs par valeur
+				int idLieu = rs.getInt("id_lieu");
+				String libelle_lieu = rs.getString("Libelle_lieu");
+				int idVille = rs.getInt("id_ville");
+
+				//Mise à jour de la liste
+				listLieu.add(new Lieu(idLieu,libelle_lieu,idVille));
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
+			//exp.printStackTrace();
+		}
+		return listLieu;
+	}
+
+
+	public static int insertLieu(Lieu unLieu) {
+		String requete = "INSERT INTO lieu values (null,'"
+				+ unLieu.getLibelle_lieu() + "',"
+				+ unLieu.getId_ville() + ");";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		int key = Modele.selectLasInsertId(requete,uneBdd);
+		System.out.println("key : " + key);
+		return key;
+	}
+
+	public static void updateLieu(Lieu unLieu) {
+		String requete =
+				"UPDATE lieu " +
+						"SET Libelle_lieu = '" + unLieu.getLibelle_lieu() +
+						"',id_ville = " + unLieu.getId_ville() +
+						" WHERE id_ville = " + unLieu.getId_lieu() + "";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+	}
+
+	public static void deleteLieu(Lieu unLieu) {
+		String requete = "DELETE FROM lieu WHERE id_lieu = " + unLieu.getId_lieu() + "; ";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		System.out.println(requete);
+		ExecutionBdd(uneBdd, requete);
+	}
 
 	/*
 	********************************************************************************************************************
@@ -805,5 +933,25 @@ public class Modele {
 		}
 		return NbAthletes;
 	}
+
+
+	public static int selectLasInsertId (String requete, Bdd uneBdd)
+	{
+		int key = 0;
+		try {
+			uneBdd.seConnecter();
+			Statement unStat2 = uneBdd.getMaConnexion().createStatement();
+			unStat2.execute(requete, Statement.RETURN_GENERATED_KEYS);
+			ResultSet keys = unStat2.getGeneratedKeys();
+			keys.next();
+			key = keys.getInt(1);
+			unStat2.close();
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete );
+		}
+		return key;
+	}
+
 
 }
