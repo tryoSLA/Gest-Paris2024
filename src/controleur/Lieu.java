@@ -17,6 +17,10 @@ public class Lieu {
         this.Libelle_lieu = Libelle_lieu;
         this.id_ville = id_ville;
     }
+    public Lieu(int id_lieu)
+    {
+        this.id_lieu = id_lieu;
+    }
     public Lieu(String Libelle_lieu, int id_ville)
     {
         this.Libelle_lieu = Libelle_lieu;
