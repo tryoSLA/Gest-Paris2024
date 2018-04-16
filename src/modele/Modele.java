@@ -14,7 +14,7 @@ public class Modele {
 
 	public static String verifConnexion(String login, String mdp) {
 		String requete = "Select count(*) as nb, role from Utilisateur" + " where pseudo ='" + login + "' and mot_de_passe ='" + mdp + "' group by id_personne; ";
-		System.out.println(requete);
+
 		String droits = "";
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
@@ -62,7 +62,7 @@ public class Modele {
 			Statement unStat = uneBdd.getMaConnexion().createStatement();
 
 			String requete = "SELECT " + champ + " FROM " + table + ";";
-			System.out.println(requete);
+
 			ResultSet Rs = unStat.executeQuery(requete);
 
 			while (Rs.next()) {
@@ -88,7 +88,7 @@ public class Modele {
 		ArrayList<Pays> listPays = new ArrayList<Pays>();
 
 		String requete = "SELECT id_pays, Libelle_pays, Description_pays, Image_pays FROM Pays;";
-		System.out.println(requete);
+
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -121,7 +121,7 @@ public class Modele {
 		String libellePays = "";
 
 		String requete = "SELECT Libelle_pays FROM Pays WHERE id_pays = " + idPays + ";";
-		System.out.println(requete);
+
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -149,7 +149,7 @@ public class Modele {
 		int idpays = 0;
 
 		String requete = "SELECT id_pays FROM Pays WHERE libelle_pays = \"" + libellePays + "\";";
-		System.out.println(requete);
+
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -182,14 +182,14 @@ public class Modele {
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 
 		ExecutionBdd(uneBdd, requete);
-		System.out.println(requete);
+
 	}
 
 	public static void deletePays(Pays unPays) {
 		String requete = "DELETE FROM pays WHERE id_pays = " + unPays.getIdPays() + "; ";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
+
 		ExecutionBdd(uneBdd, requete);
 	}
 
@@ -213,7 +213,7 @@ public class Modele {
 		ArrayList<Sports> listSports = new ArrayList<Sports>();
 
 		String requete = "SELECT * FROM Sport;";
-		System.out.println(requete);
+
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -245,7 +245,7 @@ public class Modele {
 		int idsport = 0;
 
 		String requete = "SELECT id_sport FROM sport WHERE libelle_sport = \"" + libelleSport + "\";";
-		System.out.println(requete);
+
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -284,7 +284,7 @@ public class Modele {
 		String libelleSport = "";
 
 		String requete = "SELECT Libelle_sport FROM Sport WHERE id_sport = " + idSport + ";";
-		System.out.println(requete);
+
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -325,7 +325,7 @@ public class Modele {
 				"DELETE FROM sport WHERE id_sport = " + unSports.getIdSports() + "; ";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
+
 		ExecutionBdd(uneBdd, requete);
 
 	}
@@ -340,7 +340,7 @@ public class Modele {
 
 		String requete =
 				"SELECT * FROM athletes_java;";
-		System.out.println(requete);
+
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -391,7 +391,7 @@ public class Modele {
 						unAthlete.getId_sport() + ");";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
+
 		ExecutionBdd(uneBdd, requete);
 	}
 
@@ -410,7 +410,7 @@ public class Modele {
 						unAthlete.getId_sport() + ");";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
+
 		ExecutionBdd(uneBdd, requete);
 	}
 
@@ -430,7 +430,7 @@ public class Modele {
 						"," + unAthlete.getId_sport() + ");";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
+
 		ExecutionBdd(uneBdd, requete);
 	}
 
@@ -450,7 +450,7 @@ public class Modele {
 						"," + unAthlete.getId_sport() + ");";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
+
 		ExecutionBdd(uneBdd, requete);
 	}
 
@@ -459,7 +459,7 @@ public class Modele {
 				"DELETE FROM athlete WHERE id_personne = " + unAthlete.getIdAthletes() + "; ";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
+
 		ExecutionBdd(uneBdd, requete);
 
 		String requete2 = "DELETE FROM personne WHERE id_personne = " + unAthlete.getIdAthletes() + ";";
@@ -477,7 +477,7 @@ public class Modele {
 		ArrayList<Evenements> listEvents = new ArrayList<Evenements>();
 
 		String requete = "SELECT * FROM 'evenement'";
-		System.out.println(requete);
+
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -530,7 +530,7 @@ public class Modele {
 //		ArrayList<Equipes> listEquipes = new ArrayList<Equipes>();
 //
 //		String requete = "SELECT * FROM 'equipe'";
-//		System.out.println(requete);
+//
 //		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
 //		try{
 //			//Connexion à la base de donnée
@@ -564,7 +564,7 @@ public class Modele {
 		String libelleEquipe = "";
 
 		String requete = "SELECT Libelle_equipe FROM equipe WHERE id_equipe = " + idEquipe + ";";
-		System.out.println(requete);
+
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -592,7 +592,7 @@ public class Modele {
 		int idequipe = 0;
 
 		String requete = "SELECT id_equipe FROM Equipe WHERE libelle_equipe = \"" + libelleEquipe + "\";";
-		System.out.println(requete);
+
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -626,7 +626,7 @@ public class Modele {
 		ArrayList<Utilisateurs> listUsers = new ArrayList<Utilisateurs>();
 
 		String requete = "SELECT * FROM utilisateur_detaille;";
-		System.out.println(requete);
+
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -681,7 +681,7 @@ public class Modele {
 				"DELETE FROM utilisateur WHERE id_personne = " + unUtilisateur.getId_personne() + "; ";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
+
 		ExecutionBdd(uneBdd, requete);
 
 		String requete2 = "DELETE FROM personne WHERE id_personne = " + unUtilisateur.getId_personne() + ";";
@@ -703,7 +703,7 @@ public class Modele {
 						unUtilisateur.getRole() + "');";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
+
 		ExecutionBdd(uneBdd, requete);
 
 	}
@@ -718,7 +718,6 @@ public class Modele {
 		ArrayList<Ville> listVille = new ArrayList<Ville>();
 
 		String requete = "SELECT * FROM ville";
-		System.out.println(requete);
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -748,7 +747,6 @@ public class Modele {
 		int idville = 0;
 
 		String requete = "SELECT id_ville FROM ville WHERE libelle_ville = \"" + libelleVille + "\";";
-		System.out.println(requete);
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -775,7 +773,6 @@ public class Modele {
 		String libelleVille = "";
 
 		String requete = "SELECT Libelle_ville FROM Ville WHERE id_ville = " + idVille + ";";
-		System.out.println(requete);
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -803,13 +800,8 @@ public class Modele {
 		String requete = "INSERT INTO ville values (null,'"
 				+ uneVille.getLibelle_ville() + "');";
 
-//		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-//        System.out.println(requete);
-//		ExecutionBdd(uneBdd, requete);
-
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		int key = Modele.selectLasInsertId(requete,uneBdd);
-		System.out.println("key : " + key);
 		return key;
 	}
 
@@ -820,7 +812,6 @@ public class Modele {
 						"' WHERE id_ville = " + uneVille.getId_ville() + "";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-        System.out.println(requete);
 		ExecutionBdd(uneBdd, requete);
 	}
 
@@ -828,7 +819,6 @@ public class Modele {
 		String requete = "DELETE FROM ville WHERE id_ville = " + uneVille.getId_ville() + "; ";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
 		ExecutionBdd(uneBdd, requete);
 	}
 
@@ -841,7 +831,6 @@ public class Modele {
 		ArrayList<Lieu> listLieu = new ArrayList<Lieu>();
 
 		String requete = "SELECT * FROM lieu";
-		System.out.println(requete);
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -876,7 +865,6 @@ public class Modele {
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		int key = Modele.selectLasInsertId(requete,uneBdd);
-		System.out.println("key : " + key);
 		return key;
 	}
 
@@ -888,7 +876,6 @@ public class Modele {
 						" WHERE id_ville = " + unLieu.getId_lieu() + "";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
 		ExecutionBdd(uneBdd, requete);
 	}
 
@@ -896,7 +883,6 @@ public class Modele {
 		String requete = "DELETE FROM lieu WHERE id_lieu = " + unLieu.getId_lieu() + "; ";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		System.out.println(requete);
 		ExecutionBdd(uneBdd, requete);
 	}
 
@@ -907,11 +893,10 @@ public class Modele {
 	 */
 
 
-	public static int SelectNbAthlete() {
-		int NbAthletes = 0;
-		String requete = "SELECT COUNT(*) AS NbAthletes FROM athlete;";
+	public static int SelectNb(String table) {
+		int Nb = 0;
+		String requete = "SELECT COUNT(*) AS Nb FROM "+ table+";";
 
-		System.out.println(requete);
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -923,7 +908,7 @@ public class Modele {
 
 			if (rs.next()) {
 				//récupération des Champs par valeur
-				NbAthletes = rs.getInt("NbAthletes");
+				Nb = rs.getInt("Nb");
 			}
 			//Fermeture de la connexion à la base de données
 			uneBdd.seDeConnecter();
@@ -931,7 +916,7 @@ public class Modele {
 			System.out.println("Erreur : " + requete);
 			//exp.printStackTrace();
 		}
-		return NbAthletes;
+		return Nb;
 	}
 
 
