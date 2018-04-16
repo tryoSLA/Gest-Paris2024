@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="20f4042c-d636-4152-a9f6-12878f75117a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bin/modele/Modele.class" afterPath="$PROJECT_DIR$/bin/modele/Modele.class" />
-      <change beforePath="$PROJECT_DIR$/bin/vue/VueLocalisation.class" afterPath="$PROJECT_DIR$/bin/vue/VueLocalisation.class" />
-      <change beforePath="$PROJECT_DIR$/bin/vue/VueUtilisateurs.class" afterPath="$PROJECT_DIR$/bin/vue/VueUtilisateurs.class" />
-      <change beforePath="$PROJECT_DIR$/src/controleur/Lieu.java" afterPath="$PROJECT_DIR$/src/controleur/Lieu.java" />
       <change beforePath="$PROJECT_DIR$/src/modele/Modele.java" afterPath="$PROJECT_DIR$/src/modele/Modele.java" />
-      <change beforePath="$PROJECT_DIR$/src/vue/VueLocalisation.java" afterPath="$PROJECT_DIR$/src/vue/VueLocalisation.java" />
-      <change beforePath="$PROJECT_DIR$/src/vue/VueUtilisateurs.java" afterPath="$PROJECT_DIR$/src/vue/VueUtilisateurs.java" />
+      <change beforePath="$PROJECT_DIR$/src/vue/VueAccueil.java" afterPath="$PROJECT_DIR$/src/vue/VueAccueil.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <ignored path=".idea/" />
@@ -44,121 +39,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Modele.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Modele.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="800" column="0" lean-forward="true" selection-start-line="800" selection-start-column="0" selection-end-line="800" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding>
-                <element signature="e#2724#2730#0" expanded="true" />
-                <element signature="e#6869#6877#0" expanded="true" />
-                <element signature="e#11048#11058#0" expanded="true" />
-                <element signature="e#16329#16341#0" expanded="true" />
-                <element signature="e#21480#21494#0" expanded="true" />
-                <element signature="e#24956#24963#0" expanded="true" />
-                <element signature="e#28998#29004#0" expanded="true" />
-                <marker date="1523643770442" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-                <marker date="1523643770442" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-                <marker date="1523643770442" expanded="true" signature="2755:2823" ph="SELECT id_pa... Pays" />
-                <marker date="1523643770442" expanded="true" signature="3822:3868" ph="SELECT Libel... Pays" />
-                <marker date="1523643770442" expanded="true" signature="4632:4701" ph="SELECT id_pa... Pays" />
-                <marker date="1523643770442" expanded="true" signature="6902:6921" ph="SELECT * FRO... Sport" />
-                <marker date="1523643770442" expanded="true" signature="7946:8019" ph="SELECT id_sp... sport" />
-                <marker date="1523643770442" expanded="true" signature="9123:9172" ph="SELECT Libel... Sport" />
-                <marker date="1523643770442" expanded="true" signature="11087:11114" ph="SELECT * FRO... athletes_java" />
-                <marker date="1523643770442" expanded="true" signature="16366:16391" ph="SELECT * FRO... " />
-                <marker date="1523643770442" expanded="true" signature="19424:19476" ph="SELECT Libel... equipe" />
-                <marker date="1523643770442" expanded="true" signature="20254:20331" ph="SELECT id_eq... Equipe" />
-                <marker date="1523643770442" expanded="true" signature="21519:21553" ph="SELECT * FRO... utilisateur_detaille" />
-                <marker date="1523643770442" expanded="true" signature="24988:25007" ph="SELECT * FRO... ville" />
-                <marker date="1523643770442" expanded="true" signature="25893:25966" ph="SELECT id_sp... sport" />
-                <marker date="1523643770442" expanded="true" signature="26705:26754" ph="SELECT Libel... equipe" />
-                <marker date="1523643770442" expanded="true" signature="29029:29047" ph="SELECT * FRO... lieu" />
-                <marker date="1523643770442" expanded="true" signature="31338:31380" ph="SELECT COUNT... athlete" />
+                <marker date="1523881204879" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+                <marker date="1523881204879" expanded="true" signature="1855:1881" ph="SELECT missi... missingValue" />
+                <marker date="1523881204879" expanded="true" signature="2694:2762" ph="SELECT id_pa... Pays" />
+                <marker date="1523881204879" expanded="true" signature="3731:3777" ph="SELECT Libel... Pays" />
+                <marker date="1523881204879" expanded="true" signature="4511:4580" ph="SELECT id_pa... Pays" />
+                <marker date="1523881204879" expanded="true" signature="6691:6710" ph="SELECT * FRO... Sport" />
+                <marker date="1523881204879" expanded="true" signature="7705:7778" ph="SELECT id_sp... sport" />
+                <marker date="1523881204879" expanded="true" signature="8852:8901" ph="SELECT Libel... Sport" />
+                <marker date="1523881204879" expanded="true" signature="10756:10783" ph="SELECT * FRO... athletes_java" />
+                <marker date="1523881204879" expanded="true" signature="15855:15880" ph="SELECT * FRO... " />
+                <marker date="1523881204879" expanded="true" signature="18853:18905" ph="SELECT Libel... equipe" />
+                <marker date="1523881204879" expanded="true" signature="19653:19730" ph="SELECT id_eq... Equipe" />
+                <marker date="1523881204879" expanded="true" signature="20888:20922" ph="SELECT * FRO... utilisateur_detaille" />
+                <marker date="1523881204879" expanded="true" signature="24267:24286" ph="SELECT * FRO... ville" />
+                <marker date="1523881204879" expanded="true" signature="25141:25214" ph="SELECT id_sp... sport" />
+                <marker date="1523881204879" expanded="true" signature="25922:25971" ph="SELECT Libel... equipe" />
+                <marker date="1523881204879" expanded="true" signature="27956:27974" ph="SELECT * FRO... lieu" />
+                <marker date="1523881204879" expanded="true" signature="30131:30157" ph="SELECT COUNT... " />
+                <marker date="1523881204879" expanded="true" signature="30131:30158" ph="SELECT COUNT... athlete" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lieu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controleur/Lieu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="36" />
-              <folding>
-                <element signature="e#482#483#0" expanded="true" />
-                <element signature="e#520#521#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VueLocalisation.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueLocalisation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="211" column="40" lean-forward="false" selection-start-line="211" selection-start-column="40" selection-end-line="211" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VueGeneral.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VueConnexion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueConnexion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ville.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controleur/Ville.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VueAthletes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="86" column="59" lean-forward="true" selection-start-line="83" selection-start-column="16" selection-end-line="86" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VueUtilisateurs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueUtilisateurs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5397">
-              <caret line="271" column="35" lean-forward="false" selection-start-line="271" selection-start-column="35" selection-end-line="271" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VueSports.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/vue/VueSports.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1890">
-              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -166,8 +72,8 @@
       <file leaf-file-name="VueAccueil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/vue/VueAccueil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            <state relative-caret-position="373">
+              <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,9 +98,11 @@
       <find>back</find>
       <find>choseImage</find>
       <find>panelEdition</find>
+      <find>System.out.println(requete);</find>
     </findStrings>
     <replaceStrings>
       <replace>tableSports</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -221,11 +129,11 @@
         <option value="$PROJECT_DIR$/src/vue/VueSports.java" />
         <option value="$PROJECT_DIR$/src/vue/VuePays.java" />
         <option value="$PROJECT_DIR$/src/vue/VueGeneral.java" />
-        <option value="$PROJECT_DIR$/src/vue/VueAccueil.java" />
         <option value="$PROJECT_DIR$/src/vue/VueUtilisateurs.java" />
         <option value="$PROJECT_DIR$/src/controleur/Lieu.java" />
-        <option value="$PROJECT_DIR$/src/modele/Modele.java" />
         <option value="$PROJECT_DIR$/src/vue/VueLocalisation.java" />
+        <option value="$PROJECT_DIR$/src/vue/VueAccueil.java" />
+        <option value="$PROJECT_DIR$/src/modele/Modele.java" />
       </list>
     </option>
   </component>
@@ -256,10 +164,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -460,11 +368,13 @@
       <workItem from="1523370186282" duration="4161000" />
       <workItem from="1523387615232" duration="1235000" />
       <workItem from="1523635092281" duration="9215000" />
+      <workItem from="1523722940345" duration="413000" />
+      <workItem from="1523864817044" duration="2562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74780000" />
+    <option name="totallyTimeSpent" value="77755000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -486,12 +396,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34210527" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.322691" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31743422" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22120866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31698975" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0810956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12781955" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -524,17 +434,17 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.327252" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22120866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31743422" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1659506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31698975" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12781955" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -580,10 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#1236#1237#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -619,10 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#1236#1237#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -637,10 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1236#1237#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -648,10 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#1236#1237#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,10 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1236#1237#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,10 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#1236#1237#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -695,10 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1236#1237#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,10 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#1236#1237#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -724,10 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1236#1237#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,10 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="63" column="31" lean-forward="false" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="31" />
-          <folding>
-            <element signature="e#1458#1459#0" expanded="false" />
-            <element signature="e#1498#1499#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -783,10 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="59" column="37" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="37" />
-          <folding>
-            <element signature="e#1236#1237#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -794,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,10 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
           <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding>
-            <element signature="e#3584#3585#0" expanded="false" />
-            <element signature="e#3617#3618#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -813,10 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="861">
           <caret line="58" column="37" lean-forward="false" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="37" />
-          <folding>
-            <element signature="e#1184#1185#0" expanded="false" />
-            <element signature="e#1218#1219#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -846,16 +703,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vue/VueAccueil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/vue/VueSports.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1890">
@@ -876,13 +723,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="805" column="0" lean-forward="false" selection-start-line="805" selection-start-column="0" selection-end-line="805" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controleur/Ville.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="315">
           <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding />
         </state>
@@ -890,7 +736,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controleur/Lieu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
+        <state relative-caret-position="798">
           <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="36" />
           <folding>
             <element signature="e#482#483#0" expanded="true" />
@@ -901,7 +747,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vue/VueGeneral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
+        <state relative-caret-position="294">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
@@ -909,7 +755,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vue/VueConnexion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
+        <state relative-caret-position="2478">
           <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding />
         </state>
@@ -917,51 +763,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vue/VueAthletes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="86" column="59" lean-forward="true" selection-start-line="83" selection-start-column="16" selection-end-line="86" selection-end-column="59" />
+        <state relative-caret-position="1470">
+          <caret line="86" column="59" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="86" selection-end-column="59" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="800" column="0" lean-forward="true" selection-start-line="800" selection-start-column="0" selection-end-line="800" selection-end-column="0" />
-          <folding>
-            <element signature="e#2724#2730#0" expanded="true" />
-            <element signature="e#6869#6877#0" expanded="true" />
-            <element signature="e#11048#11058#0" expanded="true" />
-            <element signature="e#16329#16341#0" expanded="true" />
-            <element signature="e#21480#21494#0" expanded="true" />
-            <element signature="e#24956#24963#0" expanded="true" />
-            <element signature="e#28998#29004#0" expanded="true" />
-            <marker date="1523643770442" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
-            <marker date="1523643770442" expanded="true" signature="1885:1911" ph="SELECT missi... missingValue" />
-            <marker date="1523643770442" expanded="true" signature="2755:2823" ph="SELECT id_pa... Pays" />
-            <marker date="1523643770442" expanded="true" signature="3822:3868" ph="SELECT Libel... Pays" />
-            <marker date="1523643770442" expanded="true" signature="4632:4701" ph="SELECT id_pa... Pays" />
-            <marker date="1523643770442" expanded="true" signature="6902:6921" ph="SELECT * FRO... Sport" />
-            <marker date="1523643770442" expanded="true" signature="7946:8019" ph="SELECT id_sp... sport" />
-            <marker date="1523643770442" expanded="true" signature="9123:9172" ph="SELECT Libel... Sport" />
-            <marker date="1523643770442" expanded="true" signature="11087:11114" ph="SELECT * FRO... athletes_java" />
-            <marker date="1523643770442" expanded="true" signature="16366:16391" ph="SELECT * FRO... " />
-            <marker date="1523643770442" expanded="true" signature="19424:19476" ph="SELECT Libel... equipe" />
-            <marker date="1523643770442" expanded="true" signature="20254:20331" ph="SELECT id_eq... Equipe" />
-            <marker date="1523643770442" expanded="true" signature="21519:21553" ph="SELECT * FRO... utilisateur_detaille" />
-            <marker date="1523643770442" expanded="true" signature="24988:25007" ph="SELECT * FRO... ville" />
-            <marker date="1523643770442" expanded="true" signature="25893:25966" ph="SELECT id_sp... sport" />
-            <marker date="1523643770442" expanded="true" signature="26705:26754" ph="SELECT Libel... equipe" />
-            <marker date="1523643770442" expanded="true" signature="29029:29047" ph="SELECT * FRO... lieu" />
-            <marker date="1523643770442" expanded="true" signature="31338:31380" ph="SELECT COUNT... athlete" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vue/VueLocalisation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="211" column="40" lean-forward="false" selection-start-line="211" selection-start-column="40" selection-end-line="211" selection-end-column="40" />
+        <state relative-caret-position="370">
+          <caret line="212" column="33" lean-forward="false" selection-start-line="212" selection-start-column="33" selection-end-line="212" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue/VueAccueil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <marker date="1523881204879" expanded="true" signature="306:438" ph="Select count... Utilisateur" />
+            <marker date="1523881204879" expanded="true" signature="1855:1881" ph="SELECT missi... missingValue" />
+            <marker date="1523881204879" expanded="true" signature="2694:2762" ph="SELECT id_pa... Pays" />
+            <marker date="1523881204879" expanded="true" signature="3731:3777" ph="SELECT Libel... Pays" />
+            <marker date="1523881204879" expanded="true" signature="4511:4580" ph="SELECT id_pa... Pays" />
+            <marker date="1523881204879" expanded="true" signature="6691:6710" ph="SELECT * FRO... Sport" />
+            <marker date="1523881204879" expanded="true" signature="7705:7778" ph="SELECT id_sp... sport" />
+            <marker date="1523881204879" expanded="true" signature="8852:8901" ph="SELECT Libel... Sport" />
+            <marker date="1523881204879" expanded="true" signature="10756:10783" ph="SELECT * FRO... athletes_java" />
+            <marker date="1523881204879" expanded="true" signature="15855:15880" ph="SELECT * FRO... " />
+            <marker date="1523881204879" expanded="true" signature="18853:18905" ph="SELECT Libel... equipe" />
+            <marker date="1523881204879" expanded="true" signature="19653:19730" ph="SELECT id_eq... Equipe" />
+            <marker date="1523881204879" expanded="true" signature="20888:20922" ph="SELECT * FRO... utilisateur_detaille" />
+            <marker date="1523881204879" expanded="true" signature="24267:24286" ph="SELECT * FRO... ville" />
+            <marker date="1523881204879" expanded="true" signature="25141:25214" ph="SELECT id_sp... sport" />
+            <marker date="1523881204879" expanded="true" signature="25922:25971" ph="SELECT Libel... equipe" />
+            <marker date="1523881204879" expanded="true" signature="27956:27974" ph="SELECT * FRO... lieu" />
+            <marker date="1523881204879" expanded="true" signature="30131:30157" ph="SELECT COUNT... " />
+            <marker date="1523881204879" expanded="true" signature="30131:30158" ph="SELECT COUNT... athlete" />
+          </folding>
         </state>
       </provider>
     </entry>
