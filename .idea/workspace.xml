@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f4042c-d636-4152-a9f6-12878f75117a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modele/Modele.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modele/Modele.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -41,9 +40,10 @@
       <file leaf-file-name="Modele.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="341" column="44" selection-start-line="341" selection-start-column="31" selection-end-line="341" selection-end-column="44" />
+            <state relative-caret-position="972">
+              <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#17729#17738#0" expanded="true" />
               </folding>
             </state>
@@ -69,6 +69,7 @@
       <find>panelEdition</find>
       <find>System.out.println(requete);</find>
       <find>tablePays</find>
+      <find>athletes_java</find>
     </findStrings>
     <replaceStrings>
       <replace>tableSports</replace>
@@ -121,7 +122,7 @@
     <packageJsonPaths />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="245" />
     <option name="y" value="-10" />
     <option name="width" value="1400" />
@@ -306,7 +307,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80227000" />
+    <option name="totallyTimeSpent" value="81340000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -682,9 +683,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modele/Modele.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="341" column="44" selection-start-line="341" selection-start-column="31" selection-end-line="341" selection-end-column="44" />
+        <state relative-caret-position="972">
+          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#17729#17738#0" expanded="true" />
           </folding>
         </state>
