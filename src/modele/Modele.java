@@ -525,40 +525,40 @@ public class Modele {
 	 */
 
 
-//	public static ArrayList<Equipes> selectAllEquipes ()
-//	{
-//		ArrayList<Equipes> listEquipes = new ArrayList<Equipes>();
-//
-//		String requete = "SELECT * FROM 'equipe'";
-//
-//		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
-//		try{
-//			//Connexion à la base de donnée
-//			uneBdd.seConnecter();
-//			Statement unStat = uneBdd.getMaConnexion().createStatement();
-//
-//			//Exécution de la requète
-//			ResultSet rs = unStat.executeQuery(requete);
-//			while (rs.next())
-//			{
-//				//récupération des Champs par valeur
-//				int idEquipe = rs.getInt("id_equipe");
-//				String libelleEquipe = rs.getString("Libelle_equipe");
-//				int Nbjoueursequipe = rs.getInt("Nb_joueurs_equipe");
-//				int idSport = rs.getInt("id_sport");
-//				//Mise à jour de la liste
-//				listEquipes.add(new Equipes(idEquipe, libelleEquipe, Nbjoueursequipe, idSport));
-//			}
-//			//Fermeture de la connexion à la base de données
-//			uneBdd.seDeConnecter();
-//		}
-//		catch( SQLException exp)
-//		{
-//			System.out.println("Erreur : "+ requete);
-//			//exp.printStackTrace();
-//		}
-//		return listEquipes;
-//	}
+	public static ArrayList<Equipes> selectAllEquipes ()
+	{
+		ArrayList<Equipes> listEquipes = new ArrayList<Equipes>();
+
+		String requete = "SELECT * FROM 'equipe'";
+
+		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
+		try{
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+			while (rs.next())
+			{
+				//récupération des Champs par valeur
+				int idEquipe = rs.getInt("id_equipe");
+				String libelleEquipe = rs.getString("Libelle_equipe");
+				int Nbjoueursequipe = rs.getInt("Nb_joueurs_equipe");
+				int idSport = rs.getInt("id_sport");
+				//Mise à jour de la liste
+				listEquipes.add(new Equipes(idEquipe, libelleEquipe, Nbjoueursequipe, idSport));
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		}
+		catch( SQLException exp)
+		{
+			System.out.println("Erreur : "+ requete);
+			//exp.printStackTrace();
+		}
+		return listEquipes;
+	}
 
 	public static String selectWhereEquipe(int idEquipe) {
 		String libelleEquipe = "";

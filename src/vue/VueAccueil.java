@@ -78,6 +78,10 @@ public class VueAccueil extends JPanel {
         gridBC.gridy = 2;
 
 
+        this.panelEdition.add(new JLabel(""+NbUser), gridBC);
+        gridBC.gridx = 2;
+        gridBC.gridy = 2;
+
         this.add(this.panelEdition);
         this.setVisible(true);
 
