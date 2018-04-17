@@ -717,7 +717,7 @@ public class Modele {
 	public static ArrayList<Ville> selectAllVilles() {
 		ArrayList<Ville> listVille = new ArrayList<Ville>();
 
-		String requete = "SELECT * FROM ville";
+		String requete = "SELECT * FROM Ville";
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
@@ -830,7 +830,7 @@ public class Modele {
 	public static ArrayList<Lieu> selectAllLieux() {
 		ArrayList<Lieu> listLieu = new ArrayList<Lieu>();
 
-		String requete = "SELECT * FROM lieu";
+		String requete = "SELECT * FROM Lieu";
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		try {
 			//Connexion à la base de donnée
