@@ -192,8 +192,8 @@ public class VuePays extends JPanel implements ActionListener
 
 
             Pays unPays = new Pays(txtLibelle.getText(),txtDescription.getText(),nameImage);
-            Modele.insertPays(unPays);
-            Object data [] = {unPays.getIdPays(), unPays.getLibelle(), unPays.getImage(), unPays.getDescription()};
+            Integer id = Modele.insertPays(unPays);
+            Object data [] = {id, unPays.getLibelle(), unPays.getImage(), unPays.getDescription()};
             this.unTableau.add(data);
 
             JOptionPane.showMessageDialog(this, "Insertion réussie");

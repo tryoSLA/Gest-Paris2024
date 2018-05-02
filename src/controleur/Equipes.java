@@ -3,7 +3,7 @@ package controleur;
 public class Equipes
 {
     private int idequipe;
-    private static int nbChampPays = 4;
+    private static int nbChampEquipe = 4;
     private String libelleEquipe;
     private int nbJoueurequipe, idSportEquipe;
 
@@ -39,12 +39,12 @@ public class Equipes
         this.idequipe = idequipe;
     }
 
-    public static int getNbChampPays() {
-        return nbChampPays;
+    public static int getNbChampEquipe() {
+        return nbChampEquipe;
     }
 
-    public static void setNbChampPays(int nbChampPays) {
-        Equipes.nbChampPays = nbChampPays;
+    public static void setNbChampEquipe(int nbChampPays) {
+        Equipes.nbChampEquipe = nbChampPays;
     }
 
     public String getLibelleEquipe() {

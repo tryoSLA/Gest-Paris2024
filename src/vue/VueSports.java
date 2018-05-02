@@ -182,8 +182,8 @@ public class VueSports extends JPanel implements ActionListener {
             //int idSport = Integer.parseInt(txtId.getText());
 
             Sports unSport = new Sports(txtLibelle.getText(), txtDescription.getText(), nameImage);
-            Modele.insertSports(unSport);
-            Object data[] = {unSport.getIdSports(), unSport.getLibelle(), unSport.getImage(), unSport.getDescription()};
+            int id = Modele.insertSports(unSport);
+            Object data[] = {id, unSport.getLibelle(), unSport.getImage(), unSport.getDescription()};
             this.unTableau.add(data);
 
             JOptionPane.showMessageDialog(this, "Insertion réussie");

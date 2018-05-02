@@ -172,7 +172,7 @@ public class Modele {
 		return idpays;
 	}
 
-	public static void insertPays(Pays unPays) {
+	public static int insertPays(Pays unPays) {
 		String requete = "INSERT INTO Pays values (" +
 				"null," +
 				" '" + unPays.getLibelle() + "'," +
@@ -180,8 +180,9 @@ public class Modele {
 				" '" + unPays.getDescriptionClean() + "');";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-
 		ExecutionBdd(uneBdd, requete);
+		int key = Modele.selectLasInsertId(requete,uneBdd);
+		return key;
 
 	}
 
@@ -268,7 +269,7 @@ public class Modele {
 		return idsport;
 	}
 
-	public static void insertSports(Sports unSports) {
+	public static int insertSports(Sports unSports) {
 		String requete = "INSERT INTO sport values (" +
 				"null," +
 				" '" + unSports.getLibelle() + "'," +
@@ -276,8 +277,9 @@ public class Modele {
 				" '" + unSports.getDescriptionClean() + "');";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-
 		ExecutionBdd(uneBdd, requete);
+		int key = Modele.selectLasInsertId(requete,uneBdd);
+		return key;
 	}
 
 	public static String selectWhereSport(int idSport) {
@@ -376,7 +378,7 @@ public class Modele {
 		return listAthletes;
 	}
 
-	public static void insertAthleteAvecEquipe(Athletes unAthlete) {
+	public static int insertAthleteAvecEquipe(Athletes unAthlete) {
 		String requete =
 				"CALL insert_athlete ('" + unAthlete.getNom() + "','" +
 						unAthlete.getPrenom() + "'," +
@@ -391,11 +393,34 @@ public class Modele {
 						unAthlete.getId_sport() + ");";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-
 		ExecutionBdd(uneBdd, requete);
+
+		Integer id = 0;
+		String requete1 =
+				"SELECT last_insert_id(id_personne) AS id FROM athlete ORDER BY id DESC LIMIT 1;";
+		System.out.println(requete1);
+		try {
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete1);
+
+			if (rs.next()) {
+				//récupération des Champs par valeur
+				id = rs.getInt("id");
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete1);
+			//exp.printStackTrace();
+		}
+		return id;
 	}
 
-	public static void insertAthleteSansEquipe(Athletes unAthlete) {
+	public static int insertAthleteSansEquipe(Athletes unAthlete) {
 		String requete =
 				"CALL insert_athlete ( '" + unAthlete.getNom() + "','" +
 						unAthlete.getPrenom() + "'," +
@@ -410,8 +435,24 @@ public class Modele {
 						unAthlete.getId_sport() + ");";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-
 		ExecutionBdd(uneBdd, requete);
+
+		Integer id_ = 0;
+		String requete1 =
+				"SELECT last_insert_id(id_personne) AS id_ FROM athlete ORDER BY id_ DESC LIMIT 1;";
+		System.out.println(requete1);
+		try {
+			uneBdd.seConnecter();
+			Statement unStat1 = uneBdd.getMaConnexion().createStatement();
+			ResultSet rs1 = unStat1.executeQuery(requete1);
+			if (rs1.next()) {
+				id_ = rs1.getInt("id_");
+			}
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete1);
+		}
+		return id_;
 	}
 
 	public static void updateAthleteAvecEquipe(Athletes unAthlete) {
@@ -529,7 +570,7 @@ public class Modele {
 	{
 		ArrayList<Equipes> listEquipes = new ArrayList<Equipes>();
 
-		String requete = "SELECT * FROM 'equipe'";
+		String requete = "SELECT * FROM equipe";
 
 		Bdd uneBdd = new Bdd ("localhost","paris_2024", "user_paris2024","123");
 		try{
@@ -615,6 +656,39 @@ public class Modele {
 		return idequipe;
 	}
 
+	public static int insertEquipe(Equipes uneEquipe)
+	{
+		String requete = "INSERT INTO equipe values (" +
+				"null," +
+				" '" + uneEquipe.getLibelleEquipe() + "' ," +
+				" '" + uneEquipe.getNbJoueurequipe() + "' ," +
+				" '" + uneEquipe.getIdSportEquipe() + "');";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		int key = Modele.selectLasInsertId(requete,uneBdd);
+		return key;
+	}
+
+	public static void deleteEquipes(Equipes uneEquipe) {
+		String requete =
+				"DELETE FROM equipe WHERE id_equipe = " + uneEquipe.getIdequipe() + "; ";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+
+		ExecutionBdd(uneBdd, requete);
+	}
+	public static void updateEquipe(Equipes uneEquipe) {
+		String requete =
+				"UPDATE equipe " +
+						"SET Libelle_equipe = '" + uneEquipe.getLibelleEquipe() + "'," +
+						"	Nb_joueurs_equipe = '" + uneEquipe.getNbJoueurequipe() + "'," +
+						"	id_sport = '" + uneEquipe.getIdSportEquipe() + "' " +
+						"WHERE id_equipe = '" + uneEquipe.getIdequipe() + "'";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+
+		ExecutionBdd(uneBdd, requete);
+	}
 
 	/*
 	********************************************************************************************************************
@@ -672,8 +746,31 @@ public class Modele {
 						unUtilisateur.getRole() + "');";
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
-		int key = Modele.selectLasInsertId(requete,uneBdd);
-		return key;
+		ExecutionBdd(uneBdd, requete);
+		Integer id_user = 0;
+		String requete1 =
+				"SELECT last_insert_id(id_personne) AS id FROM utilisateur ORDER BY id DESC LIMIT 1;";
+		System.out.println(requete1);
+		try {
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete1);
+
+			if (rs.next()) {
+				//récupération des Champs par valeur
+				id_user = rs.getInt("id");
+				System.out.println(id_user);
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete1);
+			//exp.printStackTrace();
+		}
+		return id_user;
 	}
 
 	public static void deleteUtilisateur(Utilisateurs unUtilisateur) {
