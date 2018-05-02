@@ -17,7 +17,8 @@ import modele.Modele;
 import controleur.Tableau;
 
 
-public class VueAthletes extends JPanel implements ActionListener {
+public class
+VueAthletes extends JPanel implements ActionListener {
 
     private JTable tableAthletes;
     private JPanel panelEdition = new JPanel();
