@@ -17,7 +17,8 @@ import modele.Modele;
 import controleur.Tableau;
 
 
-public class VueAthletes extends JPanel implements ActionListener {
+public class
+VueAthletes extends JPanel implements ActionListener {
 
     private JTable tableAthletes;
     private JPanel panelEdition = new JPanel();
@@ -239,14 +240,14 @@ public class VueAthletes extends JPanel implements ActionListener {
 
                 String equipe = "NULL";
                 Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),nameImage,txtBiographie.getText(),equipe, Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
-                Modele.insertAthleteSansEquipe(unAthlete);
+                Integer id =  Modele.insertAthleteSansEquipe(unAthlete);
                 System.out.println("Bio : "+ unAthlete.getBiographie());
                 Object data [] = {unAthlete.getIdAthletes(),unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), "NULL", unAthlete.getId_pays()};
                 this.unTableau.add(data);
             }else{
                 Athletes unAthlete = new Athletes (txtNom.getText(), txtPrenom.getText(),Integer.parseInt(txtAge.getText()),comboGenre.getSelectedItem().toString(),Float.parseFloat(txtTaille.getText()),Float.parseFloat(txtPoids.getText()),nameImage,txtBiographie.getText(), Modele.selectIdWhereEquipe(comboEquipe.getSelectedItem().toString()), Modele.selectIdWhereSport(comboSport.getSelectedItem().toString()), Modele.selectIdWherePays(comboPays.getSelectedItem().toString()));
-                Modele.insertAthleteAvecEquipe(unAthlete);
-                Object data [] = {unAthlete.getIdAthletes(),unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), unAthlete.getId_sport(), unAthlete.getId_pays()};
+                Integer id = Modele.insertAthleteAvecEquipe(unAthlete);
+                Object data [] = {id,unAthlete.getNom(), unAthlete.getPrenom(), unAthlete.getAge(), unAthlete.getGenre(), unAthlete.getTaille(),unAthlete.getPoids(),unAthlete.getPhoto(), unAthlete.getBiographie(), unAthlete.getId_equipe(), unAthlete.getId_sport(), unAthlete.getId_pays()};
                 this.unTableau.add(data);
             }
 
