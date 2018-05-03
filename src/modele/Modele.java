@@ -770,7 +770,7 @@ public class Modele {
                         unUtilisateur.getGenre() + "','" +
                         unUtilisateur.getEmail() + "','" +
                         unUtilisateur.getPseudo() + "','" +
-                        unUtilisateur.getMot_de_passe() + "','" +
+                        MD5(unUtilisateur.getMot_de_passe()) + "','" +
                         unUtilisateur.getRole() + "');";
 
         Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
