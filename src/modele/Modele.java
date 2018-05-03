@@ -763,6 +763,8 @@ public class Modele {
     }
 
     public static int insertUtilisateur(Utilisateurs unUtilisateur) {
+    	String mdp = unUtilisateur.getMot_de_passe();
+    	String hashMdp = MD5(mdp);
         String requete =
                 "CALL insert_user ('" + unUtilisateur.getNom() + "','" +
                         unUtilisateur.getPrenom() + "'," +
@@ -770,9 +772,9 @@ public class Modele {
                         unUtilisateur.getGenre() + "','" +
                         unUtilisateur.getEmail() + "','" +
                         unUtilisateur.getPseudo() + "','" +
-                        MD5(unUtilisateur.getMot_de_passe()) + "','" +
+						hashMdp + "','" +
                         unUtilisateur.getRole() + "');";
-
+		System.out.println(requete);
         Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
         int key = Modele.selectLasInsertId(requete, uneBdd);
         return key;
@@ -793,6 +795,8 @@ public class Modele {
     }
 
     public static void updateUtilisateur(Utilisateurs unUtilisateur) {
+		String mdp = unUtilisateur.getMot_de_passe();
+		String hashMdp = MD5(mdp);
         String requete =
                 "Call update_user (" + unUtilisateur.getId_personne() + ",'" +
                         unUtilisateur.getNom() + "','" +
@@ -801,8 +805,9 @@ public class Modele {
                         unUtilisateur.getGenre() + "','" +
                         unUtilisateur.getEmail() + "','" +
                         unUtilisateur.getPseudo() + "','" +
-                        unUtilisateur.getMot_de_passe() + "','" +
+						hashMdp + "','" +
                         unUtilisateur.getRole() + "');";
+		System.out.println(requete);
 
         Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 
