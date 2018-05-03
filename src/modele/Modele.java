@@ -21,7 +21,7 @@ public class Modele {
 
 
 	public static String verifConnexion(String login, String mdp) {
-		String requete = "Select count(*) as nb, role from Utilisateur" + " where pseudo ='" + login + "' and mot_de_passe ='" + mdp + "' group by id_personne; ";
+		String requete = "Select count(*) as nb, role from Utilisateur" + " where pseudo ='" + login + "' and mot_de_passe ='" + MD5(mdp) + "' group by id_personne; ";
 		System.out.println(requete);
 		String droits = "";
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
@@ -32,6 +32,7 @@ public class Modele {
 
 			if (unRes.next()) {
 				droits = unRes.getString("role");
+
 				int nb = unRes.getInt("nb");
 				if (nb == 0) droits = "";
 			}
