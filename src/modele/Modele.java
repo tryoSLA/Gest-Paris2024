@@ -41,6 +41,7 @@ public class Modele {
 			uneBdd.seDeConnecter();
 		} catch (SQLException exp) {
 			System.out.println("Erreur : " + requete);
+			System.out.println(exp.getMessage());
 			//exp.printStackTrace();
 		}
 		return droits;
@@ -562,7 +563,7 @@ public class Modele {
                 int idEvents = rs.getInt("id_event");
                 String titleEvents = rs.getString("Titre_event");
                 String descEvents = rs.getString("Description_event");
-                String photoEvents = rs.getString("Photo_sport");
+                String photoEvents = rs.getString("Photo_evenement");
                 Date dateEvents = rs.getDate("Date_evenement");
                 //Mise à jour de la liste
                 listEvents.add(new Evenements(idEvents, titleEvents, descEvents, photoEvents, dateEvents));
