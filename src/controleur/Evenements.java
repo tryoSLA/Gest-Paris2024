@@ -5,7 +5,7 @@ import java.util.Date;
 public class Evenements
 {
     private int idEvents;
-    private static int nbChampPays = 3;
+    private static int nbChampEvents = 4;
     private String titleEvents, descriptionEvents, photoEvents;
     private Date dateEvents;
 
@@ -44,12 +44,12 @@ public class Evenements
         this.idEvents = idEvents;
     }
 
-    public static int getNbChampPays() {
-        return nbChampPays;
+    public static int getNbChampEvents() {
+        return nbChampEvents;
     }
 
-    public static void setNbChampPays(int nbChampPays) {
-        Evenements.nbChampPays = nbChampPays;
+    public static void setNbChampEvents(int nbChampEvents) {
+        Evenements.nbChampEvents = nbChampEvents;
     }
 
     public String getDescriptionEvents() {

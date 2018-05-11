@@ -547,7 +547,7 @@ public class Modele {
     public static ArrayList<Evenements> selectAllEvents() {
         ArrayList<Evenements> listEvents = new ArrayList<Evenements>();
 
-        String requete = "SELECT * FROM 'evenement'";
+        String requete = "SELECT * FROM evenement;";
 
         Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
         try {
@@ -576,8 +576,8 @@ public class Modele {
         return listEvents;
     }
 
-    public static void insertEvents(Evenements unEvents) {
-        String requete = "INSERT INTO Sport values (" +
+    public static int insertEvents(Evenements unEvents) {
+        String requete = "INSERT INTO evenement values (" +
                 "null," +
                 " '" + unEvents.getTitleEvents() + "'," +
                 " '" + unEvents.getDescriptionEventsClean() + "," +
@@ -587,7 +587,30 @@ public class Modele {
         Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 
         ExecutionBdd(uneBdd, requete);
+
+		int key = Modele.selectLasInsertId(requete,uneBdd);
+		return key;
     }
+
+	public static void updateEvents(Evenements unEvents) {
+		String requete = "UPDATE evenement " +
+				"SET Titre_event = '" + unEvents.getTitleEvents() + "'," +
+				"	Description_event = '" + unEvents.getDescriptionEventsClean() + "'," +
+				"	Date_evenement = '" + unEvents.getDateEvents() + "', " +
+				"	Photo_evenement = '" + unEvents.getPhotoEvents() + "' " +
+				"WHERE id_event = '" + unEvents.getIdEvents() + "'";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		ExecutionBdd(uneBdd, requete);
+	}
+
+	public static void deleteEvents(Evenements unEvents) {
+		String requete = "DELETE FROM evenement WHERE id_event = " + unEvents.getIdEvents() + "; ";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		ExecutionBdd(uneBdd, requete);
+	}
+
 	/*
 	********************************************************************************************************************
 	---------------------------------------------		   Equipe 		------------------------------------------------
