@@ -24,6 +24,7 @@ public class VueEvent extends JPanel implements ActionListener {
     private JTable tableEvenements;
     private JPanel panelEdition = new JPanel();
     private JPanel panelEdition2 = new JPanel();
+    private JPanel panelEdition3 = new JPanel();
     private JButton btChoisir = new JButton("Choisir");
     private JButton btAnnuler = new JButton("Annuler");
     private JButton btAjouter = new JButton("Ajouter");
@@ -36,15 +37,20 @@ public class VueEvent extends JPanel implements ActionListener {
     private TextArea txtDescription = new TextArea();
     private JTextField txtImage = new JTextField();
     private JTextField txtDate = new JTextField();
+
+    private JComboBox cbVille = new JComboBox();
+    private JComboBox cbType = new JComboBox();
+
     private Tableau unTableau;
-    SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 
     public VueEvent() {
         this.setBounds(20, 70, 850, 750);
         this.setLayout(null);
 
+        Modele.Combo("Libelle_ville", "ville", cbVille);
+        Modele.Combo("Libelle_event", "type_event", cbType);
         //Construction de la Jtable
-        String entete[] = {"Id", "Titre", "Description", "Date", "Image"};
+        String entete[] = {"Id", "Titre", "Description", "Date", "Image", "Ville", "Type"};
 
         this.unTableau = new Tableau(this.recupererLesEvents(), entete);
 
@@ -64,6 +70,16 @@ public class VueEvent extends JPanel implements ActionListener {
                 txtDescription.setText(tableEvenements.getValueAt(ligne, 2).toString());
                 txtDate.setText(tableEvenements.getValueAt(ligne, 3).toString());
                 txtImage.setText(tableEvenements.getValueAt(ligne, 4).toString());
+
+                int idville = Integer.parseInt(tableEvenements.getValueAt(ligne, 5).toString());
+                String libelleVille;
+                libelleVille = Modele.selectWhereVille(idville);
+                cbVille.setSelectedItem(libelleVille);
+
+                int idtype = Integer.parseInt(tableEvenements.getValueAt(ligne, 6).toString());
+                String libelleType;
+                libelleType = Modele.selectWhereType(idtype);
+                cbVille.setSelectedItem(libelleType);
             }
 
             @Override
@@ -87,7 +103,7 @@ public class VueEvent extends JPanel implements ActionListener {
             }
         });
 
-        this.txtDescription.setBounds(10, 10, 100, 50);
+        this.txtDescription.setBounds(10, 10, 100, 80);
 
         //Affichage de la JTable dans une ScrollTable
         JScrollPane uneScroll = new JScrollPane(this.tableEvenements);
@@ -96,7 +112,7 @@ public class VueEvent extends JPanel implements ActionListener {
         this.add(uneScroll);
         this.tableEvenements.setEnabled(true);
 
-        this.panelEdition.setBounds(20, 300, 800, 150);
+        this.panelEdition.setBounds(20, 300, 800, 100);
         this.panelEdition.setLayout(new GridBagLayout());
         GridBagConstraints gridBC = new GridBagConstraints();
         gridBC.gridx = gridBC.gridy = 0;
@@ -111,8 +127,10 @@ public class VueEvent extends JPanel implements ActionListener {
         this.panelEdition.add(txtTitle, gridBC);
         gridBC.gridx = 2;
         gridBC.gridy = 0;
+        gridBC.weightx = -1;
+        gridBC.weighty = 2;
 
-        this.panelEdition.add(new JLabel(""), gridBC);
+        this.panelEdition.add(new JLabel("    "), gridBC);
         gridBC.gridx = 3;
         gridBC.gridy = 0;
 
@@ -124,7 +142,7 @@ public class VueEvent extends JPanel implements ActionListener {
         gridBC.gridx = 5;
         gridBC.gridy = 0;
 
-        this.panelEdition2.setBounds(20, 400, 400, 150);
+        this.panelEdition2.setBounds(20, 400, 800, 60);
         this.panelEdition2.setLayout(new GridBagLayout());
 
         GridBagConstraints gridBC2 = new GridBagConstraints();
@@ -142,24 +160,60 @@ public class VueEvent extends JPanel implements ActionListener {
         gridBC2.gridx = 2;
         gridBC2.gridy = 0;
 
-        this.panelEdition2.add(new JLabel("Date : "), gridBC2);
+        this.panelEdition2.add(new JLabel(""), gridBC2);
         gridBC2.gridx = 3;
         gridBC2.gridy = 0;
 
-        this.panelEdition2.add(txtDate, gridBC2);
+        this.panelEdition2.add(new JLabel("Date : "), gridBC2);
         gridBC2.gridx = 4;
         gridBC2.gridy = 0;
 
+        this.panelEdition2.add(txtDate, gridBC2);
+        gridBC2.gridx = 5;
+        gridBC2.gridy = 0;
+
+        this.panelEdition3.setBounds(20, 500, 800, 50);
+        this.panelEdition3.setLayout(new GridBagLayout());
+
+        GridBagConstraints gridBC3 = new GridBagConstraints();
+
+        gridBC3.gridx = gridBC3.gridy = 0;
+        gridBC3.weightx = gridBC3.weighty = 1;
+
+        gridBC3.fill = GridBagConstraints.HORIZONTAL;
+
+
+        this.panelEdition3.add(new JLabel("Ville : "), gridBC3);
+        gridBC3.gridx = 1;
+        gridBC3.gridy = 0;
+
+        this.panelEdition3.add(cbVille, gridBC3);
+        gridBC3.gridx = 2;
+        gridBC3.gridy = 0;
+
+        this.panelEdition3.add(new JLabel(""), gridBC3);
+        gridBC3.gridx = 3;
+        gridBC3.gridy = 0;
+
+        this.panelEdition3.add(new JLabel("Type : "), gridBC3);
+        gridBC3.gridx = 4;
+        gridBC3.gridy = 0;
+
+        this.panelEdition3.add(cbType, gridBC3);
+        gridBC3.gridx = 5;
+        gridBC3.gridy = 0;
+
         this.add(this.panelEdition);
         this.add(this.panelEdition2);
+        this.add(this.panelEdition3);
 
-        this.btAnnuler.setBounds(100, 550, 150, 20);
+        this.btAnnuler.setBounds(100, 650, 150, 20);
         this.add(btAnnuler);
-        this.btAjouter.setBounds(270, 550, 150, 20);
+        this.btAjouter.setBounds(270, 650, 150, 20);
         this.add(btAjouter);
-        this.btMiseAJour.setBounds(440, 550, 150, 20);
+        this.btMiseAJour.setBounds(440, 650, 150, 20);
         this.add(btMiseAJour);
-        this.btSupprimer.setBounds(610, 550, 150, 20);
+        this.btSupprimer.setBounds(610, 650, 150, 20);
         this.add(btSupprimer);
 
         //rendre les boutons cliquables
@@ -183,6 +237,8 @@ public class VueEvent extends JPanel implements ActionListener {
             donnees[i][2] = unEvent.getDescriptionEventsClean();
             donnees[i][3] = unEvent.getDateEvents();
             donnees[i][4] = unEvent.getPhotoEvents();
+            donnees[i][5] = unEvent.getIdVille();
+            donnees[i][6] = unEvent.getIdType();
             i++;
         }
         return donnees;
@@ -199,22 +255,18 @@ public class VueEvent extends JPanel implements ActionListener {
             //System.out.println(pathImage + "_____" + nameImage + "___"+ source +"_____"+destination);
             source.renameTo(destination);
 
-            try {
-                Date MaDate = format.parse(txtDate.getText());
-                Evenements unEvent = new Evenements(txtTitle.getText(), txtDescription.getText(), txtImage.getText(), MaDate);
-                Integer id = Modele.insertEvents(unEvent);
-                Object data[] = {id, unEvent.getTitleEvents(), unEvent.getDateEvents(), unEvent.getDescriptionEventsClean(), unEvent.getPhotoEvents(), unEvent.getDateEvents()};
-                this.unTableau.add(data);
-                JOptionPane.showMessageDialog(this, "Insertion réussie");
-            } catch (ParseException exp) {
-                exp.printStackTrace();
-            }
+            Evenements unEvent = new Evenements(txtTitle.getText(), txtDescription.getText(),nameImage,txtDate.getText(),Modele.selectIdWhereVille(cbVille.getSelectedItem().toString()),Modele.selectIdWhereType(cbType.getSelectedItem().toString()));
+            Integer id = Modele.insertEvents(unEvent);
+            Object data[] = {id, unEvent.getTitleEvents(), unEvent.getDateEvents(), unEvent.getDescriptionEventsClean(), unEvent.getPhotoEvents(), unEvent.getDateEvents(),unEvent.getIdVille(), unEvent.getIdType()};
+            this.unTableau.add(data);
 
             JOptionPane.showMessageDialog(this, "Insertion réussie");
             txtId.setText("");
             txtImage.setText("");
             txtDate.setText("");
             txtDescription.setText("");
+            cbVille.setSelectedItem("");
+            cbType.setSelectedItem("");
         } else if (e.getSource() == this.btChoisir) {
             this.choseImage.showOpenDialog(this);
         } else if (e.getSource() == this.btAnnuler) {
@@ -222,6 +274,8 @@ public class VueEvent extends JPanel implements ActionListener {
             txtImage.setText("");
             txtDate.setText("");
             txtDescription.setText("");
+            cbVille.setSelectedItem("");
+            cbType.setSelectedItem("");
         } else if (e.getSource() == this.btSupprimer) {
             int dialogButton = JOptionPane.YES_NO_OPTION;
             int dialogResult = JOptionPane.showConfirmDialog(null, "Vous risquez d'endommager la base de données, \n vérifiez qu'aucun(e) entité n'est lié ! \n Voulez-vous continuer ?", "Warning", dialogButton);
@@ -230,20 +284,16 @@ public class VueEvent extends JPanel implements ActionListener {
             } else {
                 int idEvents = Integer.parseInt(txtId.getText());
 
-                try {
-                    Date MaDate = format.parse(txtDate.getText());
-                    Evenements unEvent = new Evenements(txtTitle.getText(), txtDescription.getText(), txtImage.getText(), MaDate);
-                    Modele.deleteEvents(unEvent);
-                    JOptionPane.showMessageDialog(this, "Supression effectuée");
-                } catch (ParseException exp) {
-                    exp.printStackTrace();
-                }
-
+                Evenements unEvent = new Evenements(idEvents,txtTitle.getText(), txtDescription.getText(), txtImage.getText(), txtDate.getText(),Modele.selectIdWhereVille(cbVille.getSelectedItem().toString()),Modele.selectIdWhereType(cbType.getSelectedItem().toString()));
+                Modele.deleteEvents(unEvent);
                 JOptionPane.showMessageDialog(this, "Supression effectuée");
+
                 txtId.setText("");
                 txtImage.setText("");
                 txtImage.setText("");
                 txtDescription.setText("");
+                cbVille.setSelectedItem("");
+                cbType.setSelectedItem("");
 
                 int rowIndex = tableEvenements.getSelectedRow();
                 unTableau.remove(rowIndex);
@@ -251,20 +301,16 @@ public class VueEvent extends JPanel implements ActionListener {
         } else if (e.getSource() == this.btMiseAJour) {
             int idEvents = Integer.parseInt(txtId.getText());
 
-            try {
-                Date MaDate = format.parse(txtDate.getText());
-                Evenements unEvent = new Evenements(txtTitle.getText(), txtDescription.getText(), txtImage.getText(), MaDate);
-                Modele.updateEvents(unEvent);
-                JOptionPane.showMessageDialog(this, "Modification réussie");
-                Object data[] = {unEvent.getIdEvents() + "", unEvent.getTitleEvents(), unEvent.getDescriptionEventsClean(), unEvent.getDateEvents(), unEvent.getPhotoEvents()};
-                int rowIndex = tableEvenements.getSelectedRow();
-                System.out.println(rowIndex);
-                if (unTableau != null) {
-                    this.unTableau.update(rowIndex, data);
-                }
-            } catch (ParseException exp) {
-                exp.printStackTrace();
+            Evenements unEvent = new Evenements(idEvents,txtTitle.getText(), txtDescription.getText(), txtImage.getText(), txtDate.getText(), Modele.selectIdWhereVille(cbVille.getSelectedItem().toString()), Modele.selectIdWhereType(cbType.getSelectedItem().toString()));
+            Modele.updateEvents(unEvent);
+            JOptionPane.showMessageDialog(this, "Modification réussie");
+            Object data[] = {unEvent.getIdEvents() + "", unEvent.getTitleEvents(), unEvent.getDescriptionEventsClean(), unEvent.getDateEvents(), unEvent.getPhotoEvents(), unEvent.getIdVille(), unEvent.getIdType()};
+            int rowIndex = tableEvenements.getSelectedRow();
+            System.out.println(rowIndex);
+            if (unTableau != null) {
+                this.unTableau.update(rowIndex, data);
             }
+
         }
     }
 }

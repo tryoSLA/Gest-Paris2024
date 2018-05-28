@@ -564,9 +564,11 @@ public class Modele {
                 String titleEvents = rs.getString("Titre_event");
                 String descEvents = rs.getString("Description_event");
                 String photoEvents = rs.getString("Photo_evenement");
-                Date dateEvents = rs.getDate("Date_evenement");
+                String dateEvents = rs.getString("Date_evenement");
+                int ville = rs.getInt("id_ville");
+                int type = rs.getInt("id_type_event");
                 //Mise à jour de la liste
-                listEvents.add(new Evenements(idEvents, titleEvents, descEvents, photoEvents, dateEvents));
+                listEvents.add(new Evenements(idEvents, titleEvents, descEvents, photoEvents, dateEvents,ville,type));
             }
             //Fermeture de la connexion à la base de données
             uneBdd.seDeConnecter();
@@ -581,9 +583,11 @@ public class Modele {
         String requete = "INSERT INTO evenement values (" +
                 "null," +
                 " '" + unEvents.getTitleEvents() + "'," +
-                " '" + unEvents.getDescriptionEventsClean() + "," +
+                " '" + unEvents.getDescriptionEventsClean() + "'," +
                 " '" + unEvents.getDateEvents() + "'," +
-                " '" + unEvents.getPhotoEvents() + "');";
+                " '" + unEvents.getPhotoEvents() + "'," +
+				" " + unEvents.getIdVille() + "," +
+				" " + unEvents.getIdType() + ");";
 
         Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 
@@ -607,9 +611,64 @@ public class Modele {
 
 	public static void deleteEvents(Evenements unEvents) {
 		String requete = "DELETE FROM evenement WHERE id_event = " + unEvents.getIdEvents() + "; ";
+		System.out.println(requete);
 
 		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
 		ExecutionBdd(uneBdd, requete);
+	}
+
+	public static String selectWhereType(int idType) {
+		String libelleType = "";
+
+		String requete = "SELECT Libelle_event FROM type_event WHERE id_type_event = " + idType + ";";
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+
+			if (rs.next()) {
+				//récupération des Champs par valeur
+				libelleType = rs.getString("Libelle_event");
+
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
+			//exp.printStackTrace();
+		}
+		return libelleType;
+	}
+
+	public static int selectIdWhereType(String libelleType) {
+		int idType = 0;
+
+		String requete = "SELECT id_type_event FROM type_event WHERE Libelle_event = \"" + libelleType + "\";";
+
+		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		try {
+			//Connexion à la base de donnée
+			uneBdd.seConnecter();
+			Statement unStat = uneBdd.getMaConnexion().createStatement();
+
+			//Exécution de la requète
+			ResultSet rs = unStat.executeQuery(requete);
+
+			if (rs.next()) {
+				//récupération des Champs par valeur
+				idType = rs.getInt("id_type_event");
+			}
+			//Fermeture de la connexion à la base de données
+			uneBdd.seDeConnecter();
+		} catch (SQLException exp) {
+			System.out.println("Erreur : " + requete);
+			//exp.printStackTrace();
+		}
+		return idType;
 	}
 
 	/*
@@ -1048,6 +1107,9 @@ public class Modele {
         }
         return Nb;
     }
+
+
+
 
 
     public static int selectLasInsertId(String requete, Bdd uneBdd) {
