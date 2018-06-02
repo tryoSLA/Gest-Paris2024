@@ -5,6 +5,7 @@ import modele.Modele;
 
 import javax.swing.*;
 import java.awt.*;
+import java.net.URL;
 
 
 public class VueAccueil extends JPanel {
@@ -17,7 +18,8 @@ public class VueAccueil extends JPanel {
         this.setBounds(20, 70, 850, 650);
         this.setLayout(null);
 
-        ImageIcon logo = new ImageIcon("src/images/Back_head.png");
+        URL logoBackUrl = ClassLoader.getSystemResource("Back_head.png");
+        ImageIcon logo = new ImageIcon(logoBackUrl);
         JLabel lbLogo = new JLabel(logo);
         lbLogo.setBounds(0, 0, 850, 350);
         this.add(lbLogo);

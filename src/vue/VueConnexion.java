@@ -4,7 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.net.URL;
 
+import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -67,16 +69,17 @@ public class VueConnexion extends JFrame implements ActionListener,KeyListener
 		this.pwdMdp.setBackground(null);
 		this.pwdMdp.setBorder(BorderFactory.createMatteBorder(0,0,1,0, Color.black));
 
-		
-				
 		//ajout de l'image � la fenetre 		
-		ImageIcon logo = new ImageIcon("src/images/JO.png");
+		//ImageIcon logo = new ImageIcon("src/images/JO.png");
+		URL logoUrl = ClassLoader.getSystemResource("JO.png");
+		ImageIcon logo = new ImageIcon(logoUrl);
 		JLabel lbLogo = new JLabel(logo);
 		lbLogo.setBounds(50, 20, 400, 120);
 		this.add(lbLogo);
 		
-		//changer icone application 
-		ImageIcon logopetit = new ImageIcon("src/images/Logo_paris_2024_simple.png");
+		//changer icone application
+		URL logoPetitUrl = ClassLoader.getSystemResource("Logo_paris_2024_simple.png");
+		ImageIcon logopetit = new ImageIcon(logoPetitUrl);
 		this.setIconImage(logopetit.getImage());
 		
 		//rendre les boutons cliquables 

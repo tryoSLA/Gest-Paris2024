@@ -24,7 +24,8 @@ public class Modele {
 		String requete = "Select count(*) as nb, role from Utilisateur" + " where pseudo ='" + login + "' and mot_de_passe ='" + MD5(mdp) + "' group by id_personne; ";
 		System.out.println(requete);
 		String droits = "";
-		Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		//Bdd uneBdd = new Bdd("localhost", "paris_2024", "user_paris2024", "123");
+		Bdd uneBdd = new Bdd("172.16.0.3", "paris_2024", "user_paris2024", "123");
 		try {
 			uneBdd.seConnecter();
 			Statement unStat = uneBdd.getMaConnexion().createStatement();

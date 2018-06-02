@@ -3,6 +3,7 @@ package vue;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.URL;
 
 import javax.swing.*;
 
@@ -42,7 +43,8 @@ public class VueGeneral extends JFrame implements ActionListener
 
 
 		 //changer icone application
-		 ImageIcon logopetit = new ImageIcon("src/images/Logo_paris_2024_simple.png");
+		 URL logoPetitUrl = ClassLoader.getSystemResource("Logo_paris_2024_simple.png");
+		 ImageIcon logopetit = new ImageIcon(logoPetitUrl);
 		 this.setIconImage(logopetit.getImage());
 					 
 		for (int i = 0; i<9; i++)
